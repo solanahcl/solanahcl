@@ -64,8 +64,6 @@ Source: https://github.com/anza-xyz/agave/blob/master/docs/src/operations/requir
 
 - **Storage Selection:** Choose NVMe SSDs that offer high IOPS to handle the intensive read/write operations necessary for validator nodes. Samsung's Pro series and WD's SN850X are highly recommended for their reliability and performance within the validator community.
 
-- **Compatibility Verification:** Always verify the compatibility of hardware components with the latest Solana software releases. Conduct comprehensive performance testing tailored to your specific validator setup to ensure optimal performance and stability.
-
 - **Memory Considerations:** While not part of the table, remember that **RAM** requirements are crucial. Ensure you have ECC memory and sufficient capacity as per the [Hardware Recommendations](#hardware-recommendations) section. RAM **speed** and DDR4 vs DDR5 are not known to make any significant differences 
 
 Feel free to reach out if you need further assistance or more detailed specifications!
