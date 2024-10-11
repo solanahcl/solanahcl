@@ -2,12 +2,12 @@
 
 This is the Solana Hardware Compatibility List for running a mainnet validator.
 
-- [[Hardware Recommendations]]
-- [[Compatible Hardware]]
-  - [[CPU]]
-  - [[Storage]]
-- [[Datacenter Providers]]
-
+- [Hardware Recommendations](#hardware-recommendations)
+- [Compatible Hardware](#compatible-hardware)
+  - [CPU](#cpu)
+  - [Storage](#storage)
+- [Datacenter Providers](#datacenter-providers)
+  
 ## Hardware Recommendations
 
 The hardware recommendations below are provided as a guide. Operators are encouraged to do their own performance testing.
@@ -51,6 +51,7 @@ The hardware recommendations below are provided as a guide. Operators are encour
 | **WD**       | SN850X     | 1,000,000 IOPS | 1,000,000 IOPS |
 | **Samsung**  | 990 Pro    | 1,400,000 IOPS | 1,550,000 IOPS |
 | **Samsung**  | 980 Pro    | 1,000,000 IOPS | 1,000,000 IOPS |
+
 ---
 
 ### Notes
