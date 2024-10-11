@@ -10,7 +10,7 @@ This is the Solana Hardware Compatibility List for running a mainnet validator.
   
 ## Hardware Recommendations
 
-The hardware recommendations below are provided as a guide. Operators are encouraged to do their own performance testing.
+Source: https://github.com/anza-xyz/agave/blob/master/docs/src/operations/requirements.md
 
 | Component | Validator Requirements | Additional RPC Node Requirements |
 |-----------|------------------------|----------------------------------|
