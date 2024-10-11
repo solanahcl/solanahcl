@@ -26,31 +26,35 @@ The hardware recommendations below are provided as a guide. Operators are encour
 ### CPU
 
 | Manufacturer | Model                              | Base Clock | Max Boost Clock | Cores | Threads | Default TDP |
-|--------------|------------------------------------|------------|------------------|-------|---------|-------------|
-| **AMD**      | Ryzen™ Threadripper™ PRO 7985WX    | 3.2 GHz    | Up to 5.1 GHz     | 64    | 128     | 350W        |
-| **AMD**      | Ryzen™ Threadripper™ PRO 7975WX    | 4.0 GHz    | Up to 5.3 GHz     | 32    | 64      | 350W        |
-| **AMD**      | Ryzen™ Threadripper™ PRO 7965WX    | 4.2 GHz    | Up to 5.3 GHz     | 24    | 48      | 350W        |
-| **AMD**      | Ryzen™ Threadripper™ PRO 7955WX    | 4.5 GHz    | Up to 5.3 GHz     | 16    | 32      | 350W        |
-| **AMD**      | Ryzen™ Threadripper™ PRO 7945WX    | 4.7 GHz    | Up to 5.3 GHz     | 12    | 24      | 350W        |
-| **AMD**      | AMD EPYC™ 9274F                     | 3.4 GHz    | Up to 4.3 GHz     | 24    | 48      | 320W        |
-| **AMD**      | AMD EPYC™ 74F3                      | 3.2 GHz    | Up to 4.0 GHz             | 24    | 48      | 240W        |
-| **AMD**      | AMD EPYC™ 9254                      | 2.9 GHz    | Up to 4.15 GHz    | 24    | 48      | 200W        |
-| **AMD**      | AMD EPYC™ 7443P                     | 2.85 GHz   | Up to 4.0 GHz     | 28    | 56      | 200W        |
-| **AMD**      | AMD EPYC™ 9354                      | 2.6 GHz    | Up to 3.75 GHz      | 32    | 64      | 280W        |
+|--------------|------------------------------------|------------|----------------|-------|---------|-------------|
+| **AMD**      | Ryzen™ Threadripper™ PRO 7945WX    | 4.7 GHz    | Up to 5.3 GHz   | 12    | 24      | 350W        |
+| **AMD**      | Ryzen™ Threadripper™ PRO 7955WX    | 4.5 GHz    | Up to 5.3 GHz   | 16    | 32      | 350W        |
+| **AMD**      | Ryzen™ Threadripper™ 7960X         | 4.2 GHz    | Up to 5.3 GHz   | 24    | 48      | 350W        |
+| **AMD**      | Ryzen™ Threadripper™ PRO 7965WX    | 4.2 GHz    | Up to 5.3 GHz   | 24    | 48      | 350W        |
+| **AMD**      | Ryzen™ Threadripper™ PRO 7975WX    | 4.0 GHz    | Up to 5.3 GHz   | 32    | 64      | 350W        |
+| **AMD**      | AMD EPYC™ 9274F                    | 3.4 GHz    | Up to 4.3 GHz   | 24    | 48      | 320W        |
+| **AMD**      | Ryzen™ Threadripper™ PRO 7985WX    | 3.2 GHz    | Up to 5.1 GHz   | 64    | 128     | 350W        |
+| **AMD**      | AMD EPYC™ 74F3                     | 3.2 GHz    | Up to 4.0 GHz   | 24    | 48      | 240W        |
+| **AMD**      | AMD EPYC™ 9254                     | 2.9 GHz    | Up to 4.15 GHz  | 24    | 48      | 200W        |
+| **AMD**      | AMD EPYC™ 7443P                    | 2.85 GHz   | Up to 4.0 GHz   | 28    | 56      | 200W        |
+| **AMD**      | AMD EPYC™ 9354                     | 2.6 GHz    | Up to 3.75 GHz  | 32    | 64      | 280W        |
+
 
 ### Storage
 
 | Manufacturer | Model      | Max IOPS Read | Max IOPS Write |
 |--------------|------------|---------------|----------------|
 | **Kioxia**   | CM7-R      | 2,700,000 IOPS | 310,000 IOPS   |
-| **Samsung**  | PM9A1      | 1,000,000 IOPS | 850,000 IOPS   |
-| **Samsung**  | PM9A3      | 900,000 IOPS   | 130,000 IOPS   |
+| **Samsung**  | PM9A1      | 1,000,000 IOPS | 800,000 IOPS   |
+| **Samsung**  | PM9A3      | 900,000 IOPS   | 180,000 IOPS   |
 | **Micron**   | 9400 Pro   | 1,600,000 IOPS | 300,000 IOPS   |
 | **Micron**   | 9400 Max   | 1,500,000 IOPS | 550,000 IOPS   |
 | **Crucial**  | T705       | 650,000 IOPS   | 600,000 IOPS   |
 | **WD**       | SN850X     | 1,000,000 IOPS | 1,000,000 IOPS |
 | **Samsung**  | 990 Pro    | 1,400,000 IOPS | 1,550,000 IOPS |
 | **Samsung**  | 980 Pro    | 1,000,000 IOPS | 1,000,000 IOPS |
+
+## Datacenter Providers
 
 ---
 
@@ -65,3 +69,9 @@ The hardware recommendations below are provided as a guide. Operators are encour
 - **Memory Considerations:** While not part of the table, remember that **RAM** requirements are crucial. Ensure you have ECC memory and sufficient capacity as per the [Hardware Recommendations](#hardware-recommendations) section. RAM **speed** and DDR4 vs DDR5 are not known to make any significant differences 
 
 Feel free to reach out if you need further assistance or more detailed specifications!
+
+--
+
+## Contributors
+
+- ferric (https://x.com/ferric) / StakeWare (https://stakeware.xyz)
