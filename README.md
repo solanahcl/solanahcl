@@ -25,30 +25,32 @@ The hardware recommendations below are provided as a guide. Operators are encour
 
 ### CPU
 
-| Manufacturer | Model                              | Base Clock | Max Boost Clock | Cores | Threads | Default TDP | Additional Features                                       |
-|--------------|------------------------------------|------------|------------------|-------|---------|-------------|-----------------------------------------------------------|
-| **AMD**      | Ryzen™ Threadripper™ PRO 7995WX    | 2.5 GHz    | Up to 5.1 GHz     | 96    | 192     | 350W        | Discrete Graphics Card Required, AVX2 & AVX-512 support   |
-| **AMD**      | Ryzen™ Threadripper™ PRO 7985WX    | 3.2 GHz    | Up to 5.1 GHz     | 64    | 128     | 350W        | Discrete Graphics Card Required, AVX2 & AVX-512 support   |
-| **AMD**      | Ryzen™ Threadripper™ PRO 7975WX    | 4.0 GHz    | Up to 5.3 GHz     | 32    | 64      | 350W        | Discrete Graphics Card Required, AVX2 & AVX-512 support   |
-| **AMD**      | Ryzen™ Threadripper™ PRO 7965WX    | 4.2 GHz    | Up to 5.3 GHz     | 24    | 48      | 350W        | Discrete Graphics Card Required, AVX2 & AVX-512 support   |
-| **AMD**      | Ryzen™ Threadripper™ PRO 7955WX    | 4.5 GHz    | Up to 5.3 GHz     | 16    | 32      | 350W        | Discrete Graphics Card Required, AVX2 & AVX-512 support   |
-| **AMD**      | Ryzen™ Threadripper™ PRO 7945WX    | 4.7 GHz    | Up to 5.3 GHz     | 12    | 24      | 350W        | Discrete Graphics Card Required, AVX2 & AVX-512 support   |
-| **AMD**      | AMD EPYC™ 9274F                     | 3.4 GHz    | N/A               | 24    | 48      | [TDP Spec]  | AVX2 support                                              |
-| **AMD**      | AMD EPYC™ 9254                      | 3.1 GHz    | N/A               | 20    | 40      | [TDP Spec]  | Suitable for multi-threaded applications                  |
-| **AMD**      | AMD EPYC™ 9354                      | 2.6 GHz    | N/A               | 32    | 64      | [TDP Spec]  | High core count for parallel processing                   |
-| **AMD**      | AMD EPYC™ 7443P                     | 3.0 GHz    | N/A               | 28    | 56      | [TDP Spec]  | Designed for robust performance in data centers           |
-| **AMD**      | AMD EPYC™ 74F3                      | 3.2 GHz    | N/A               | 24    | 48      | [TDP Spec]  | Optimized for high-performance computing tasks            |
+| Manufacturer | Model                              | Base Clock | Max Boost Clock | Cores | Threads | Default TDP |
+|--------------|------------------------------------|------------|------------------|-------|---------|-------------|
+| **AMD**      | Ryzen™ Threadripper™ PRO 7985WX    | 3.2 GHz    | Up to 5.1 GHz     | 64    | 128     | 350W        |
+| **AMD**      | Ryzen™ Threadripper™ PRO 7975WX    | 4.0 GHz    | Up to 5.3 GHz     | 32    | 64      | 350W        |
+| **AMD**      | Ryzen™ Threadripper™ PRO 7965WX    | 4.2 GHz    | Up to 5.3 GHz     | 24    | 48      | 350W        |
+| **AMD**      | Ryzen™ Threadripper™ PRO 7955WX    | 4.5 GHz    | Up to 5.3 GHz     | 16    | 32      | 350W        |
+| **AMD**      | Ryzen™ Threadripper™ PRO 7945WX    | 4.7 GHz    | Up to 5.3 GHz     | 12    | 24      | 350W        |
+| **AMD**      | AMD EPYC™ 9274F                     | 3.4 GHz    | Up to 4.3 GHz     | 24    | 48      | 320W        |
+| **AMD**      | AMD EPYC™ 74F3                      | 3.2 GHz    | Up to 4.0 GHz             | 24    | 48      | 240W        |
+| **AMD**      | AMD EPYC™ 9254                      | 2.9 GHz    | Up to 4.15 GHz    | 24    | 48      | 200W        |
+| **AMD**      | AMD EPYC™ 7443P                     | 2.85 GHz   | Up to 4.0 GHz     | 28    | 56      | 200W        |
+| **AMD**      | AMD EPYC™ 9354                      | 2.6 GHz    | Up to 3.75 GHz      | 32    | 64      | 280W        |
 
 ### Storage (NVMe SSDs)
 
 | Manufacturer | Model      | Max IOPS Read | Max IOPS Write |
 |--------------|------------|---------------|----------------|
-| **Crucial**  | T705       | 650,000       | 600,000        |
-| **Samsung**  | 990 Pro    | 2,000,000     | 2,000,000      |
-| **Samsung**  | 980 Pro    | 1,000,000     | 1,000,000      |
-| **Samsung**  | P9A1/3     | 800,000       | 700,000        |
-| **WD**       | SN850X     | 1,000,000     | 1,000,000      |
-
+| **Kioxia**   | CM7-R      | 2,700,000 IOPS | 310,000 IOPS   |
+| **Samsung**  | PM9A1      | 1,000,000 IOPS | 850,000 IOPS   |
+| **Samsung**  | PM9A3      | 900,000 IOPS   | 130,000 IOPS   |
+| **Micron**   | 9400 Pro   | 1,600,000 IOPS | 300,000 IOPS   |
+| **Micron**   | 9400 Max   | 1,500,000 IOPS | 550,000 IOPS   |
+| **Crucial**  | T705       | 650,000 IOPS   | 600,000 IOPS   |
+| **WD**       | SN850X     | 1,000,000 IOPS | 1,000,000 IOPS |
+| **Samsung**  | 990 Pro    | 1,400,000 IOPS | 1,550,000 IOPS |
+| **Samsung**  | 980 Pro    | 1,000,000 IOPS | 1,000,000 IOPS |
 ---
 
 ### Notes
