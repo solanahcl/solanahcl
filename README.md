@@ -38,7 +38,7 @@ The hardware recommendations below are provided as a guide. Operators are encour
 | **AMD**      | AMD EPYC™ 7443P                     | 2.85 GHz   | Up to 4.0 GHz     | 28    | 56      | 200W        |
 | **AMD**      | AMD EPYC™ 9354                      | 2.6 GHz    | Up to 3.75 GHz      | 32    | 64      | 280W        |
 
-### Storage (NVMe SSDs)
+### Storage
 
 | Manufacturer | Model      | Max IOPS Read | Max IOPS Write |
 |--------------|------------|---------------|----------------|
