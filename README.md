@@ -84,4 +84,4 @@ Feel free to reach out if you need further assistance or more detailed specifica
 
 ## Contributors
 
-- ferric (https://x.com/ferric) / StakeWare (https://stakeware.xyz)
+- [ferric](https://x.com/ferric) / [StakeWare](https://stakeware.xyz)
