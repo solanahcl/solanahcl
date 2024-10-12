@@ -1,3 +1,5 @@
+<p>Last updated: {{ site.github.commit.last_modified_at | date: "%B %d, %Y" }}</p>
+
 # Solana Hardware Compatibility List
 
 This is the Solana Hardware Compatibility List for running a mainnet validator.
