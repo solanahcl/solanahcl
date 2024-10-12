@@ -37,7 +37,7 @@ Source: [https://github.com/anza-xyz/agave/blob/master/docs/src/operations/requi
 | Yes          | **AMD**      | AMD EPYC™ 74F3                     | 3.2 GHz    | Up to 4.0 GHz   | 24    | 48      | 240W        |
 | Yes          | **AMD**      | AMD EPYC™ 9254                     | 2.9 GHz    | Up to 4.15 GHz  | 24    | 48      | 200W        |
 | Barely       | **AMD**      | AMD EPYC™ 7443P                    | 2.85 GHz   | Up to 4.0 GHz   | 28    | 56      | 200W        |
-| Barely       | **AMD**      | AMD EPYC™ 9354                     | 2.6 GHz    | Up to 3.75 GHz  | 32    | 64      | 280W        |
+| Barely       | **AMD**      | AMD EPYC™ 9354P                    | 3.25 GHz   | Up to 3.8 GHz   | 32    | 64      | 280W        |
 
 
 ### Storage
