@@ -1,4 +1,4 @@
-<p>Last updated: {{ site.time | date: "%B %d, %Y" }}</p>
+<p style="text-align: right;">Last updated: {{ site.time | date: "%B %d, %Y" }}</p>
 
 # Solana Hardware Compatibility List
 
