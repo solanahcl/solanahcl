@@ -56,6 +56,16 @@ Source: [https://github.com/anza-xyz/agave/blob/master/docs/src/operations/requi
 
 ## Datacenter Providers
 
+| Provider     | Link                                                                 | Notes                                  |
+|--------------|----------------------------------------------------------------------|----------------------------------------|
+| **Latitude** | [Latitude](https://latitude.sh)                                      | Widely used by Solana validators, yearly contracts, API access |
+| **Edgevana** | [Edgevana](https://srv.edgevana.com/solana-validator-servers)        | Tailored specifically for Solana validators |
+| **Teraswitch**| [Teraswitch](https://teraswitch.com/bare-metal/)                    | Widely used by Solana validators |
+| **Vultr**    | [Vultr](https://www.vultr.com/pricing/#bare-metal)                  | Affordable bare-metal options, worldwide datacenter locations, per hour pricing |
+| **Cherry**   | [Cherry](https://www.cherryservers.com/bare-metal-dedicated-servers) | API access, possibly oversold bandwidth, good availability |
+| **OVH**      | [OVH](https://ovhcloud.com/)                                         | Large provider, but beware of over-aggressive DDoS mitigation, which may impact Solana performance |
+
+More here: [Marinade ISP list](https://app.marinade.finance/network/isps/?countries=&direction=descending&sorting=stake)
 ---
 
 ### Notes
