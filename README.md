@@ -42,17 +42,17 @@ Source: [https://github.com/anza-xyz/agave/blob/master/docs/src/operations/requi
 
 ### Storage
 
-| Manufacturer | Model      | Max IOPS Read | Max IOPS Write |
-|--------------|------------|---------------|----------------|
-| **Kioxia**   | CM7-R      | 2,700,000 IOPS | 310,000 IOPS   |
-| **Samsung**  | PM9A1      | 1,000,000 IOPS | 800,000 IOPS   |
-| **Samsung**  | PM9A3      | 900,000 IOPS   | 180,000 IOPS   |
-| **Micron**   | 9400 Pro   | 1,600,000 IOPS | 300,000 IOPS   |
-| **Micron**   | 9400 Max   | 1,500,000 IOPS | 550,000 IOPS   |
-| **Crucial**  | T705       | 650,000 IOPS   | 600,000 IOPS   |
-| **WD**       | SN850X     | 1,000,000 IOPS | 1,000,000 IOPS |
-| **Samsung**  | 990 Pro    | 1,400,000 IOPS | 1,550,000 IOPS |
-| **Samsung**  | 980 Pro    | 1,000,000 IOPS | 1,000,000 IOPS |
+| Manufacturer | Model      | Sequential Read | Sequential Write | Random Read (IOPS) | Random Write (IOPS) |
+|--------------|------------|-----------------|------------------|--------------------|---------------------|
+| **Kioxia**   | CM7-R      | 14,000 MB/s     | 7,000 MB/s       | 2,700,000 IOPS     | 310,000 IOPS        |
+| **Samsung**  | PM9A1      | 7,000 MB/s      | 5,100 MB/s       | 1,000,000 IOPS     | 800,000 IOPS        |
+| **Samsung**  | PM9A3      | 6,500 MB/s      | 3,000 MB/s       | 900,000 IOPS       | 180,000 IOPS        |
+| **Micron**   | 7450       | 6,800 MB/s      | 5,300 MB/s       | 1,500,000 IOPS     | 550,000 IOPS        |
+| **Crucial**  | T705       | 3,400 MB/s      | 3,000 MB/s       | 650,000 IOPS       | 600,000 IOPS        |
+| **WD**       | SN850X     | 7,300 MB/s      | 6,600 MB/s       | 1,000,000 IOPS     | 1,000,000 IOPS      |
+| **Samsung**  | 990 Pro    | 7,450 MB/s      | 6,900 MB/s       | 1,400,000 IOPS     | 1,550,000 IOPS      |
+| **Samsung**  | 980 Pro    | 7,000 MB/s      | 5,000 MB/s       | 1,000,000 IOPS     | 1,000,000 IOPS      |
+
 
 ## Datacenter Providers
 
