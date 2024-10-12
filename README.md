@@ -25,19 +25,19 @@ Source: [https://github.com/anza-xyz/agave/blob/master/docs/src/operations/requi
 
 ### CPU
 
-| Manufacturer | Model                              | Base Clock | Max Boost Clock | Cores | Threads | Default TDP |
-|--------------|------------------------------------|------------|----------------|-------|---------|-------------|
-| **AMD**      | Ryzen™ Threadripper™ PRO 7945WX    | 4.7 GHz    | Up to 5.3 GHz   | 12    | 24      | 350W        |
-| **AMD**      | Ryzen™ Threadripper™ PRO 7955WX    | 4.5 GHz    | Up to 5.3 GHz   | 16    | 32      | 350W        |
-| **AMD**      | Ryzen™ Threadripper™ 7960X         | 4.2 GHz    | Up to 5.3 GHz   | 24    | 48      | 350W        |
-| **AMD**      | Ryzen™ Threadripper™ PRO 7965WX    | 4.2 GHz    | Up to 5.3 GHz   | 24    | 48      | 350W        |
-| **AMD**      | Ryzen™ Threadripper™ PRO 7975WX    | 4.0 GHz    | Up to 5.3 GHz   | 32    | 64      | 350W        |
-| **AMD**      | AMD EPYC™ 9274F                    | 3.4 GHz    | Up to 4.3 GHz   | 24    | 48      | 320W        |
-| **AMD**      | Ryzen™ Threadripper™ PRO 7985WX    | 3.2 GHz    | Up to 5.1 GHz   | 64    | 128     | 350W        |
-| **AMD**      | AMD EPYC™ 74F3                     | 3.2 GHz    | Up to 4.0 GHz   | 24    | 48      | 240W        |
-| **AMD**      | AMD EPYC™ 9254                     | 2.9 GHz    | Up to 4.15 GHz  | 24    | 48      | 200W        |
-| **AMD**      | AMD EPYC™ 7443P                    | 2.85 GHz   | Up to 4.0 GHz   | 28    | 56      | 200W        |
-| **AMD**      | AMD EPYC™ 9354                     | 2.6 GHz    | Up to 3.75 GHz  | 32    | 64      | 280W        |
+| Recommended | Manufacturer | Model                              | Base Clock | Max Boost Clock | Cores | Threads | Default TDP |
+|-------------|--------------|------------------------------------|------------|----------------|-------|---------|-------------|
+| Yes         | **AMD**      | Ryzen™ Threadripper™ PRO 7945WX    | 4.7 GHz    | Up to 5.3 GHz   | 12    | 24      | 350W        |
+| Yes         | **AMD**      | Ryzen™ Threadripper™ PRO 7955WX    | 4.5 GHz    | Up to 5.3 GHz   | 16    | 32      | 350W        |
+| Yes         | **AMD**      | Ryzen™ Threadripper™ 7960X         | 4.2 GHz    | Up to 5.3 GHz   | 24    | 48      | 350W        |
+| Yes         | **AMD**      | Ryzen™ Threadripper™ PRO 7965WX    | 4.2 GHz    | Up to 5.3 GHz   | 24    | 48      | 350W        |
+| Yes         | **AMD**      | Ryzen™ Threadripper™ PRO 7975WX    | 4.0 GHz    | Up to 5.3 GHz   | 32    | 64      | 350W        |
+| Yes          | **AMD**      | AMD EPYC™ 9274F                    | 3.4 GHz    | Up to 4.3 GHz   | 24    | 48      | 320W        |
+| Yes          | **AMD**      | Ryzen™ Threadripper™ PRO 7985WX    | 3.2 GHz    | Up to 5.1 GHz   | 64    | 128     | 350W        |
+| Yes          | **AMD**      | AMD EPYC™ 74F3                     | 3.2 GHz    | Up to 4.0 GHz   | 24    | 48      | 240W        |
+| Yes          | **AMD**      | AMD EPYC™ 9254                     | 2.9 GHz    | Up to 4.15 GHz  | 24    | 48      | 200W        |
+| Barely          | **AMD**      | AMD EPYC™ 7443P                    | 2.85 GHz   | Up to 4.0 GHz   | 28    | 56      | 200W        |
+| Barely          | **AMD**      | AMD EPYC™ 9354                     | 2.6 GHz    | Up to 3.75 GHz  | 32    | 64      | 280W        |
 
 
 ### Storage
