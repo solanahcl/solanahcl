@@ -1,4 +1,4 @@
-<p>Last updated: {{ site.github.commit.last_modified_at | date: "%B %d, %Y" }}</p>
+<p>Last updated: {{ site.time | date: "%B %d, %Y" }}</p>
 
 # Solana Hardware Compatibility List
 
