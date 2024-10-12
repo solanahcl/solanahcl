@@ -27,8 +27,6 @@ Source: [https://github.com/anza-xyz/agave/blob/master/docs/src/operations/requi
 
 | Recommended | Manufacturer | Model                              | Base Clock | Max Boost Clock | Cores | Threads | Default TDP |
 |-------------|--------------|------------------------------------|------------|----------------|-------|---------|-------------|
-| Yes         | **AMD**      | Ryzen™ Threadripper™ PRO 7945WX    | 4.7 GHz    | Up to 5.3 GHz   | 12    | 24      | 350W        |
-| Yes         | **AMD**      | Ryzen™ Threadripper™ PRO 7955WX    | 4.5 GHz    | Up to 5.3 GHz   | 16    | 32      | 350W        |
 | Yes         | **AMD**      | Ryzen™ Threadripper™ 7960X         | 4.2 GHz    | Up to 5.3 GHz   | 24    | 48      | 350W        |
 | Yes         | **AMD**      | Ryzen™ Threadripper™ PRO 7965WX    | 4.2 GHz    | Up to 5.3 GHz   | 24    | 48      | 350W        |
 | Yes         | **AMD**      | Ryzen™ Threadripper™ PRO 7975WX    | 4.0 GHz    | Up to 5.3 GHz   | 32    | 64      | 350W        |
