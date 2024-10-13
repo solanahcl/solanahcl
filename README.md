@@ -25,6 +25,8 @@ Source: [https://github.com/anza-xyz/agave/blob/master/docs/src/operations/requi
 
 ## Compatible Hardware
 
+AMD is the CPU of choice when it comes to running Solana validators. Intel Xeon Gold/Platinum (6[45]xx) are the only ones known to be able to keep up with the chain.
+
 ### CPU
 
 | Recommended  | Manufacturer | Model                              | Base Clock | Max Boost Clock | Cores | Threads | Default TDP |
@@ -40,7 +42,9 @@ Source: [https://github.com/anza-xyz/agave/blob/master/docs/src/operations/requi
 | Barely       | **AMD**      | AMD EPYC™ 7443P                    | 2.85 GHz   | Up to 4.0 GHz   | 24    | 48      | 200W        |
 
 These recommendations also work for RPC nodes, but RPC nodes require more cores and RAM to perform better under load
-
+Source:
+- [AMD Server Processors](https://www.amd.com/en/products/specifications/server-processor.html)
+- [AMD Workstation Processors](https://www.amd.com/en/products/specifications/processors.html)
 
 ### Storage
 
