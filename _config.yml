@@ -1,4 +1,14 @@
 plugins:
   - jekyll-github-metadata
-  - jekyll-remote-theme # add this line to the plugins list if you already have one
+  - jekyll-remote-theme
 remote_theme: pages-themes/hacker@v0.2.0
+
+# Add these lines
+title: Solana Hardware Compatibility List
+description: A comprehensive list of compatible hardware for Solana validators
+show_downloads: false
+google_analytics:
+theme: jekyll-theme-hacker
+
+# Optimize for mobile
+mobile_optimization: true
