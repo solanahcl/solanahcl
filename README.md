@@ -1,44 +1,3 @@
----
-layout: default
----
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<style>
-  @media screen and (max-width: 600px) {
-    table {
-      font-size: 12px;
-    }
-    
-    th, td {
-      padding: 5px;
-    }
-    
-    h1 {
-      font-size: 24px;
-    }
-    
-    h2 {
-      font-size: 20px;
-    }
-  }
-
-  table {
-    width: 100%;
-    overflow-x: auto;
-    display: block;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-</style>
-
-<p style="text-align: right;">Last updated: {{ site.time | date: "%B %d, %Y" }}</p>
-
-<h1 style="text-align: center;">Solana Hardware Compatibility List</h1>
-
 This is the Solana Hardware Compatibility List for running a mainnet validator.
 
 - [Hardware Recommendations](#hardware-recommendations)
@@ -79,6 +38,7 @@ AMD is the CPU of choice when it comes to running Solana validators. Intel Xeon 
 | Barely       | **AMD**      | AMD EPYC™ 7443P                    | 2.85 GHz   | Up to 4.0 GHz   | 24    | 48      | 200W        |
 
 These recommendations also work for RPC nodes, but RPC nodes require more cores and RAM to perform better under load
+
 Source:
 - [AMD Server Processors](https://www.amd.com/en/products/specifications/server-processor.html)
 - [AMD Workstation Processors](https://www.amd.com/en/products/specifications/processors.html)
@@ -95,7 +55,6 @@ Source:
 | **WD**       | SN850X     | 7,300 MB/s      | 6,600 MB/s       | 1,000,000 IOPS     | 1,000,000 IOPS      |
 | **Samsung**  | 990 Pro    | 7,450 MB/s      | 6,900 MB/s       | 1,400,000 IOPS     | 1,550,000 IOPS      |
 | **Samsung**  | 980 Pro    | 7,000 MB/s      | 5,000 MB/s       | 1,000,000 IOPS     | 1,000,000 IOPS      |
-
 
 ## Datacenter Providers
 
