@@ -1,6 +1,6 @@
 <p style="text-align: right;">Last updated: {{ site.time | date: "%B %d, %Y" }}</p>
 
-# Solana Hardware Compatibility List
+<p style="text-align: center;"># Solana Hardware Compatibility List</p>
 
 This is the Solana Hardware Compatibility List for running a mainnet validator.
 
