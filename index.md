@@ -2,7 +2,6 @@
 layout: default
 ---
 
-{% raw %}
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
@@ -36,9 +35,16 @@ layout: default
   }
 </style>
 
-<p style="text-align: right;">Last updated: {{ site.time | date: "%B %d, %Y" }}</p>
+<p id="last-updated" style="text-align: right;"></p>
 
 <h1 style="text-align: center;">Solana Hardware Compatibility List</h1>
-{% endraw %}
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var options = { year: 'numeric', month: 'long', day: 'numeric' };
+    var date = new Date().toLocaleDateString('en-US', options);
+    document.getElementById('last-updated').textContent = 'Last updated: ' + date;
+  });
+</script>
 
 {% include_relative README.md %}
