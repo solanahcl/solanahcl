@@ -38,13 +38,5 @@ layout: default
 <p id="last-updated" style="text-align: right;"></p>
 
 <h1 style="text-align: center;">Solana Hardware Compatibility List</h1>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var options = { year: 'numeric', month: 'long', day: 'numeric' };
-    var date = new Date().toLocaleDateString('en-US', options);
-    document.getElementById('last-updated').textContent = 'Last updated: ' + date;
-  });
-</script>
-
+<p>Last updated: {{ site.github.build_revision | date: "%Y-%m-%d" }}</p>
 {% include_relative README.md %}
