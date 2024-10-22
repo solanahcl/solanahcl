@@ -51,7 +51,7 @@ Source:
 | **Samsung**  | PM9A1      | 7,000 MB/s      | 5,100 MB/s       | 1,000,000 IOPS     | 800,000 IOPS        |
 | **Samsung**  | PM9A3      | 6,500 MB/s      | 3,000 MB/s       | 900,000 IOPS       | 180,000 IOPS        |
 | **Micron**   | 7450       | 6,800 MB/s      | 5,300 MB/s       | 1,500,000 IOPS     | 550,000 IOPS        |
-| **Crucial**  | T705       | 3,400 MB/s      | 3,000 MB/s       | 650,000 IOPS       | 600,000 IOPS        |
+| **Crucial**  | T705       | 14,500MB/s      | 12,700MB/s       | 1,550,000 IOPS     | 1,800,000 IOPS      |
 | **WD**       | SN850X     | 7,300 MB/s      | 6,600 MB/s       | 1,000,000 IOPS     | 1,000,000 IOPS      |
 | **Samsung**  | 990 Pro    | 7,450 MB/s      | 6,900 MB/s       | 1,400,000 IOPS     | 1,550,000 IOPS      |
 | **Samsung**  | 980 Pro    | 7,000 MB/s      | 5,000 MB/s       | 1,000,000 IOPS     | 1,000,000 IOPS      |
