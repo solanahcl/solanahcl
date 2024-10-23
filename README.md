@@ -5,6 +5,8 @@ This is the Solana Hardware Compatibility List for running a mainnet validator.
   - [CPU](#cpu)
   - [Storage](#storage)
 - [Datacenter Providers](#datacenter-providers)
+- [FAQ](#faq)
+- [Contributors](#contributors)
   
 ## Hardware Recommendations
 
@@ -21,16 +23,19 @@ Source: [https://github.com/anza-xyz/agave/blob/master/docs/src/operations/requi
 
 ## Compatible Hardware
 
-AMD is the CPU of choice when it comes to running Solana validators. Intel Xeon Gold/Platinum (6[45]xx) are the only ones known to be able to keep up with the chain.
-
 ### CPU
+
+AMD is the CPU of choice when it comes to running Solana validators. Intel Xeon Gold/Platinum (6[45]xx) are the only ones known to be able to keep up with the chain.
+This list is not exhaustive, just a selection of CPUs different folks on the discord have run or are currently running. 24 cores is the sweet spot, as of 10/2024. 
+12/16cores will most likely struggle and more than 32 cores will have a slower base clock speed due to TDP issues. 32 cores would possibly be more future proof.
 
 | Recommended  | Manufacturer | Model                              | Base Clock | Max Boost Clock | Cores | Threads | Default TDP |
 |--------------|--------------|------------------------------------|------------|-----------------|-------|---------|-------------|
 | Yes          | **AMD**      | Ryzen™ Threadripper™ PRO 7965WX    | 4.2 GHz    | Up to 5.3 GHz   | 24    | 48      | 350W        |
 | Yes          | **AMD**      | Ryzen™ Threadripper™ PRO 7975WX    | 4.0 GHz    | Up to 5.3 GHz   | 32    | 64      | 350W        |
 | Yes          | **AMD**      | Ryzen™ Threadripper™ PRO 7985WX    | 3.2 GHz    | Up to 5.1 GHz   | 64    | 128     | 350W        |
-| Yes          | **AMD**      | AMD EPYC™ 9274F                    | 3.4 GHz    | Up to 4.3 GHz   | 24    | 48      | 320W        |
+| Yes          | **AMD**      | AMD EPYC™ 9274F                    | 4.05 GHz   | Up to 4.3 GHz   | 24    | 48      | 320W        |
+| Yes          | **AMD**      | AMD EPYC™ 9275F                    | 4.1 GHz    | Up to 4.8 GHz   | 24    | 48      | 320W        |
 | Yes          | **AMD**      | Ryzen™ Threadripper™ 7960X         | 4.2 GHz    | Up to 5.3 GHz   | 24    | 48      | 350W        |
 | Yes          | **AMD**      | AMD EPYC™ 74F3                     | 3.2 GHz    | Up to 4.0 GHz   | 24    | 48      | 240W        |
 | Yes          | **AMD**      | AMD EPYC™ 9254                     | 2.9 GHz    | Up to 4.15 GHz  | 24    | 48      | 200W        |
@@ -45,16 +50,21 @@ Source:
 
 ### Storage
 
-| Manufacturer | Model      | Sequential Read | Sequential Write | Random Read (IOPS) | Random Write (IOPS) |
-|--------------|------------|-----------------|------------------|--------------------|---------------------|
-| **Kioxia**   | CM7-R      | 14,000 MB/s     | 7,000 MB/s       | 2,700,000 IOPS     | 310,000 IOPS        |
-| **Samsung**  | PM9A1      | 7,000 MB/s      | 5,100 MB/s       | 1,000,000 IOPS     | 800,000 IOPS        |
-| **Samsung**  | PM9A3      | 6,500 MB/s      | 3,000 MB/s       | 900,000 IOPS       | 180,000 IOPS        |
-| **Micron**   | 7450       | 6,800 MB/s      | 5,300 MB/s       | 1,500,000 IOPS     | 550,000 IOPS        |
-| **Crucial**  | T705       | 14,500MB/s      | 12,700MB/s       | 1,550,000 IOPS     | 1,800,000 IOPS      |
-| **WD**       | SN850X     | 7,300 MB/s      | 6,600 MB/s       | 1,000,000 IOPS     | 1,000,000 IOPS      |
-| **Samsung**  | 990 Pro    | 7,450 MB/s      | 6,900 MB/s       | 1,400,000 IOPS     | 1,550,000 IOPS      |
-| **Samsung**  | 980 Pro    | 7,000 MB/s      | 5,000 MB/s       | 1,000,000 IOPS     | 1,000,000 IOPS      |
+**Enterprise**
+| Manufacturer | Model         | Sequential Read | Sequential Write | Random Read (IOPS) | Random Write (IOPS) |
+|--------------|---------------|-----------------|------------------|--------------------|---------------------|
+| **Kioxia**   | CM7-R (3.8tb) | 14,000 MB/s     | 7,000 MB/s       | 2,700,000 IOPS     | 310,000 IOPS        |
+| **Samsung**  | PM9A1         | 7,000 MB/s      | 5,200 MB/s       | 1,000,000 IOPS     | 850,000 IOPS        |
+| **Samsung**  | PM9A3         | 6,800 MB/s      | 2,700 MB/s       | 850,000 IOPS       | 130,000 IOPS        |
+| **Micron**   | 7450          | 6,800 MB/s      | 5,300 MB/s       | 1,500,000 IOPS     | 550,000 IOPS        |
+
+**Consumer**
+| Manufacturer | Model         | Sequential Read | Sequential Write | Random Read (IOPS) | Random Write (IOPS) |
+|--------------|---------------|-----------------|------------------|--------------------|---------------------|
+| **Crucial**  | T705          | 14,500MB/s      | 12,700MB/s       | 1,550,000 IOPS     | 1,800,000 IOPS      |
+| **WD**       | SN850X        | 7,300 MB/s      | 6,600 MB/s       | 1,200,000 IOPS     | 1,000,000 IOPS      |
+| **Samsung**  | 990 Pro       | 7,450 MB/s      | 6,900 MB/s       | 1,400,000 IOPS     | 1,550,000 IOPS      |
+| **Samsung**  | 980 Pro       | 7,000 MB/s      | 5,100 MB/s       | 1,000,000 IOPS     | 1,000,000 IOPS      |
 
 ## Datacenter Providers
 
@@ -80,8 +90,37 @@ More here: [Marinade ISP list](https://app.marinade.finance/network/isps/?countr
 
 Feel free to reach out if you need further assistance or more detailed specifications!
 
+## FAQ
+
+Q: My validator doesn't catch up or catches up slowly or does not keep up with the tip
+
+A: If you've followed the [setup instructions](https://docs.solanalabs.com/operations/setup-a-validator) correctly, make sure to:
+  (via https://discord.com/channels/428295358100013066/1187805174803210341/1288757805062553600)
+
+  i would like to suggest using the acronym "core" when beginners are asking for help, because its always the same question with same answers. it helps to break down the steps and make the guidance easier to follow:
+- c: check cpu performance (focus on single-thread speeds)
+- o: optimize nvme by separating ledger and accounts
+- r: remove unnecessary cli arguments
+- e: enable performance mode 
+
+this way we can give quick, clear advice thats easy to remember. we could pin and refer to it. what do you think?
+
+### setup performance mode
+
+```sudo apt install cpufrequtils```
+
+```sudo bash -c 'echo performance > /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor'```
+
 --
 
 ## Contributors
 
 - [ferric](https://x.com/ferric) / [StakeWare](https://stakeware.xyz)
+
+### Inspired by
+- [Zan](https://x.com/shinobisystems)
+- [/dev/null](https://x.com/pumpkinspool)
+- ax / [1000x.sh](https://1000x.sh)
+- meyerbro
+- [7layer](https://x.com/7LayerMagik) / [Overclock](https://overclock.one)
+- Everyone else on #validator-hw-tuning
