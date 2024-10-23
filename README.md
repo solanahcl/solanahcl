@@ -110,8 +110,6 @@ A: If you've followed the [setup instructions](https://docs.solanalabs.com/opera
 - r: remove unnecessary cli arguments
 - e: enable performance mode 
 
-this way we can give quick, clear advice thats easy to remember. we could pin and refer to it. what do you think?
-
 ### setup performance mode
 
 ```sudo apt install cpufrequtils```
