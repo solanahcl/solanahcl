@@ -25,9 +25,13 @@ Source: [https://docs.anza.xyz/operations/requirements](https://docs.anza.xyz/op
 
 ### CPU
 
-AMD is the CPU of choice when it comes to running Solana validators. Intel Xeon Gold/Platinum (6[45]xx) are the only ones known to be able to keep up with the chain.
-This list is not exhaustive, just a selection of CPUs different folks on the discord have run or are currently running. 24 cores is the sweet spot, as of 10/2024. 
-12/16cores will most likely struggle and more than 32 cores will have a slower base clock speed due to TDP issues. 32 cores would possibly be more future proof.
+AMD is the CPU maker of choice when it comes to running Solana validators. Intel Xeon Gold/Platinum (6[45]xx) are the only ones known to be able to keep up with the chain.
+
+
+**NOTE**: This list is not exhaustive, just a selection of CPUs different folks on the discord have run or are currently running. 
+- 24 cores is the sweet spot, as of 10/2024, 
+- 12/16cores will most likely struggle and,
+- more than 32 cores will have a slower base clock speed due to TDP issues (32 cores would possibly be more future proof)
 
 | Recommended  | Manufacturer | Model                              | Base Clock | Max Boost Clock | Cores | Threads | Default TDP |
 |--------------|--------------|------------------------------------|------------|-----------------|-------|---------|-------------|
@@ -39,6 +43,7 @@ This list is not exhaustive, just a selection of CPUs different folks on the dis
 | Yes          | **AMD**      | Ryzen™ Threadripper™ 7960X         | 4.2 GHz    | Up to 5.3 GHz   | 24    | 48      | 350W        |
 | Yes          | **AMD**      | AMD EPYC™ 9254                     | 2.9 GHz    | Up to 4.15 GHz  | 24    | 48      | 200W        |
 | Yes          | **AMD**      | AMD EPYC™ 9354P                    | 3.25 GHz   | Up to 3.8 GHz   | 32    | 64      | 280W        |
+| Maybe        | **AMD**      | Ryzen 9 7950x                      | 4.5 GHz    | Up to 5.7 GHz   | 16    | 32      | 170W        |
 | Barely       | **AMD**      | AMD EPYC™ 74F3                     | 3.2 GHz    | Up to 4.0 GHz   | 24    | 48      | 240W        |
 | Barely       | **AMD**      | AMD EPYC™ 7443P                    | 2.85 GHz   | Up to 4.0 GHz   | 24    | 48      | 200W        |
 
@@ -125,4 +130,6 @@ this way we can give quick, clear advice thats easy to remember. we could pin an
 - ax / [1000x.sh](https://1000x.sh)
 - meyerbro
 - [7layer](https://x.com/7LayerMagik) / [Overclock](https://overclock.one)
+- [Matthias](https://x.com/StakingMatthias) / [Staking Facilities](https://stakingfacilities.com/)
+- [dhruvsol](https://x.com/_dhruvsol) / [Ice staking](https://www.cubik.so/)
 - Everyone else on #validator-hw-tuning
