@@ -52,21 +52,21 @@ Source:
 
 **Enterprise**
 
-| Manufacturer | Model         | Sequential Read | Sequential Write | Random Read (IOPS) | Random Write (IOPS) |
-|--------------|---------------|-----------------|------------------|--------------------|---------------------|
-| **Kioxia**   | CM7-R (3.8tb) | 14,000 MB/s     | 7,000 MB/s       | 2,700,000 IOPS     | 310,000 IOPS        |
-| **Samsung**  | PM9A1         | 7,000 MB/s      | 5,200 MB/s       | 1,000,000 IOPS     | 850,000 IOPS        |
-| **Samsung**  | PM9A3         | 6,800 MB/s      | 2,700 MB/s       | 850,000 IOPS       | 130,000 IOPS        |
-| **Micron**   | 7450          | 6,800 MB/s      | 5,300 MB/s       | 1,500,000 IOPS     | 550,000 IOPS        |
+| Manufacturer | Model         | Generation   | Sequential Read | Sequential Write   | Random Read (IOPS)  | Random Write (IOPS) |
+|--------------|---------------|--------------|-----------------|--------------------|---------------------|---------------------|
+| **Kioxia**   | CM7-R (3.8tb) | Gen 5        | 14,000 MB/s     | 7,000 MB/s         | 2,700,000 IOPS      | 310,000 IOPS        |
+| **Samsung**  | PM9A1         | Gen 4        | 7,000 MB/s      | 5,200 MB/s         | 1,000,000 IOPS      | 850,000 IOPS        |
+| **Samsung**  | PM9A3         | Gen 4        | 6,800 MB/s      | 2,700 MB/s         | 850,000 IOPS        | 130,000 IOPS        |
+| **Micron**   | 7450          | Gen 4        | 6,800 MB/s      | 5,300 MB/s         | 1,500,000 IOPS      | 550,000 IOPS        |
 
 **Consumer**
 
-| Manufacturer | Model         | Sequential Read | Sequential Write | Random Read (IOPS) | Random Write (IOPS) |
-|--------------|---------------|-----------------|------------------|--------------------|---------------------|
-| **Crucial**  | T705          | 14,500MB/s      | 12,700MB/s       | 1,550,000 IOPS     | 1,800,000 IOPS      |
-| **WD**       | SN850X        | 7,300 MB/s      | 6,600 MB/s       | 1,200,000 IOPS     | 1,000,000 IOPS      |
-| **Samsung**  | 990 Pro       | 7,450 MB/s      | 6,900 MB/s       | 1,400,000 IOPS     | 1,550,000 IOPS      |
-| **Samsung**  | 980 Pro       | 7,000 MB/s      | 5,100 MB/s       | 1,000,000 IOPS     | 1,000,000 IOPS      |
+| Manufacturer | Model         | Generation   | Sequential Read | Sequential Write   | Random Read (IOPS)  | Random Write (IOPS) |
+|--------------|---------------|--------------|-----------------|--------------------|---------------------|---------------------|
+| **Crucial**  | T705          | Gen 5        | 14,500 MB/s     | 12,700 MB/s        | 1,550,000 IOPS      | 1,800,000 IOPS      |
+| **WD**       | SN850X        | Gen 4        | 7,300 MB/s      | 6,600 MB/s         | 1,200,000 IOPS      | 1,000,000 IOPS      |
+| **Samsung**  | 990 Pro       | Gen 4        | 7,450 MB/s      | 6,900 MB/s         | 1,400,000 IOPS      | 1,550,000 IOPS      |
+| **Samsung**  | 980 Pro       | Gen 4        | 7,000 MB/s      | 5,100 MB/s         | 1,000,000 IOPS      | 1,000,000 IOPS      |
 
 ## Datacenter Providers
 
