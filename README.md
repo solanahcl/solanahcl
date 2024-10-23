@@ -1,14 +1,14 @@
 This is the Solana Hardware Compatibility List for running a mainnet validator.
 
-- [Hardware Recommendations](#hardware-recommendations)
-- [Compatible Hardware](#compatible-hardware)
+- [Baseline Hardware](#baseline-hardware)
+- [Recommended Hardware](#recommended-hardware)
   - [CPU](#cpu)
   - [Storage](#storage)
 - [Datacenter Providers](#datacenter-providers)
 - [FAQ](#faq)
 - [Contributors](#contributors)
   
-## Hardware Recommendations
+## Baseline Hardware
 
 Source: [https://docs.anza.xyz/operations/requirements](https://docs.anza.xyz/operations/requirements)
 
@@ -21,7 +21,7 @@ Source: [https://docs.anza.xyz/operations/requirements](https://docs.anza.xyz/op
 | **Disk**  | PCIe Gen3 x4 NVME SSD, or better, on each of:<br />- **Accounts**: 500GB, or larger. High TBW (Total Bytes Written)<br />- **Ledger**: 1TB or larger. High TBW suggested<br />- **Snapshots**: 250GB or larger. High TBW suggested<br />- **OS**: (Optional) 500GB, or larger. SATA OK<br /><br />The OS may be installed on the ledger disk, though testing has shown better performance with the ledger on its own disk<br /><br />Accounts and ledger *can* be stored on the same disk, however due to high IOPS, this is not recommended<br /><br />The Samsung 970 and 980 Pro series SSDs are popular with the validator community | Consider a larger ledger disk if longer transaction history is required<br /><br />Accounts and ledger **should not** be stored on the same disk |
 | **GPUs**  | Not necessary at this time<br />Operators in the validator community do not use GPUs currently | |
 
-## Compatible Hardware
+## Recommended Hardware
 
 ### CPU
 
@@ -125,11 +125,12 @@ this way we can give quick, clear advice thats easy to remember. we could pin an
 - [ferric](https://x.com/ferric) / [StakeWare](https://stakeware.xyz)
 
 ### Inspired by
-- [Zan](https://x.com/shinobisystems)
-- [/dev/null](https://x.com/pumpkinspool)
+- [Zan](https://x.com/shinobisystems) / [Shinobi Systems](https://www.shinobi-systems.com/)
+- [/dev/null](https://x.com/pumpkinspool) / [Pumpkins Pool](https://pumpkinspool.eco/)
 - ax / [1000x.sh](https://1000x.sh)
 - meyerbro
 - [7layer](https://x.com/7LayerMagik) / [Overclock](https://overclock.one)
 - [Matthias](https://x.com/StakingMatthias) / [Staking Facilities](https://stakingfacilities.com/)
 - [dhruvsol](https://x.com/_dhruvsol) / [Ice staking](https://www.cubik.so/)
+- [Tim Garcia](https://x.com/TimGarcia0) / [Solana Fndn](https://solana.org)
 - Everyone else on #validator-hw-tuning
