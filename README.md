@@ -93,7 +93,7 @@ More here: [Marinade ISP list](https://app.marinade.finance/network/isps/?countr
 
 - **Storage Selection:** Choose NVMe SSDs that offer high IOPS to handle the intensive read/write operations necessary for validator nodes. Samsung's Pro series and WD's SN850X are highly recommended for their reliability and performance within the validator community.
 
-- **Memory Considerations:** While not part of the table, remember that **RAM** requirements are crucial. Ensure you have ECC memory and sufficient capacity as per the [Hardware Recommendations](#hardware-recommendations) section. RAM **speed** and DDR4 vs DDR5 are not known to make any significant differences 
+- **Memory Considerations:** While not part of the table, remember that **RAM** requirements are crucial. Ensure you have ECC memory and sufficient capacity as per the [Hardware Recommendations](#recommended-hardware) section. RAM **speed** and DDR4 vs DDR5 are not known to make any significant differences 
 
 Feel free to reach out if you need further assistance or more detailed specifications!
 
