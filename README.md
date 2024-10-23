@@ -51,6 +51,7 @@ Source:
 ### Storage
 
 **Enterprise**
+
 | Manufacturer | Model         | Sequential Read | Sequential Write | Random Read (IOPS) | Random Write (IOPS) |
 |--------------|---------------|-----------------|------------------|--------------------|---------------------|
 | **Kioxia**   | CM7-R (3.8tb) | 14,000 MB/s     | 7,000 MB/s       | 2,700,000 IOPS     | 310,000 IOPS        |
@@ -59,6 +60,7 @@ Source:
 | **Micron**   | 7450          | 6,800 MB/s      | 5,300 MB/s       | 1,500,000 IOPS     | 550,000 IOPS        |
 
 **Consumer**
+
 | Manufacturer | Model         | Sequential Read | Sequential Write | Random Read (IOPS) | Random Write (IOPS) |
 |--------------|---------------|-----------------|------------------|--------------------|---------------------|
 | **Crucial**  | T705          | 14,500MB/s      | 12,700MB/s       | 1,550,000 IOPS     | 1,800,000 IOPS      |
@@ -95,7 +97,7 @@ Feel free to reach out if you need further assistance or more detailed specifica
 Q: My validator doesn't catch up or catches up slowly or does not keep up with the tip
 
 A: If you've followed the [setup instructions](https://docs.solanalabs.com/operations/setup-a-validator) correctly, make sure to:
-  (via https://discord.com/channels/428295358100013066/1187805174803210341/1288757805062553600)
+  (via [ax on discord](https://discord.com/channels/428295358100013066/1187805174803210341/1288757805062553600))
 
   i would like to suggest using the acronym "core" when beginners are asking for help, because its always the same question with same answers. it helps to break down the steps and make the guidance easier to follow:
 - c: check cpu performance (focus on single-thread speeds)
