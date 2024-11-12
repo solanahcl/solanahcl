@@ -47,7 +47,6 @@ AMD is the CPU maker of choice when it comes to running Solana validators. Intel
 | Yes          | **AMD**      | AMD EPYC™ 9354P                    | 3.25 GHz   | Up to 3.8 GHz   | 32    | 64      | 280W        |
 | Maybe        | **AMD**      | Ryzen 9 7950x                      | 4.5 GHz    | Up to 5.7 GHz   | 16    | 32      | 170W        |
 | Barely       | **AMD**      | AMD EPYC™ 74F3                     | 3.2 GHz    | Up to 4.0 GHz   | 24    | 48      | 240W        |
-| Barely       | **AMD**      | AMD EPYC™ 7443P                    | 2.85 GHz   | Up to 4.0 GHz   | 24    | 48      | 200W        |
 
 These recommendations also work for RPC nodes, but RPC nodes require more cores and RAM to perform better under load
 
