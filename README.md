@@ -4,6 +4,7 @@ This is the Solana Hardware Compatibility List for running a mainnet validator.
 - [Recommended Hardware](#recommended-hardware)
   - [CPU](#cpu)
   - [Storage](#storage)
+  - [Swap](#swap)
 - [Datacenter Providers](#datacenter-providers)
 - [FAQ](#faq)
 - [Contributors](#contributors)
@@ -73,6 +74,9 @@ Source:
 | **WD**       | SN850X        | Gen 4        | 7,300 MB/s      | 6,600 MB/s         | 1,200,000 IOPS      | 1,000,000 IOPS      |
 | **Samsung**  | 990 Pro       | Gen 4        | 7,450 MB/s      | 6,900 MB/s         | 1,400,000 IOPS      | 1,550,000 IOPS      |
 | **Samsung**  | 980 Pro       | Gen 4        | 7,000 MB/s      | 5,100 MB/s         | 1,000,000 IOPS      | 1,000,000 IOPS      |
+
+## Swap
+Running swapfiles is **highly discouraged** since it masks problems with your setup and will lead to negative consequences as chain activity increases.
 
 ## Datacenter Providers
 
