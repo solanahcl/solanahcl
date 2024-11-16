@@ -82,7 +82,7 @@ Source:
 | **Edgevana** | [Edgevana](https://srv.edgevana.com/solana-validator-servers)        | Tailored specifically for Solana validators, accepts crypto |
 | **Teraswitch**| [Teraswitch](https://teraswitch.com/bare-metal/)                    | Widely used by Solana validators |
 | **Vultr**    | [Vultr](https://www.vultr.com/pricing/#bare-metal)                  | Affordable bare-metal options, worldwide datacenter locations, per hour pricing, accepts crypto |
-| **Cherry**   | [Cherry](https://www.cherryservers.com/bare-metal-dedicated-servers) | Openly crypto-friendly, API access, accepts crypto payments, custom servers, good availability |
+| **CherryServers**   | [CherryServers](https://www.cherryservers.com/bare-metal-dedicated-servers) | Openly crypto-friendly, API access, accepts crypto payments, custom servers, good availability (ping [Telegram](https://t.me/Darius_d10s) or [Discord](https://discord.com/users/DariusD#6564) to enable 20Gbps bursts) |
 | **DedicatedNodes** | [DedicatedNodes](https://www.dedicatednodes.io/solana-nodes/) | Low latency hosting designed for both validators and RPC nodes, offers managed services for RPC nodes, accepts crypto |
 | **OVH**      | [OVH](https://ovhcloud.com/)                                         | Large provider, but beware of over-aggressive DDoS mitigation, which may impact Solana performance |
 
