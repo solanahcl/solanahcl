@@ -93,7 +93,8 @@ Running swapfiles is **highly discouraged** since it masks problems with your se
 
 More here: [Marinade ISP list](https://app.marinade.finance/network/isps/?countries=&direction=descending&sorting=stake)
 
-#### notes to consider:
+#### notes to consider for renting:
+
 - check reviews on the solana discord for your specific provider.
 - ensure you are not running within a virtual machine (vm).
 - verify the speed and uplink of the provider; low latency is crucial.
@@ -101,6 +102,7 @@ More here: [Marinade ISP list](https://app.marinade.finance/network/isps/?countr
 - before using your validator, confirm that all hardware components are functioning as expected.
 
  #### free to test for beginners
+ 
  some providers offer a test phase before you commit to renting with them, often as a playground to explore running a solana node. you can check the list, which we update frequently with new providers.
 - [CherryServers](https://www.cherryservers.com/bare-metal-dedicated-servers)
 ---
