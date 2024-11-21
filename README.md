@@ -81,17 +81,28 @@ Running swapfiles is **highly discouraged** since it masks problems with your se
 
 ## Datacenter Providers
 
-| Provider     | Link                                                                 | Notes                                  |
-|--------------|----------------------------------------------------------------------|----------------------------------------|
-| **Latitude** | [Latitude](https://latitude.sh)                                      | Widely used by Solana validators, yearly contracts, API access |
-| **Edgevana** | [Edgevana](https://srv.edgevana.com/solana-validator-servers)        | Tailored specifically for Solana validators, accepts crypto |
-| **Teraswitch**| [Teraswitch](https://teraswitch.com/bare-metal/)                    | Widely used by Solana validators |
-| **Vultr**    | [Vultr](https://www.vultr.com/pricing/#bare-metal)                  | Affordable bare-metal options, worldwide datacenter locations, per hour pricing, accepts crypto |
-| **Cherry**   | [Cherry](https://www.cherryservers.com/bare-metal-dedicated-servers) | API access, possibly oversold bandwidth, good availability |
-| **DedicatedNodes** | [DedicatedNodes](https://www.dedicatednodes.io/solana-nodes/) | Low latency hosting designed for both validators and RPC nodes, offers managed services for RPC nodes, accepts crypto |
-| **OVH**      | [OVH](https://ovhcloud.com/)                                         | Large provider, but beware of over-aggressive DDoS mitigation, which may impact Solana performance |
+| Provider     | Link                                                                 
+|--------------|----------------------------------------------------------------------
+| **Latitude** | [Latitude](https://latitude.sh)                                      
+| **Edgevana** | [Edgevana](https://srv.edgevana.com/solana-validator-servers)        
+| **Teraswitch**| [Teraswitch](https://teraswitch.com/bare-metal/)                    
+| **Vultr**    | [Vultr](https://www.vultr.com/pricing/#bare-metal)                  
+| **Cherry**   | [Cherry](https://www.cherryservers.com/bare-metal-dedicated-servers) 
+| **DedicatedNodes** | [DedicatedNodes](https://www.dedicatednodes.io/solana-nodes/) 
+| **OVH**      | [OVH](https://ovhcloud.com/)                                         
 
 More here: [Marinade ISP list](https://app.marinade.finance/network/isps/?countries=&direction=descending&sorting=stake)
+
+#### notes to consider:
+- check reviews on the solana discord for your specific provider.
+- ensure you are not running within a virtual machine (vm).
+- verify the speed and uplink of the provider; low latency is crucial.
+- ask the provider about the hardware specifications, focusing on higher ram frequencies.
+- before using your validator, confirm that all hardware components are functioning as expected.
+
+ #### free to test for beginners
+ some providers offer a test phase before you commit to renting with them, often as a playground to explore running a solana node. you can check the list, which we update frequently with new providers.
+- [CherryServers](https://www.cherryservers.com/bare-metal-dedicated-servers)
 ---
 
 ### Notes
