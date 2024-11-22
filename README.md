@@ -101,10 +101,11 @@ More here: [Marinade ISP list](https://app.marinade.finance/network/isps/?countr
 - ask the provider about the hardware specifications, focusing on higher ram frequencies.
 - before using your validator, confirm that all hardware components are functioning as expected.
 
- #### free to test for beginners
- 
- some providers offer a test phase before you commit to renting with them, often as a playground to explore running a solana node. you can check the list, which we update frequently with new providers.
-- [CherryServers](https://www.cherryservers.com/bare-metal-dedicated-servers)
+#### free to test for beginners
+
+some providers offer a test phase before you commit to renting with them, often as a playground to explore running a solana node. you can check the list, which we update frequently with new providers.
+
+  - [CherryServers](https://www.cherryservers.com/bare-metal-dedicated-servers)
 ---
 
 ### Notes
