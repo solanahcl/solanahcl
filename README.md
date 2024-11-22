@@ -143,11 +143,11 @@ A: If you've followed the [setup instructions](https://docs.solanalabs.com/opera
 ## Contributors
 
 - [ferric](https://x.com/ferric) / [StakeWare](https://stakeware.xyz)
+- [ax](https://x.com/ax_1000x) / [1000x.sh](https://1000x.sh)
 
 ### Inspired by
 - [Zan](https://x.com/shinobisystems) / [Shinobi Systems](https://www.shinobi-systems.com/)
 - [/dev/null](https://x.com/pumpkinspool) / [Pumpkins Pool](https://pumpkinspool.eco/)
-- ax / [1000x.sh](https://1000x.sh)
 - meyerbro
 - [7layer](https://x.com/7LayerMagik) / [Overclock](https://overclock.one)
 - [Matthias](https://x.com/StakingMatthias) / [Staking Facilities](https://stakingfacilities.com/)
