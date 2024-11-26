@@ -49,10 +49,10 @@ AMD is the CPU maker of choice when it comes to running Solana validators. Intel
 | Yes          | **AMD**      | AMD EPYC™ 9354P                    | 3.25 GHz   | Up to 3.8 GHz   | 32    | 64      | 280W        |             |
 | Yes          | **AMD**      | Ryzen 9 7950x                      | 4.5 GHz    | Up to 5.7 GHz   | 16    | 32      | 170W        | 22.4M       |
 
+* Recommendation from version Agave 2.1.1 is to have at least 10M hashes/sec. Results based on governor set at performance mode.
 
 These recommendations also work for RPC nodes, but RPC nodes require more cores and RAM to perform better under load
 
-* Recommendation from version Agave 2.1.1 is to have at least 10M hashes/sec. Results based on governor set at performance mode.
 Source:
 - [AMD Server Processors](https://www.amd.com/en/products/specifications/server-processor.html)
 - [AMD Workstation Processors](https://www.amd.com/en/products/specifications/processors.html)
