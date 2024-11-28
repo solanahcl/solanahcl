@@ -45,9 +45,10 @@ AMD is the CPU maker of choice when it comes to running Solana validators. Intel
 | Yes          | **AMD**      | AMD EPYC™ 9374F                    | 3.85 GHz   | Up to 4.3 GHz   | 32    | 64      | 320W        |             |
 | Yes          | **AMD**      | AMD EPYC™ 9275F                    | 4.1 GHz    | Up to 4.8 GHz   | 24    | 48      | 320W        |             |
 | Yes          | **AMD**      | Ryzen™ Threadripper™ 7960X         | 4.2 GHz    | Up to 5.3 GHz   | 24    | 48      | 350W        |             |
+| Yes          | **AMD**      | Ryzen 9 7950x                      | 4.5 GHz    | Up to 5.7 GHz   | 16    | 32      | 170W        | 22.4M       |
 | Yes          | **AMD**      | AMD EPYC™ 9254                     | 2.9 GHz    | Up to 4.15 GHz  | 24    | 48      | 200W        |             |
 | Yes          | **AMD**      | AMD EPYC™ 9354P                    | 3.25 GHz   | Up to 3.8 GHz   | 32    | 64      | 280W        |             |
-| Yes          | **AMD**      | Ryzen 9 7950x                      | 4.5 GHz    | Up to 5.7 GHz   | 16    | 32      | 170W        | 22.4M       |
+
 
 * Recommendation from version Agave 2.1.1 is to have at least 10M hashes/sec. Results based on governor set at performance mode.
 
@@ -63,10 +64,12 @@ Source:
 
 | Manufacturer | Model         | Generation   | Sequential Read | Sequential Write   | Random Read (IOPS)  | Random Write (IOPS) |
 |--------------|---------------|--------------|-----------------|--------------------|---------------------|---------------------|
-| **Kioxia**   | CM7-R (3.8tb) | Gen 5        | 14,000 MB/s     | 7,000 MB/s         | 2,700,000 IOPS      | 310,000 IOPS        |
 | **Samsung**  | PM9A1         | Gen 4        | 7,000 MB/s      | 5,200 MB/s         | 1,000,000 IOPS      | 850,000 IOPS        |
 | **Samsung**  | PM9A3         | Gen 4        | 6,800 MB/s      | 2,700 MB/s         | 850,000 IOPS        | 130,000 IOPS        |
 | **Micron**   | 7450          | Gen 4        | 6,800 MB/s      | 5,300 MB/s         | 1,500,000 IOPS      | 550,000 IOPS        |
+| **Kioxia**   | CM7-R (3.8tb) | Gen 5        | 14,000 MB/s     | 7,000 MB/s         | 2,700,000 IOPS      | 310,000 IOPS        |
+
+**Note**: There have been a few reports of Kioxia's being unreliable on the discord, so proceed with caution
 
 **Consumer**
 
@@ -149,7 +152,7 @@ A: If you've followed the [setup instructions](https://docs.solanalabs.com/opera
 ### Inspired by
 - [Zan](https://x.com/shinobisystems) / [Shinobi Systems](https://www.shinobi-systems.com/)
 - [/dev/null](https://x.com/pumpkinspool) / [Pumpkins Pool](https://pumpkinspool.eco/)
-- meyerbro
+- [meyerbro](https://meyerbro-validator.github.io/)
 - [7layer](https://x.com/7LayerMagik) / [Overclock](https://overclock.one)
 - [Matthias](https://x.com/StakingMatthias) / [Staking Facilities](https://stakingfacilities.com/)
 - [dhruvsol](https://x.com/_dhruvsol) / [Ice staking](https://www.cubik.so/)
