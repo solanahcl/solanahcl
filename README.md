@@ -28,7 +28,7 @@ Source: [https://docs.anza.xyz/operations/requirements](https://docs.anza.xyz/op
 
 ### CPU
 
-AMD is the CPU maker of choice when it comes to running Solana validators. Intel Xeon Gold/Platinum (6[45]xx) are the only ones known to be able to keep up with the chain.
+AMD is the CPU maker of choice when it comes to running Solana validators. Running Intel processors for a new validator is **strongly discouraged**. Intel Xeon Gold/Platinum (6[45]xx) are the only ones known to be able to possibly keep up with the chain.
 
 
 **NOTE**: This list is not exhaustive, just a selection of CPUs different folks on the discord have run or are currently running. 
