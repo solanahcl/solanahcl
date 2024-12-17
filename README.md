@@ -36,18 +36,18 @@ AMD is the CPU maker of choice when it comes to running Solana validators. Runni
 - 12/16cores will most likely struggle and,
 - more than 32 cores will have a slower base clock speed due to TDP issues (32 cores would possibly be more future proof)
 
-| Recommended  | Manufacturer | Model                              | Base Clock | Max Boost Clock | Cores | Threads | Default TDP | PoH speed * |
-|--------------|--------------|------------------------------------|------------|-----------------|-------|---------|-------------|-------------
-| Yes          | **AMD**      | Ryzen™ Threadripper™ PRO 7965WX    | 4.2 GHz    | Up to 5.3 GHz   | 24    | 48      | 350W        |             |
-| Yes          | **AMD**      | AMD EPYC™ 9274F                    | 4.05 GHz   | Up to 4.3 GHz   | 24    | 48      | 320W        | 18.1M       |
-| Yes          | **AMD**      | Ryzen™ Threadripper™ PRO 7975WX    | 4.0 GHz    | Up to 5.3 GHz   | 32    | 64      | 350W        |             |
-| Yes          | **AMD**      | Ryzen™ Threadripper™ PRO 7985WX    | 3.2 GHz    | Up to 5.1 GHz   | 64    | 128     | 350W        |             |
-| Yes          | **AMD**      | AMD EPYC™ 9374F                    | 3.85 GHz   | Up to 4.3 GHz   | 32    | 64      | 320W        |             |
-| Yes          | **AMD**      | AMD EPYC™ 9275F                    | 4.1 GHz    | Up to 4.8 GHz   | 24    | 48      | 320W        |             |
-| Yes          | **AMD**      | Ryzen™ Threadripper™ 7960X         | 4.2 GHz    | Up to 5.3 GHz   | 24    | 48      | 350W        | 20.6M       |
-| Yes          | **AMD**      | Ryzen 9 7950x                      | 4.5 GHz    | Up to 5.7 GHz   | 16    | 32      | 170W        | 22.4M       |
-| Yes          | **AMD**      | AMD EPYC™ 9254                     | 2.9 GHz    | Up to 4.15 GHz  | 24    | 48      | 200W        | 17.5M       |
-| Yes          | **AMD**      | AMD EPYC™ 9354P                    | 3.25 GHz   | Up to 3.8 GHz   | 32    | 64      | 280W        | 16.1M       |
+| Recommended  | Manufacturer | Model                              | Base Clock | Max Boost Clock | Cores | Threads | Default TDP | PoH speed *   |
+|--------------|--------------|------------------------------------|------------|-----------------|-------|---------|-------------|---------------|
+| Yes          | **AMD**      | Ryzen™ Threadripper™ PRO 7965WX    | 4.2 GHz    | Up to 5.3 GHz   | 24    | 48      | 350W        |               |
+| Yes          | **AMD**      | AMD EPYC™ 9274F                    | 4.05 GHz   | Up to 4.3 GHz   | 24    | 48      | 320W        | 18.1M         |
+| Yes          | **AMD**      | Ryzen™ Threadripper™ PRO 7975WX    | 4.0 GHz    | Up to 5.3 GHz   | 32    | 64      | 350W        |               |
+| Yes          | **AMD**      | Ryzen™ Threadripper™ PRO 7985WX    | 3.2 GHz    | Up to 5.1 GHz   | 64    | 128     | 350W        |               |
+| Yes          | **AMD**      | AMD EPYC™ 9374F                    | 3.85 GHz   | Up to 4.3 GHz   | 32    | 64      | 320W        |               |
+| Yes          | **AMD**      | AMD EPYC™ 9275F                    | 4.1 GHz    | Up to 4.8 GHz   | 24    | 48      | 320W        |               |
+| Yes          | **AMD**      | Ryzen™ Threadripper™ 7960X         | 4.2 GHz    | Up to 5.3 GHz   | 24    | 48      | 350W        | 20.6M         |
+| Yes          | **AMD**      | Ryzen 9 7950x                      | 4.5 GHz    | Up to 5.7 GHz   | 16    | 32      | 170W        | 22.4M         |
+| Yes          | **AMD**      | AMD EPYC™ 9254                     | 2.9 GHz    | Up to 4.15 GHz  | 24    | 48      | 200W        | 17.5M         |
+| Yes          | **AMD**      | AMD EPYC™ 9354P                    | 3.25 GHz   | Up to 3.8 GHz   | 32    | 64      | 280W        | 16.1M, 14.4M  |
 
 
 * Recommendation from version Agave 2.1.1 is to have at least 10M hashes/sec. Results based on governor set at performance mode.
