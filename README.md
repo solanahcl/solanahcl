@@ -159,4 +159,4 @@ A: If you've followed the [setup instructions](https://docs.solanalabs.com/opera
 - [Matthias](https://x.com/StakingMatthias) / [Staking Facilities](https://stakingfacilities.com/)
 - [dhruvsol](https://x.com/_dhruvsol) / [Ice staking](https://www.cubik.so/)
 - [Tim Garcia](https://x.com/TimGarcia0) / [Solana Fndn](https://solana.org)
-- Everyone else on #validator-hw-tuning
+- Everyone else on [#validator-hw-tuning](https://discord.com/channels/428295358100013066/811317327609856081)
