@@ -144,7 +144,6 @@ A: If you've followed the [setup instructions](https://docs.solanalabs.com/opera
 ```sudo bash -c 'echo performance > /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor'```
 
 ## Resources
-- [https://github.com/valigator-tech/solana-info?tab=readme-ov-file](https://github.com/valigator-tech/solana-info?tab=readme-ov-file)
 - [Useful links to tools for validators](https://gist.github.com/ferric-sol/451fbb55e34d1df04c0dcc7556f95cb6)
 
 ## Contributors
