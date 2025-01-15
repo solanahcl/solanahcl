@@ -65,6 +65,7 @@ Source:
 Each CPU was tested if its possible to catch up with a non voting node.   
    
 | Recommended  | Manufacturer | Model                              | Base Clock | Max Boost Clock | Cores | Threads | Default TDP | Caught Up in Tesnet | Caught Up in Mainnet |   
+|--------------|--------------|------------------------------------|------------|-----------------|-------|---------|-------------|---------------------|----------------------|   
 | Yes          | **AMD**      | AMD EPYC 9374F                     | 3.85 GHz   | Up to 4.3 GHz   | 32    | 64      | 320W        | Yes, default Layout | Yes, default Layout  |   
 | Yes          | **AMD**      | AMD EPYC 74F3                      | 3.2 GHz    | Up to 4   GHz   | 24    | 48      | 240W        | Yes, default Layout | Yes, default Layout  |   
 | Yes          | **AMD**      | AMD EPYC 7742                      | 2.25 GHz   | Up to 3.4 GHz   | 64    | 128     | 225W        | Yes, default Layout | Yes, default Layout  |   
