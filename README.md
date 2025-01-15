@@ -3,6 +3,8 @@ This is the Solana Hardware Compatibility List for running a mainnet validator.
 - [Baseline Hardware](#baseline-hardware)
 - [Recommended Hardware](#recommended-hardware)
   - [CPU](#cpu)
+    - [Agave CPU](#agave-cpu)
+    - [Frankendancer CPU](#frankendancer-cpu)
   - [Storage](#storage)
   - [Swap](#swap)
 - [Datacenter Providers](#datacenter-providers)
@@ -60,7 +62,7 @@ Source:
 - [AMD Server Processors](https://www.amd.com/en/products/specifications/server-processor.html)
 - [AMD Workstation Processors](https://www.amd.com/en/products/specifications/processors.html)
 
-### Firedancer CPU   
+### Frankendancer CPU   
    
 Each CPU was tested if its possible to catch up with a non voting node.   
    
