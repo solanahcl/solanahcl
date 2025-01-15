@@ -26,7 +26,7 @@ Source: [https://docs.anza.xyz/operations/requirements](https://docs.anza.xyz/op
 
 ## Recommended Hardware
 
-### CPU
+### Agave CPU
 
 AMD is the CPU maker of choice when it comes to running Solana validators. Running Intel processors for a new validator is **strongly discouraged**. Intel Xeon Gold/Platinum (6[45]xx) are the only ones known to be able to possibly keep up with the chain.
 
@@ -59,6 +59,19 @@ These recommendations also work for RPC nodes, but RPC nodes require more cores 
 Source:
 - [AMD Server Processors](https://www.amd.com/en/products/specifications/server-processor.html)
 - [AMD Workstation Processors](https://www.amd.com/en/products/specifications/processors.html)
+
+### Firedancer CPU   
+   
+Each CPU was tested if its possible to catch up with a non voting node.   
+   
+| Recommended  | Manufacturer | Model                              | Base Clock | Max Boost Clock | Cores | Threads | Default TDP | Caught Up in Tesnet | Caught Up in Mainnet |   
+| Yes          | **AMD**      | AMD EPYC 9374F                     | 3.85 GHz   | Up to 4.3 GHz   | 32    | 64      | 320W        | Yes, default Layout | Yes, default Layout  |   
+| Yes          | **AMD**      | AMD EPYC 74F3                      | 3.2 GHz    | Up to 4   GHz   | 24    | 48      | 240W        | Yes, default Layout | Yes, default Layout  |   
+| Yes          | **AMD**      | AMD EPYC 7742                      | 2.25 GHz   | Up to 3.4 GHz   | 64    | 128     | 225W        | Yes, default Layout | Yes, default Layout  |   
+| No           | **AMD**      | Ryzen 9 5900X                      | 3.7 GHz    | Up to 4.8 GHz   | 12    | 24      | 105W        | Yes, custom Layout  | No                   |   
+
+Tested Testnet Layout for Ryzen 9 5900X: one verify tile, one bank tile and agave affinity "auto"   
+
 
 ### Storage
 
