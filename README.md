@@ -64,8 +64,9 @@ Source:
 - [AMD Workstation Processors](https://www.amd.com/en/products/specifications/processors.html)
 
 #### Frankendancer CPU   
-   
-Each CPU was tested if its possible to catch up with a non voting node.   
+ 
+For Frankendancer its beneficial to have Simultaneous Multi-Threading (SMT) enabled.   
+With each CPU it was tested if its possible to catch up with a non voting node, while SMT was enabled.   
    
 | Recommended  | Manufacturer | Model                              | Base Clock | Max Boost Clock | Cores | Threads | Default TDP | Caught Up in Tesnet | Caught Up in Mainnet |   
 |--------------|--------------|------------------------------------|------------|-----------------|-------|---------|-------------|---------------------|----------------------|  
