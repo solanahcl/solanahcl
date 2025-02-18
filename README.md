@@ -177,13 +177,14 @@ A: If you've followed the [setup instructions](https://docs.solanalabs.com/opera
 
 - [ferric](https://x.com/ferric) / [StakeWare](https://stakeware.xyz)
 - [ax](https://x.com/ax_1000x) / [1000x.sh](https://1000x.sh)
+- [Matthias](https://x.com/StakingMatthias) / [Staking Facilities](https://stakingfacilities.com/)
+
 
 ### Inspired by
 - [Zan](https://x.com/shinobisystems) / [Shinobi Systems](https://www.shinobi-systems.com/)
 - [/dev/null](https://x.com/pumpkinspool) / [Pumpkins Pool](https://pumpkinspool.eco/)
 - [meyerbro](https://meyerbro-validator.github.io/)
 - [7layer](https://x.com/7LayerMagik) / [Overclock](https://overclock.one)
-- [Matthias](https://x.com/StakingMatthias) / [Staking Facilities](https://stakingfacilities.com/)
 - [dhruvsol](https://x.com/_dhruvsol) / [Ice staking](https://www.cubik.so/)
 - [Tim Garcia](https://x.com/TimGarcia0) / [Solana Fndn](https://solana.org)
 - Everyone else on [#validator-hw-tuning](https://discord.com/channels/428295358100013066/811317327609856081)
