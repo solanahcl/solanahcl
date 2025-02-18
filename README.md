@@ -138,7 +138,7 @@ More here: [Marinade ISP list](https://app.marinade.finance/network/isps/?countr
 
 some providers offer a test phase before you commit to renting with them, often as a playground to explore running a solana node. you can check the list, which we update frequently with new providers.
 
-  - [CherryServers](https://www.cherryservers.com/bare-metal-dedicated-servers)
+- [CherryServers](https://www.cherryservers.com/bare-metal-dedicated-servers)
 ---
 
 ### Notes
