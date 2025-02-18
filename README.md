@@ -81,6 +81,9 @@ With each CPU it was tested if its possible to catch up with a non voting node, 
 | Yes          | **AMD**      | AMD EPYC 74F3                      | 3.2 GHz    | Up to 4   GHz   | 24    | 48      | 240W        | Yes, default Layout | Yes, default Layout  | 
 | Yes          | **AMD**      | AMD Ryzen Threadripper Pro 7965WX  | 4.2 GHz    | Up to 5.3 GHz   | 24    | 48      | 350W        | Yes, default Layout | Yes, default Layout  |
 | No           | **AMD**      | Ryzen 9 5900X                      | 3.7 GHz    | Up to 4.8 GHz   | 12    | 24      | 105W        | Yes, custom Layout  | No                   |   
+| No           | **AMD**      | Ryzen 9 5950X                      | 3.4 GHz    | Up to 4.9 GHz   | 16    | 32      | 105W        | Yes, default Layout | -                    |   
+| No           | **AMD**      | Ryzen 9 7950X                      | 4.5 GHz    | Up to 5.7 GHz   | 16    | 32      | 170W        | Yes, default Layout | -                    |   
+
 
 Tested Testnet Layout for Ryzen 9 5900X: one verify tile, one bank tile and agave affinity "auto"   
 
