@@ -92,22 +92,30 @@ Tested Testnet Layout for Ryzen 9 5900X: one verify tile, one bank tile and agav
 
 **Enterprise**
 
-| Manufacturer | Model         | Generation   | Sequential Read | Sequential Write   | Random Read (IOPS)  | Random Write (IOPS) |
-|--------------|---------------|--------------|-----------------|--------------------|---------------------|---------------------|
-| **Samsung**  | PM9A1         | Gen 4        | 7,000 MB/s      | 5,200 MB/s         | 1,000,000 IOPS      | 850,000 IOPS        |
-| **Samsung**  | PM9A3         | Gen 4        | 6,800 MB/s      | 2,700 MB/s         | 850,000 IOPS        | 130,000 IOPS        |
-| **Micron**   | 7450          | Gen 4        | 6,800 MB/s      | 5,300 MB/s         | 1,500,000 IOPS      | 550,000 IOPS        |
-| **Kioxia**   | CM7-R (3.8tb) | Gen 5        | 14,000 MB/s     | 7,000 MB/s         | 2,700,000 IOPS      | 310,000 IOPS        |
+| Manufacturer | Model  | Generation |    Size | Sequential Read | Sequential Write |    Random Read | Random Write |
+|--------------|--------|------------|--------:|----------------:|-----------------:|---------------:|-------------:|
+| **Samsung**  | PM9A1  | Gen 4      | 2.00 TB |      7,000 MB/s |       5,200 MB/s | 1,000,000 IOPS | 850,000 IOPS |
+| **Samsung**  | PM9A3  | Gen 4      | 1.92 TB |      6,800 MB/s |       2,700 MB/s |   850,000 IOPS | 130,000 IOPS |
+| **Samsung**  | PM9A3  | Gen 4      | 3.84 TB |      6,900 MB/s |       4,100 MB/s | 1,000,000 IOPS | 180,000 IOPS |
+| **Micron**   | 7450   | Gen 4      | 3.84 TB |      6,800 MB/s |       5,300 MB/s | 1,500,000 IOPS | 550,000 IOPS |
+| **Kioxia**   | CM7-R  | Gen 5      | 3.84 TB |     14,000 MB/s |       6,750 MB/s | 2,700,000 IOPS | 310,000 IOPS |
+| **Kioxia**   | CM7-R  | Gen 5      | 7.68 TB |     14,000 MB/s |       6,750 MB/s | 2,450,000 IOPS | 300,000 IOPS |
+| **Samsung**  | PM1743 | Gen 5      | 3.84 TB |     14,000 MB/s |       6,000 MB/s | 2,500,000 IOPS | 280,000 IOPS |
+| **Samsung**  | PM1743 | Gen 5      | 7.68 TB |     14,000 MB/s |       6,000 MB/s | 2,500,000 IOPS | 300,000 IOPS |
+| **SanDisk**  | SN861  | Gen 5      | 3.20 TB |     13,700 MB/s |       7,200 MB/s | 3,300,000 IOPS | 665,000 IOPS |
+| **SanDisk**  | SN861  | Gen 5      | 6.40 TB |     13,700 MB/s |       7,500 MB/s | 3,300,000 IOPS | 800,000 IOPS |
+| **SanDisk**  | SN861  | Gen 5      | 3.84 TB |     13,700 MB/s |       7,200 MB/s | 3,300,000 IOPS | 330,000 IOPS |
+| **SanDisk**  | SN861  | Gen 5      | 7.68 TB |     13,700 MB/s |       7,500 MB/s | 3,300,000 IOPS | 430,000 IOPS |
 
 **Note**: There have been a few reports of Kioxia's being unreliable on the discord, so proceed with caution
 
 **Consumer**
 
-| Manufacturer | Model         | Generation   | Sequential Read | Sequential Write   | Random Read (IOPS)  | Random Write (IOPS) |
-|--------------|---------------|--------------|-----------------|--------------------|---------------------|---------------------|
-| **Crucial**  | T705          | Gen 5        | 14,500 MB/s     | 12,700 MB/s        | 1,550,000 IOPS      | 1,800,000 IOPS      |
-| **WD**       | SN850X        | Gen 4        | 7,300 MB/s      | 6,600 MB/s         | 1,200,000 IOPS      | 1,000,000 IOPS      |
-| **Samsung**  | 980 Pro       | Gen 4        | 7,000 MB/s      | 5,100 MB/s         | 1,000,000 IOPS      | 1,000,000 IOPS      |
+| Manufacturer | Model         | Generation | Sequential Read | Sequential Write |    Random Read |   Random Write |
+|--------------|---------------|------------|----------------:|-----------------:|---------------:|---------------:|
+| **Crucial**  | T705          | Gen 5      |     14,500 MB/s |      12,700 MB/s | 1,550,000 IOPS | 1,800,000 IOPS |
+| **WD**       | SN850X        | Gen 4      |      7,300 MB/s |       6,600 MB/s | 1,200,000 IOPS | 1,000,000 IOPS |
+| **Samsung**  | 980 Pro       | Gen 4      |      7,000 MB/s |       5,100 MB/s | 1,000,000 IOPS | 1,000,000 IOPS |
 
 ## Swap
 Running swapfiles is **highly discouraged** since it masks problems with your setup and will lead to negative consequences as chain activity increases.
