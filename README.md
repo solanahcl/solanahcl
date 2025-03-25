@@ -98,8 +98,12 @@ Tested Testnet Layout for Ryzen 9 5900X: one verify tile, one bank tile and agav
 | **Samsung**  | PM9A3  | Gen 4      | 1.92 TB |      6,800 MB/s |       2,700 MB/s |   850,000 IOPS | 130,000 IOPS |
 | **Samsung**  | PM9A3  | Gen 4      | 3.84 TB |      6,900 MB/s |       4,100 MB/s | 1,000,000 IOPS | 180,000 IOPS |
 | **Micron**   | 7450   | Gen 4      | 3.84 TB |      6,800 MB/s |       5,300 MB/s | 1,500,000 IOPS | 550,000 IOPS |
+| **Kioxia**   | CM7-V  | Gen 5      | 3.20 TB |     14,000 MB/s |       6,750 MB/s | 2,700,000 IOPS | 600,000 IOPS |
+| **Kioxia**   | CM7-V  | Gen 5      | 6.40 TB |     14,000 MB/s |       6,750 MB/s | 2,450,000 IOPS | 550,000 IOPS |
 | **Kioxia**   | CM7-R  | Gen 5      | 3.84 TB |     14,000 MB/s |       6,750 MB/s | 2,700,000 IOPS | 310,000 IOPS |
 | **Kioxia**   | CM7-R  | Gen 5      | 7.68 TB |     14,000 MB/s |       6,750 MB/s | 2,450,000 IOPS | 300,000 IOPS |
+| **Kioxia**   | CD8P-V | Gen 5      | 3.20 TB |     12,000 MB/s |       5,500 MB/s | 1,900,000 IOPS | 400,000 IOPS |
+| **Kioxia**   | CD8P-V | Gen 5      | 6.40 TB |     12,000 MB/s |       5,500 MB/s | 2,000,000 IOPS | 400,000 IOPS |
 | **Samsung**  | PM1743 | Gen 5      | 3.84 TB |     14,000 MB/s |       6,000 MB/s | 2,500,000 IOPS | 280,000 IOPS |
 | **Samsung**  | PM1743 | Gen 5      | 7.68 TB |     14,000 MB/s |       6,000 MB/s | 2,500,000 IOPS | 300,000 IOPS |
 | **SanDisk**  | SN861  | Gen 5      | 3.20 TB |     13,700 MB/s |       7,200 MB/s | 3,300,000 IOPS | 665,000 IOPS |
