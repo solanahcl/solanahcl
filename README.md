@@ -134,7 +134,6 @@ Running swapfiles is **highly discouraged** since it masks problems with your se
 | **Vultr**    | [Vultr](https://www.vultr.com/pricing/#bare-metal)                  
 | **Cherry**   | [Cherry](https://www.cherryservers.com/bare-metal-dedicated-servers) 
 | **DedicatedNodes** | [DedicatedNodes](https://www.dedicatednodes.io/solana-nodes/) 
-| **OVH**      | [OVH](https://ovhcloud.com/)                                         
 
 More here: [Marinade ISP list](https://app.marinade.finance/network/isps/?countries=&direction=descending&sorting=stake)
 
