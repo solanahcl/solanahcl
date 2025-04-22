@@ -139,7 +139,7 @@ More here: [Marinade ISP list](https://app.marinade.finance/network/isps/?countr
 
 #### notes to consider for renting:
 
-- DO NOT USE **OVH**. They have the widest availability and the poortest understanding of Solana's network needs. You will randomly get blackholed and support is absolutely useless.
+- DO NOT USE **OVH**. They may have the server widest availability but also the poorest understanding of Solana's network needs. You will randomly get blackholed and support is absolutely useless.
 - check reviews on the solana discord for your specific provider.
 - ensure you are not running within a virtual machine (vm).
 - verify the speed and uplink of the provider; low latency is crucial.
