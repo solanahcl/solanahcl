@@ -12,7 +12,7 @@ This is the Solana Hardware Compatibility List for running a mainnet validator.
 - [Resources](#resources)
 - [Contributors](#contributors)
 
-  
+
 ## Baseline Hardware
 
 Source: [https://docs.anza.xyz/operations/requirements](https://docs.anza.xyz/operations/requirements)
@@ -36,137 +36,162 @@ AMD is the CPU maker of choice when it comes to running Solana validators. Runni
 
 **NOTE**: This list is not exhaustive, just a selection of CPUs different folks on the discord have run or are currently running. 
 - 24 cores is the sweet spot, as of 10/2024, 
-- 12/16cores will most likely struggle and,
-- more than 32 cores will have a slower base clock speed due to TDP issues (32 cores would possibly be more future proof)
+- 12/16 cores will most likely struggle, and
+- more than 32 cores will have a slower base clock speed due to TDP issues (32 cores would possibly be more future proof).
 
-| Recommended  | Manufacturer | Model                              | Base Clock | Max Boost Clock | Cores | Threads | Default TDP | PoH speed *   |
-|--------------|--------------|------------------------------------|------------|-----------------|-------|---------|-------------|---------------|
-| Yes          | **AMD**      | Ryzen™ Threadripper™ PRO 7965WX    | 4.2 GHz    | Up to 5.3 GHz   | 24    | 48      | 350W        | 22.2M, 20.4M  |
-| Yes          | **AMD**      | AMD EPYC™ 9274F                    | 4.05 GHz   | Up to 4.3 GHz   | 24    | 48      | 320W        | 18.1M         |
-| Yes          | **AMD**      | Ryzen™ Threadripper™ PRO 7975WX    | 4.0 GHz    | Up to 5.3 GHz   | 32    | 64      | 350W        |               |
-| Yes          | **AMD**      | Ryzen™ Threadripper™ PRO 7985WX    | 3.2 GHz    | Up to 5.1 GHz   | 64    | 128     | 350W        |               |
-| Yes          | **AMD**      | AMD EPYC™ 9374F                    | 3.85 GHz   | Up to 4.3 GHz   | 32    | 64      | 320W        | 18.2M         |
-| Yes          | **AMD**      | AMD EPYC™ 9375F                    | 3.8 GHz    | Up to 4.8 GHz   | 32    | 64      | 320W        |               |
-| Yes          | **AMD**      | AMD EPYC™ 9275F                    | 4.1 GHz    | Up to 4.8 GHz   | 24    | 48      | 320W        |               |
-| Yes          | **AMD**      | Ryzen™ Threadripper™ 7960X         | 4.2 GHz    | Up to 5.3 GHz   | 24    | 48      | 350W        | 20.6M, 19.9M  |
-| Yes          | **AMD**      | Ryzen 9 7950x                      | 4.5 GHz    | Up to 5.7 GHz   | 16    | 32      | 170W        | 22.4M         |
-| Yes          | **AMD**      | Ryzen 9 9950x                      | 4.3 GHz    | Up to 5.7 GHz   | 16    | 32      | 170W        | 23M           |
-| Yes          | **AMD**      | AMD EPYC™ 9254                     | 2.9 GHz    | Up to 4.15 GHz  | 24    | 48      | 200W        | 17.5M         |
-| Yes          | **AMD**      | AMD EPYC™ 9354P                    | 3.25 GHz   | Up to 3.8 GHz   | 32    | 64      | 280W        | 16.1M, 14.4M  |
+The recommendations also apply to RPC nodes, but RPC nodes require more cores and RAM than validators to perform sufficiently under load. RPC node operators should therefore aim for a slightly higher core count than validator operators.
 
+| Recommended | Manufacturer | Model                         | Base Clock | Max Boost Clock | Cores | Threads | Default TDP | PoH speed *  |
+|-------------|--------------|-------------------------------|-----------:|----------------:|------:|--------:|------------:|--------------|
+| Yes         | **AMD**      | Ryzen Threadripper PRO 7965WX |   4.20 GHz |  Up to 5.30 GHz |    24 |      48 |       350 W | 22.2M, 20.4M |
+| Yes         | **AMD**      | EPYC 9274F                    |   4.05 GHz |  Up to 4.30 GHz |    24 |      48 |       320 W | 18.1M        |
+| Yes         | **AMD**      | Ryzen Threadripper PRO 7975WX |   4.00 GHz |  Up to 5.30 GHz |    32 |      64 |       350 W |              |
+| Yes         | **AMD**      | Ryzen Threadripper PRO 7985WX |   3.20 GHz |  Up to 5.10 GHz |    64 |     128 |       350 W |              |
+| Yes         | **AMD**      | EPYC 9374F                    |   3.85 GHz |  Up to 4.30 GHz |    32 |      64 |       320 W | 18.2M        |
+| Yes         | **AMD**      | EPYC 9375F                    |   3.80 GHz |  Up to 4.80 GHz |    32 |      64 |       320 W |              |
+| Yes         | **AMD**      | EPYC 9275F                    |   4.10 GHz |  Up to 4.80 GHz |    24 |      48 |       320 W | 19.3M        |
+| Yes         | **AMD**      | Ryzen Threadripper 7960X      |   4.20 GHz |  Up to 5.30 GHz |    24 |      48 |       350 W | 20.6M, 19.9M |
+| Yes         | **AMD**      | Ryzen 9 7950X                 |   4.50 GHz |  Up to 5.70 GHz |    16 |      32 |       170 W | 22.4M        |
+| Yes         | **AMD**      | Ryzen 9 9950X                 |   4.30 GHz |  Up to 5.70 GHz |    16 |      32 |       170 W | 23M          |
+| Yes         | **AMD**      | EPYC 9254                     |   2.90 GHz |  Up to 4.15 GHz |    24 |      48 |       200 W | 17.5M        |
+| Yes         | **AMD**      | EPYC 9354P                    |   3.25 GHz |  Up to 3.80 GHz |    32 |      64 |       280 W | 16.1M, 14.4M |
 
-* Recommendation from version Agave 2.1.1 is to have at least 10M hashes/sec. Results based on governor set at performance mode.
-
-These recommendations also work for RPC nodes, but RPC nodes require more cores and RAM to perform better under load
+\* The CPU should be capable of at least 10M hashes/sec. Results based on governor set at performance mode.
 
 Source:
 - [AMD Server Processors](https://www.amd.com/en/products/specifications/server-processor.html)
 - [AMD Workstation Processors](https://www.amd.com/en/products/specifications/processors.html)
 
-#### Frankendancer CPU   
- 
-For Frankendancer its beneficial to have Simultaneous Multi-Threading (SMT) enabled.   
-With each CPU it was tested if its possible to catch up with a non voting node, while SMT was enabled.   
-   
-| Recommended  | Manufacturer | Model                              | Base Clock | Max Boost Clock | Cores | Threads | Default TDP | Caught Up in Tesnet | Caught Up in Mainnet |   
-|--------------|--------------|------------------------------------|------------|-----------------|-------|---------|-------------|---------------------|----------------------|  
-| Yes          | **AMD**      | AMD EPYC 9474F                     | 3.6 GHz    | Up to 4.1 GHz   | 48    | 96      | 360W        | Yes, default Layout | Yes, default Layout  |   
-| Yes          | **AMD**      | AMD EPYC 9374F                     | 3.85 GHz   | Up to 4.3 GHz   | 32    | 64      | 320W        | Yes, default Layout | Yes, default Layout  | 
-| Yes          | **AMD**      | AMD EPYC 9354P                     | 3.25 GHz   | Up to 3.8 GHz   | 32    | 64      | 280W        | Yes, default Layout | Yes, default Layout  | 
-| Yes          | **AMD**      | AMD EPYC 9354                      | 3.25 GHz   | Up to 3.8 GHz   | 32    | 64      | 280W        | Yes, default Layout | Not tested yet       | 
-| Yes          | **AMD**      | AMD EPYC 9274F                     | 4.05 GHz   | Up to 4.3 GHz   | 24    | 48      | 320W        | Yes, default Layout | Yes, default Layout  |
-| Yes          | **AMD**      | AMD EPYC 9254                      | 2.9 GHz    | Up to 4.15 GHz  | 24    | 48      | 200W        | Yes, default Layout | Yes, default Layout  | 
-| Yes          | **AMD**      | AMD EPYC 7742                      | 2.25 GHz   | Up to 3.4 GHz   | 64    | 128     | 225W        | Yes, default Layout | Yes, default Layout  |   
-| Yes          | **AMD**      | AMD EPYC 7513                      | 2.6 GHz    | Up to 3.65 GHz  | 32    | 64      | 200W        | Yes, default Layout | Not tested yet       |   
-| Yes          | **AMD**      | AMD EPYC 74F3                      | 3.2 GHz    | Up to 4   GHz   | 24    | 48      | 240W        | Yes, default Layout | Yes, default Layout  | 
-| Yes          | **AMD**      | AMD Ryzen Threadripper Pro 7965WX  | 4.2 GHz    | Up to 5.3 GHz   | 24    | 48      | 350W        | Yes, default Layout | Yes, default Layout  |
-| No           | **AMD**      | Ryzen 9 5900X                      | 3.7 GHz    | Up to 4.8 GHz   | 12    | 24      | 105W        | Yes, custom Layout  | No                   |   
-| No           | **AMD**      | Ryzen 9 5950X                      | 3.4 GHz    | Up to 4.9 GHz   | 16    | 32      | 105W        | Yes, default Layout | -                    |   
-| No           | **AMD**      | Ryzen 9 7950X                      | 4.5 GHz    | Up to 5.7 GHz   | 16    | 32      | 170W        | Yes, default Layout | -                    |   
+#### Frankendancer CPU
 
+For Frankendancer its beneficial to have Simultaneous Multi-Threading (SMT) enabled.
+With each CPU it was tested if its possible to catch up with a non-voting node, while SMT was enabled.
 
-Tested Testnet Layout for Ryzen 9 5900X: one verify tile, one bank tile and agave affinity "auto"   
+| Recommended | Manufacturer | Model                         | Base Clock | Max Boost Clock | Cores | Threads | Default TDP | Caught up in Testnet | Caught up in Mainnet |
+|-------------|--------------|-------------------------------|-----------:|----------------:|------:|--------:|------------:|----------------------|----------------------|
+| Yes         | **AMD**      | EPYC 9474F                    |   3.60 GHz |  Up to 4.10 GHz |    48 |      96 |       360 W | Yes, default layout  | Yes, default layout  |
+| Yes         | **AMD**      | EPYC 9374F                    |   3.85 GHz |  Up to 4.30 GHz |    32 |      64 |       320 W | Yes, default layout  | Yes, default layout  |
+| Yes         | **AMD**      | EPYC 9354P                    |   3.25 GHz |  Up to 3.80 GHz |    32 |      64 |       280 W | Yes, default layout  | Yes, default layout  |
+| Yes         | **AMD**      | EPYC 9354                     |   3.25 GHz |  Up to 3.80 GHz |    32 |      64 |       280 W | Yes, default layout  | Not tested yet       |
+| Yes         | **AMD**      | EPYC 9274F                    |   4.05 GHz |  Up to 4.30 GHz |    24 |      48 |       320 W | Yes, default layout  | Yes, default layout  |
+| Yes         | **AMD**      | EPYC 9254                     |   2.90 GHz |  Up to 4.15 GHz |    24 |      48 |       200 W | Yes, default layout  | Yes, default layout  |
+| Yes         | **AMD**      | EPYC 7742                     |   2.25 GHz |  Up to 3.40 GHz |    64 |     128 |       225 W | Yes, default layout  | Yes, default layout  |
+| Yes         | **AMD**      | EPYC 7513                     |   2.60 GHz |  Up to 3.65 GHz |    32 |      64 |       200 W | Yes, default layout  | Not tested yet       |
+| Yes         | **AMD**      | EPYC 74F3                     |   3.20 GHz |  Up to 4.00 GHz |    24 |      48 |       240 W | Yes, default layout  | Yes, default layout  |
+| Yes         | **AMD**      | Ryzen Threadripper Pro 7965WX |   4.20 GHz |  Up to 5.30 GHz |    24 |      48 |       350 W | Yes, default layout  | Yes, default layout  |
+| No          | **AMD**      | Ryzen 9 5900X                 |   3.70 GHz |  Up to 4.80 GHz |    12 |      24 |       105 W | Yes, custom layout*  | No                   |
+| No          | **AMD**      | Ryzen 9 5950X                 |   3.40 GHz |  Up to 4.90 GHz |    16 |      32 |       105 W | Yes, default layout  | -                    |
+| No          | **AMD**      | Ryzen 9 7950X                 |   4.50 GHz |  Up to 5.70 GHz |    16 |      32 |       170 W | Yes, default layout  | -                    |
 
+\* Tested Testnet layout for Ryzen 9 5900X: one verify tile, one bank tile and agave affinity "auto"   
 
 ### Storage
 
-**Enterprise**
+Drives are mainly recommended based on performance figures from the manufacturer. All tables are sorted by the claimed random write performance (IOPS), as this is an essential property for Solana validators.
 
-| Manufacturer | Model  | Generation |    Size | Sequential Read | Sequential Write |    Random Read | Random Write |
-|--------------|--------|------------|--------:|----------------:|-----------------:|---------------:|-------------:|
-| **Samsung**  | PM9A1  | Gen 4      | 2.00 TB |      7,000 MB/s |       5,200 MB/s | 1,000,000 IOPS | 850,000 IOPS |
-| **Samsung**  | PM9A3  | Gen 4      | 1.92 TB |      6,800 MB/s |       2,700 MB/s |   850,000 IOPS | 130,000 IOPS |
-| **Samsung**  | PM9A3  | Gen 4      | 3.84 TB |      6,900 MB/s |       4,100 MB/s | 1,000,000 IOPS | 180,000 IOPS |
-| **Micron**   | 7450   | Gen 4      | 3.84 TB |      6,800 MB/s |       5,300 MB/s | 1,500,000 IOPS | 550,000 IOPS |
-| **Kioxia**   | CM7-V  | Gen 5      | 3.20 TB |     14,000 MB/s |       6,750 MB/s | 2,700,000 IOPS | 600,000 IOPS |
-| **Kioxia**   | CM7-V  | Gen 5      | 6.40 TB |     14,000 MB/s |       6,750 MB/s | 2,450,000 IOPS | 550,000 IOPS |
-| **Kioxia**   | CM7-R  | Gen 5      | 3.84 TB |     14,000 MB/s |       6,750 MB/s | 2,700,000 IOPS | 310,000 IOPS |
-| **Kioxia**   | CM7-R  | Gen 5      | 7.68 TB |     14,000 MB/s |       6,750 MB/s | 2,450,000 IOPS | 300,000 IOPS |
-| **Kioxia**   | CD8P-V | Gen 5      | 3.20 TB |     12,000 MB/s |       5,500 MB/s | 1,900,000 IOPS | 400,000 IOPS |
-| **Kioxia**   | CD8P-V | Gen 5      | 6.40 TB |     12,000 MB/s |       5,500 MB/s | 2,000,000 IOPS | 400,000 IOPS |
-| **Samsung**  | PM1743 | Gen 5      | 3.84 TB |     14,000 MB/s |       6,000 MB/s | 2,500,000 IOPS | 280,000 IOPS |
-| **Samsung**  | PM1743 | Gen 5      | 7.68 TB |     14,000 MB/s |       6,000 MB/s | 2,500,000 IOPS | 300,000 IOPS |
-| **SanDisk**  | SN861  | Gen 5      | 3.20 TB |     13,700 MB/s |       7,200 MB/s | 3,300,000 IOPS | 665,000 IOPS |
-| **SanDisk**  | SN861  | Gen 5      | 6.40 TB |     13,700 MB/s |       7,500 MB/s | 3,300,000 IOPS | 800,000 IOPS |
-| **SanDisk**  | SN861  | Gen 5      | 3.84 TB |     13,700 MB/s |       7,200 MB/s | 3,300,000 IOPS | 330,000 IOPS |
-| **SanDisk**  | SN861  | Gen 5      | 7.68 TB |     13,700 MB/s |       7,500 MB/s | 3,300,000 IOPS | 430,000 IOPS |
+#### **Enterprise gen 5 (PCIe 5.0)**
 
-**Note**: There have been a few reports of Kioxia's being unreliable on the discord, so proceed with caution
+| Manufacturer | Model     |    Size | Sequential Read | Sequential Write | Random Read | Random Write |
+|--------------|-----------|--------:|----------------:|-----------------:|------------:|-------------:|
+| **Phison**   | X200E     | 6.40 TB |     14,800 MB/s |       8,700 MB/s | 3,200K IOPS |    880K IOPS |
+| **Solidigm** | D7-PS1030 | 6.40 TB |     14,500 MB/s |      10,000 MB/s | 3,000K IOPS |    800K IOPS |
+| **SanDisk**  | SN861     | 6.40 TB |     13,700 MB/s |       7,500 MB/s | 3,300K IOPS |    800K IOPS |
+| **Phison**   | X200E     | 3.20 TB |     14,800 MB/s |       8,600 MB/s | 3,300K IOPS |    790K IOPS |
+| **Solidigm** | D7-PS1030 | 3.20 TB |     14,500 MB/s |       8,200 MB/s | 3,100K IOPS |    716K IOPS |
+| **SanDisk**  | SN861     | 3.20 TB |     13,700 MB/s |       7,200 MB/s | 3,300K IOPS |    665K IOPS |
+| **Micron**   | 9550 MAX  | 6.40 TB |     14,000 MB/s |      10,000 MB/s | 3,300K IOPS |    640K IOPS |
+| **Kioxia**   | CM7-V     | 3.20 TB |     14,000 MB/s |       6,750 MB/s | 2,700K IOPS |    600K IOPS |
+| **Kioxia**   | CM7-V     | 6.40 TB |     14,000 MB/s |       6,750 MB/s | 2,450K IOPS |    550K IOPS |
+| **Micron**   | 9550 MAX  | 3.20 TB |     14,000 MB/s |       6,000 MB/s | 3,000K IOPS |    540K IOPS |
+| **SanDisk**  | SN861     | 7.68 TB |     13,700 MB/s |       7,500 MB/s | 3,300K IOPS |    430K IOPS |
+| **Solidigm** | D7-PS1010 | 7.68 TB |     14,500 MB/s |      10,000 MB/s | 3,000K IOPS |    400K IOPS |
+| **Kioxia**   | CD8P-V    | 3.20 TB |     12,000 MB/s |       5,500 MB/s | 1,900K IOPS |    400K IOPS |
+| **Kioxia**   | CD8P-V    | 6.40 TB |     12,000 MB/s |       5,500 MB/s | 2,000K IOPS |    400K IOPS |
+| **Phison**   | X200P     | 7.68 TB |     14,800 MB/s |       8,700 MB/s | 3,200K IOPS |    390K IOPS |
+| **Micron**   | 9550 PRO  | 7.68 TB |     14,000 MB/s |      10,000 MB/s | 3,300K IOPS |    380K IOPS |
+| **SanDisk**  | SN861     | 3.84 TB |     13,700 MB/s |       7,200 MB/s | 3,300K IOPS |    330K IOPS |
+| **Phison**   | X200P     | 3.84 TB |     14,800 MB/s |       8,600 MB/s | 3,300K IOPS |    320K IOPS |
+| **Solidigm** | D7-PS1010 | 3.84 TB |     14,500 MB/s |       8,200 MB/s | 3,100K IOPS |    315K IOPS |
+| **Kioxia**   | CM7-R     | 3.84 TB |     14,000 MB/s |       6,750 MB/s | 2,700K IOPS |    310K IOPS |
+| **Micron**   | 9550 PRO  | 3.84 TB |     14,000 MB/s |       6,000 MB/s | 3,000K IOPS |    300K IOPS |
+| **Kioxia**   | CM7-R     | 7.68 TB |     14,000 MB/s |       6,750 MB/s | 2,450K IOPS |    300K IOPS |
+| **Samsung**  | PM1743    | 7.68 TB |     14,000 MB/s |       6,000 MB/s | 2,500K IOPS |    300K IOPS |
+| **Samsung**  | PM1743    | 3.84 TB |     14,000 MB/s |       6,000 MB/s | 2,500K IOPS |    280K IOPS |
 
-**Consumer**
+#### **Enterprise gen 4 (PCIe 4.0)**
 
-| Manufacturer | Model         | Generation | Sequential Read | Sequential Write |    Random Read |   Random Write |
-|--------------|---------------|------------|----------------:|-----------------:|---------------:|---------------:|
-| **Crucial**  | T705          | Gen 5      |     14,500 MB/s |      12,700 MB/s | 1,550,000 IOPS | 1,800,000 IOPS |
-| **WD**       | SN850X        | Gen 4      |      7,300 MB/s |       6,600 MB/s | 1,200,000 IOPS | 1,000,000 IOPS |
-| **Samsung**  | 980 Pro       | Gen 4      |      7,000 MB/s |       5,100 MB/s | 1,000,000 IOPS | 1,000,000 IOPS |
+| Manufacturer   | Model  |    Size | Sequential Read | Sequential Write | Random Read | Random Write |
+|----------------|--------|--------:|----------------:|-----------------:|------------:|-------------:|
+| **Samsung**    | PM9A1  | 2.00 TB |      7,000 MB/s |       5,200 MB/s | 1,000K IOPS |    850K IOPS |
+| **Micron**     | 7450   | 3.84 TB |      6,800 MB/s |       5,300 MB/s | 1,500K IOPS |    550K IOPS |
+| **Samsung**    | PM9A3  | 3.84 TB |      6,900 MB/s |       4,100 MB/s | 1,000K IOPS |    180K IOPS |
+| **Samsung**    | PM9A3  | 1.92 TB |      6,800 MB/s |       2,700 MB/s |   850K IOPS |    130K IOPS |
+
+**NOTE:** There have been a few reports of Kioxia's being unreliable on the discord, so proceed with caution.
+
+#### **Consumer**
+
+Consumer drives are less suitable for Solana validators, because they are designed for lighter workloads and have lower write endurance compared to enterprise drives. Minimum 2 TB per drive is recommended. Larger drives offer increased write endurance, which is crucial for handling the intensive read/write operations of Solana validators.
+
+| Manufacturer | Model            |   Size | Generation | Sequential Read | Sequential Write | Random Read | Random Write |
+|--------------|------------------|-------:|------------|----------------:|-----------------:|------------:|-------------:|
+| **Samsung**  | 9100 PRO         | > 2 TB | Gen 5      |     14,700 MB/s |      13,400 MB/s | 1,850K IOPS |  2,600K IOPS |
+| **SanDisk**  | WD_BLACK SN8100  | > 2 TB | Gen 5      |     14,900 MB/s |      14,000 MB/s | 2,300K IOPS |  2,400K IOPS |
+| **Kingston** | FURY Renegade G5 | > 2 TB | Gen 5      |     14,700 MB/s |      14,000 MB/s | 2,200K IOPS |  2,200K IOPS |
+| **Micron**   | 4600             | > 2 TB | Gen 5      |     14,500 MB/s |      12,000 MB/s | 2,100K IOPS |  2,100K IOPS |
+| **Crucial**  | T705             | > 2 TB | Gen 5      |     14,500 MB/s |      12,700 MB/s | 1,550K IOPS |  1,800K IOPS |
+| **Seagate**  | FireCuda 540     | > 2 TB | Gen 5      |     10,000 MB/s |      10,000 MB/s | 1,490K IOPS |  1,500K IOPS |
+| **SanDisk**  | WD_BLACK SN850X  | > 2 TB | Gen 4      |      7,300 MB/s |       6,600 MB/s | 1,200K IOPS |  1,000K IOPS |
+| **Samsung**  | 980 Pro          | > 2 TB | Gen 4      |      7,000 MB/s |       5,100 MB/s | 1,000K IOPS |  1,000K IOPS |
+
+**NOTE:** The Samsung 990 PRO has been reported to have severe endurance issues, and is therefore not recommended.
 
 ## Swap
-Running swapfiles is **highly discouraged** since it masks problems with your setup and will lead to negative consequences as chain activity increases.
+Running swap files is **highly discouraged** since it masks problems with your setup and will lead to negative consequences as chain activity increases.
 
 ## Datacenter Providers
 
-| Provider     | Link                                                                 
-|--------------|----------------------------------------------------------------------
-| **Latitude** | [Latitude](https://latitude.sh)                                      
-| **Edgevana** | [Edgevana](https://srv.edgevana.com/solana-validator-servers)        
-| **Teraswitch**| [Teraswitch](https://teraswitch.com/bare-metal/)                    
-| **Vultr**    | [Vultr](https://www.vultr.com/pricing/#bare-metal)                  
-| **Cherry**   | [Cherry](https://www.cherryservers.com/bare-metal-dedicated-servers) 
-| **DedicatedNodes** | [DedicatedNodes](https://www.dedicatednodes.io/solana-nodes/) 
-| **Allnodes** | [Allnodes](https://www.allnodes.com/hosting) 
+| Provider           | Link                                                        
+|--------------------|----------------------------------------------------------------------
+| **Latitude**       | [Latitude](https://latitude.sh)                             
+| **Edgevana**       | [Edgevana](https://srv.edgevana.com/solana-validator-servers)
+| **Teraswitch**     | [Teraswitch](https://teraswitch.com/bare-metal/)           
+| **Vultr**          | [Vultr](https://www.vultr.com/pricing/#bare-metal)         
+| **Cherry**         | [Cherry](https://www.cherryservers.com/bare-metal-dedicated-servers)
+| **DedicatedNodes** | [DedicatedNodes](https://www.dedicatednodes.io/solana-nodes/)
+| **Allnodes**       | [Allnodes](https://www.allnodes.com/hosting)
 
 More here: [Marinade ISP list](https://app.marinade.finance/network/isps/?countries=&direction=descending&sorting=stake)
 
-#### notes to consider for renting:
+#### Notes to consider for renting:
 
 - DO NOT USE **OVH**. They may have the widest server availability but also the poorest understanding of Solana's network needs. You will randomly get blackholed and support is absolutely useless.
-- check reviews on the solana discord for your specific provider.
-- ensure you are not running within a virtual machine (vm).
-- verify the speed and uplink of the provider; low latency is crucial.
-- ask the provider about the hardware specifications, focusing on higher ram frequencies.
-- before using your validator, confirm that all hardware components are functioning as expected.
+- Check reviews on the Solana Discord for your specific provider.
+- Ensure you are not running within a virtual machine (VM).
+- Verify the speed and uplink of the provider; low latency is crucial.
+- Ask the provider about the hardware specifications, focusing on higher RAM frequencies.
+- Before using your validator, confirm that all hardware components are functioning as expected.
 
-#### free to test for beginners
+#### Free to test for beginners
 
-some providers offer a test phase before you commit to renting with them, often as a playground to explore running a solana node. you can check the list, which we update frequently with new providers.
+Some providers offer a test phase before you commit to renting with them, often as a playground to explore running a Solana node. You can check the list, which we update frequently with new providers.
 
 - [CherryServers](https://www.cherryservers.com/bare-metal-dedicated-servers)
 ---
 
 ### Notes
 
-- **CPU Selection:** Prioritize CPUs with higher base clock speeds to meet Solana validator performance requirements. Ensure the selected CPU supports at least AVX2 instructions, with AVX-512 providing additional performance benefits. The AMD Ryzen™ Threadripper™ PRO and AMD EPYC™ series listed above are optimized for high-performance and multi-threaded tasks essential for validator operations.
+- **CPU Selection:** Prioritize CPUs with higher base clock speeds to meet Solana validator performance requirements. Ensure the selected CPU supports at least AVX2 instructions, with AVX-512 providing additional performance benefits. The AMD Ryzen Threadripper PRO and AMD EPYC series listed above are optimized for high-performance and multi-threaded tasks essential for validator operations.
 
-- **Storage Selection:** Choose NVMe SSDs that offer high IOPS to handle the intensive read/write operations necessary for validator nodes. Samsung's Pro series and WD's SN850X are highly recommended for their reliability and performance within the validator community.
+- **Storage Selection:** Choose NVMe SSDs that offer high IOPS to handle the intensive read/write operations necessary for validator nodes.
 
-- **Memory Considerations:** While not part of the table, remember that **RAM** requirements are crucial. Ensure you have ECC memory and sufficient capacity as per the [Hardware Recommendations](#recommended-hardware) section. RAM **speed** and DDR4 vs DDR5 are not known to make any significant differences 
+- **Memory Considerations:** While not part of the table, remember that **RAM** requirements are crucial. Ensure you have ECC memory and sufficient capacity as per the [Hardware Recommendations](#recommended-hardware) section. RAM **speed** and DDR4 vs DDR5 are not known to make any significant differences
 
 Feel free to reach out if you need further assistance or more detailed specifications!
 
 ## FAQ
 
-Q: My validator doesn't catch up or catches up slowly or does not keep up with the tip
+Q: My validator doesn't catch up, catches up slowly or does not keep up with the tip. Why?
 
 A: If you've followed the [setup instructions](https://docs.solanalabs.com/operations/setup-a-validator) correctly, make sure to:
   (via [ax on discord](https://discord.com/channels/428295358100013066/1187805174803210341/1288757805062553600))
@@ -177,7 +202,7 @@ A: If you've followed the [setup instructions](https://docs.solanalabs.com/opera
 - r: remove unnecessary cli arguments
 - e: enable performance mode 
 
-### setup performance mode
+### Enable performance mode
 
 ```sudo apt install cpufrequtils```
 
@@ -191,6 +216,7 @@ A: If you've followed the [setup instructions](https://docs.solanalabs.com/opera
 - [ferric](https://x.com/ferric) / [StakeWare](https://stakeware.xyz)
 - [ax](https://x.com/ax_1000x) / [1000x.sh](https://1000x.sh)
 - [Matthias](https://x.com/StakingMatthias) / [Staking Facilities](https://stakingfacilities.com/)
+- [Andrebo](https://github.com/agjell/sol-tutorials/) / [Nordstar](https://nordstar.one/)
 
 
 ### Inspired by
