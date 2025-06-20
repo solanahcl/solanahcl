@@ -74,7 +74,7 @@ With each CPU it was tested if its possible to catch up with a non-voting node, 
 | Yes         | **AMD**      | EPYC 9354P                    |   3.25 GHz |  Up to 3.80 GHz |    32 |      64 |       280 W | Yes, default layout  | Yes, default layout  |
 | Yes         | **AMD**      | EPYC 9354                     |   3.25 GHz |  Up to 3.80 GHz |    32 |      64 |       280 W | Yes, default layout  | Not tested yet       |
 | Yes         | **AMD**      | EPYC 9274F                    |   4.05 GHz |  Up to 4.30 GHz |    24 |      48 |       320 W | Yes, default layout  | Yes, default layout  |
-| Yes         | **AMD**      | EPYC 9254                     |   2.90 GHz |  Up to 4.15 GHz |    24 |      48 |       200 W | Yes, custom  layout  | Yes, default layout  |
+| Yes         | **AMD**      | EPYC 9254                     |   2.90 GHz |  Up to 4.15 GHz |    24 |      48 |       200 W | Yes, custom layout*  | Yes, default layout  |
 | Yes         | **AMD**      | EPYC 7742                     |   2.25 GHz |  Up to 3.40 GHz |    64 |     128 |       225 W | Yes, default layout  | Yes, default layout  |
 | Yes         | **AMD**      | EPYC 7513                     |   2.60 GHz |  Up to 3.65 GHz |    32 |      64 |       200 W | Yes, default layout  | Not tested yet       |
 | Yes         | **AMD**      | EPYC 74F3                     |   3.20 GHz |  Up to 4.00 GHz |    24 |      48 |       240 W | Yes, default layout  | Yes, default layout  |
@@ -84,6 +84,7 @@ With each CPU it was tested if its possible to catch up with a non-voting node, 
 | No          | **AMD**      | Ryzen 9 7950X                 |   4.50 GHz |  Up to 5.70 GHz |    16 |      32 |       170 W | Yes, default layout  | -                    |
 
 \* Tested Testnet layout for Ryzen 9 5900X: one verify tile, one bank tile and agave affinity "auto"   
+\* Per [Bored King](https://github.com/gabrielhicks) 9254 with [custom layout](https://gist.github.com/ferric-sol/07f511d3c3b6c45a1a4e392016c977f4) and [disable accounts index patch](https://discord.com/channels/@me/1366447066762449006/1385636501517242529)
 
 ### Storage
 
