@@ -74,7 +74,7 @@ With each CPU it was tested if its possible to catch up with a non-voting node, 
 | Yes         | **AMD**      | EPYC 9354P                    |   3.25 GHz |  Up to 3.80 GHz |    32 |      64 |       280 W | Yes, default layout  | Yes, default layout  |
 | Yes         | **AMD**      | EPYC 9354                     |   3.25 GHz |  Up to 3.80 GHz |    32 |      64 |       280 W | Yes, default layout  | Not tested yet       |
 | Yes         | **AMD**      | EPYC 9274F                    |   4.05 GHz |  Up to 4.30 GHz |    24 |      48 |       320 W | Yes, default layout  | Yes, default layout  |
-| Yes         | **AMD**      | EPYC 9254                     |   2.90 GHz |  Up to 4.15 GHz |    24 |      48 |       200 W | Yes, default layout  | Yes, default layout  |
+| Yes         | **AMD**      | EPYC 9254                     |   2.90 GHz |  Up to 4.15 GHz |    24 |      48 |       200 W | Yes, custom  layout  | Yes, default layout  |
 | Yes         | **AMD**      | EPYC 7742                     |   2.25 GHz |  Up to 3.40 GHz |    64 |     128 |       225 W | Yes, default layout  | Yes, default layout  |
 | Yes         | **AMD**      | EPYC 7513                     |   2.60 GHz |  Up to 3.65 GHz |    32 |      64 |       200 W | Yes, default layout  | Not tested yet       |
 | Yes         | **AMD**      | EPYC 74F3                     |   3.20 GHz |  Up to 4.00 GHz |    24 |      48 |       240 W | Yes, default layout  | Yes, default layout  |
