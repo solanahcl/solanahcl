@@ -211,40 +211,41 @@ A: If you've followed the [setup instructions](https://docs.solanalabs.com/opera
 
 ## Resources
 
-### Migrating to firedancer
-- https://github.com/pzupan/solana_validator_set_identity_scripts
-- https://stakingfacilities.com/blog/guide-how-to-switch-from-agave-jito-to-frankendancer
+# Solana Validator Resources
 
-### Upcoming leader slots
-- https://masdefi.vercel.app/leaderSchedule
-- https://github.com/bji/solana_tools/blob/master/validator-idle-time.sh
-- https://github.com/1000xsh/solana/blob/main/next-leader/status.sh
+## Migrating to Firedancer
+- [solana_validator_set_identity_scripts](https://github.com/pzupan/solana_validator_set_identity_scripts)
+- [Guide: How to Switch from Agave/Jito to Frankendancer (Staking Facilities)](https://stakingfacilities.com/blog/guide-how-to-switch-from-agave-jito-to-frankendancer)
 
-### Skip rate investigation
-- https://github.com/a3mc/lead-inspector
-- https://github.com/1000xsh/solana-slot-bandits
-- https://www.validators.app/log-deep-dives/slot-72677728?locale=en&network=mainnet
-- https://promptlogic.systems/inspect/search
+## Upcoming Leader Slots
+- [MasDeFi Leader Schedule](https://masdefi.vercel.app/leaderSchedule)
+- [validator-idle-time.sh by bji](https://github.com/bji/solana_tools/blob/master/validator-idle-time.sh)
+- [next-leader/status.sh by 1000xsh](https://github.com/1000xsh/solana/blob/main/next-leader/status.sh)
 
-### Monitoring tools
-- https://github.com/stakeconomy/solanamonitoring/blob/main/README.md
-- https://github.com/asymmetric-research/solana-exporter/tree/update-log?tab=readme-ov-file
-- https://github.com/qskyhigh/solana-monitor-public
+## Skip Rate Investigation
+- [lead-inspector](https://github.com/a3mc/lead-inspector)
+- [solana-slot-bandits by 1000xsh](https://github.com/1000xsh/solana-slot-bandits)
+- [Slot 72677728 Deep Dive - validators.app](https://www.validators.app/log-deep-dives/slot-72677728?locale=en&network=mainnet)
+- [Prompt Logic Inspector](https://promptlogic.systems/inspect/search)
 
-### Dashboards
-- https://validators.app
-- https://staking.kiwi
-- https://svt.one
-- https://app.vx.tools
-- https://xshin.fi/#Validators
-- https://app.marinade.finance/network/validators/
-- https://www.jito.network/stakenet/
-- https://stakewiz.com
-- https://1000x.sh/validators
+## Monitoring Tools
+- [solanamonitoring by stakeconomy](https://github.com/stakeconomy/solanamonitoring/blob/main/README.md)
+- [solana-exporter (update-log branch)](https://github.com/asymmetric-research/solana-exporter/tree/update-log?tab=readme-ov-file)
+- [solana-monitor-public by qskyhigh](https://github.com/qskyhigh/solana-monitor-public)
 
+## Dashboards
+- [validators.app](https://validators.app)
+- [staking.kiwi](https://staking.kiwi)
+- [svt.one](https://svt.one)
+- [vx.tools](https://app.vx.tools)
+- [xshin.fi - Validators](https://xshin.fi/#Validators)
+- [Marinade Validator Network](https://app.marinade.finance/network/validators/)
+- [Jito StakeNet](https://www.jito.network/stakenet/)
+- [stakewiz.com](https://stakewiz.com)
+- [1000x.sh Validators](https://1000x.sh/validators)
 
-### Apps
-- https://gateomega.com/solcircl/
+## Apps
+- [Gate Omega - Solcircl](https://gateomega.com/solcircl/)
 
 
 ### Validator hardware list
