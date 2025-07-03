@@ -38,5 +38,5 @@ layout: default
 <p id="last-updated" style="text-align: right;"></p>
 
 <h1 style="text-align: center;">Solana Hardware Compatibility List</h1>
-<p>Last updated: {{ site.github.build_revision | date: "%Y-%m-%d" }}</p>
+<p>Last updated: {{% last_modified_at %}}</p>
 {% include_relative README.md %}
