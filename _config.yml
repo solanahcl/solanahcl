@@ -1,6 +1,7 @@
 plugins:
   - jekyll-github-metadata
   - jekyll-remote-theme
+  - jekyll-last-modified-at
 remote_theme: pages-themes/hacker@v0.2.0
 
 # Add these lines
@@ -12,3 +13,6 @@ theme: jekyll-theme-hacker
 
 # Optimize for mobile
 mobile_optimization: true
+
+last-modified-at:
+    date-format: '%Y-%m-%d'
