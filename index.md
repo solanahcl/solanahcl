@@ -38,5 +38,5 @@ layout: default
 <p id="last-updated" style="text-align: right;"></p>
 
 <h1 style="text-align: center;">Solana Hardware Compatibility List</h1>
-<p>Last updated: {% last-modified-at %}
+<p>Last updated: [README](https://github.com/solanahcl/solanahcl/blob/main/README.md)
 {% include_relative README.md %}
