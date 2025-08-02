@@ -232,7 +232,7 @@ A: If you've followed the [setup instructions](https://docs.solanalabs.com/opera
 
 ## Monitoring Tools
 - [solanamonitoring by stakeconomy](https://github.com/stakeconomy/solanamonitoring/blob/main/README.md)
-- [solana-exporter (update-log branch)](https://github.com/asymmetric-research/solana-exporter/tree/update-log?tab=readme-ov-file)
+- [solana-exporter](https://github.com/asymmetric-research/solana-exporter)
 - [solana-monitor-public by qskyhigh](https://github.com/qskyhigh/solana-monitor-public)
 
 ## Dashboards
