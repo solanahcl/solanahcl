@@ -220,6 +220,11 @@ A: If you've followed the [setup instructions](https://docs.solanalabs.com/opera
 - [solana_validator_set_identity_scripts](https://github.com/pzupan/solana_validator_set_identity_scripts)
 - [Guide: How to Switch from Agave/Jito to Frankendancer (Staking Facilities)](https://stakingfacilities.com/blog/guide-how-to-switch-from-agave-jito-to-frankendancer)
 
+## Validator Hotswap & Failover
+- [SVS - Switch, Alert and Autofailover by huisky](https://github.com/huiskylabs/solana-validator-switch)
+- [Pumpkin's Pool Identity Switch & Keyless Operation](https://pumpkins-pool.gitbook.io/pumpkins-pool/keyless-operation)
+- [Anza Guide - Setup Node Failover](https://docs.anza.xyz/operations/guides/validator-failover#triggering-a-failover-via-monitoring)
+
 ## Upcoming Leader Slots
 - [MasDeFi Leader Schedule](https://masdefi.vercel.app/leaderSchedule)
 - [validator-idle-time.sh by bji](https://github.com/bji/solana_tools/blob/master/validator-idle-time.sh)
