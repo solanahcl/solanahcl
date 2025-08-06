@@ -79,6 +79,7 @@ With each CPU it was tested if its possible to catch up with a non-voting node, 
 | Yes         | **AMD**      | EPYC 7742                     |   2.25 GHz |  Up to 3.40 GHz |    64 |     128 |       225 W | Yes, default layout  | Yes, default layout  |
 | Yes         | **AMD**      | EPYC 7513                     |   2.60 GHz |  Up to 3.65 GHz |    32 |      64 |       200 W | Yes, default layout  | Not tested yet       |
 | Yes         | **AMD**      | EPYC 74F3                     |   3.20 GHz |  Up to 4.00 GHz |    24 |      48 |       240 W | Yes, default layout  | Yes, default layout  |
+| Yes         | **AMD**      | Ryzen Threadripper Pro 7975WX |   4.00 GHz |  Up to 5.30 GHz |    32 |      64 |       350 W | Yes, default layout  | Yes, default layout  |
 | Yes         | **AMD**      | Ryzen Threadripper Pro 7965WX |   4.20 GHz |  Up to 5.30 GHz |    24 |      48 |       350 W | Yes, default layout  | Yes, default layout  |
 | No          | **AMD**      | Ryzen 9 5900X                 |   3.70 GHz |  Up to 4.80 GHz |    12 |      24 |       105 W | Yes, custom layout*  | No                   |
 | No          | **AMD**      | Ryzen 9 5950X                 |   3.40 GHz |  Up to 4.90 GHz |    16 |      32 |       105 W | Yes, default layout  | -                    |
