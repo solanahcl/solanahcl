@@ -1,0 +1,19 @@
+[global]
+ioengine=libaio
+direct=1             ; bypass os cache to test raw device performance
+thread=1             ; one thread per job
+time_based=1        ; run for a fixed duration
+runtime=720           ; duration in seconds
+group_reporting=1    ; aggregate stats across jobs
+
+rw=randrw            ; mixed random read/write pattern
+rwmixread=10         ; 10% reads, 90% writes
+bs=4k                ; 4 KB block size for small account access
+iodepth=1000           ; outstanding i/o per job
+numjobs=1000           ; number of files/jobs
+size=1M              ; size per file
+randrepeat=0         ; disable repeating random pattern across jobs
+norandommap=1        ; each job uses its own random offset map
+
+[job1]
+directory=/mnt/ext4
