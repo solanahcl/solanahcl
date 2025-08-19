@@ -1,0 +1,54 @@
+
+[global]
+ioengine=libaio
+direct=1
+time_based=1
+runtime=720
+group_reporting=1
+
+### durable small writes (rocksdb wal sim)
+
+; rocksdb wal is write-ahead log with fsync durability. using ioengine=sync or libaio+fsync emulates the commit semantics.
+[rocksdb-wal]
+name=rocksdb-wal
+ioengine=sync
+rw=write
+bs=16k
+size=5G
+iodepth=1
+filename=/mnt/xfs/rocksdb_wal_sim.dat
+
+### ledger append workload (high-throughput sequential writes)
+
+; simulates appending transaction data / shreds into blockstore (batched, large sequential writes).
+[ledger-append]
+name=solana-ledger-append
+ioengine=libaio
+rw=write
+bs=64k
+size=50G
+iodepth=16
+numjobs=2
+filename=/mnt/xfs/ledger_append_sim.dat
+
+### compaction read workload (input reads from existing SSTs)
+
+[compaction-read]
+name=rocksdb-compaction-read
+ioengine=libaio
+rw=read
+bs=1M
+size=50G
+iodepth=4
+filename=/mnt/xfs/compaction_source.dat
+
+### compaction write workload (merged SST output)
+
+[compaction-write]
+name=rocksdb-compaction-write
+ioengine=libaio
+rw=write
+bs=1M
+size=50G
+iodepth=8
+filename=/mnt/xfs/compaction_output.dat
