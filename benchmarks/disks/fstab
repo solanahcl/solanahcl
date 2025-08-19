@@ -1,0 +1,5 @@
+# ext4
+UUID= /mnt/ext4 ext4 defaults,noatime,nofail 0 0
+
+# xfs
+UUID= /mnt/xfs xfs defaults,noatime,logbufs=8,nofail 0 0
