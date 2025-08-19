@@ -1,0 +1,23 @@
+[global]
+ioengine=libaio
+direct=1
+thread=1
+group_reporting=1
+time_based=1        ; run for a fixed duration
+runtime=720           ; duration in seconds
+
+#[snapshot-read]
+#name=solana-snapshot-read
+#filename=/mnt/ext4/snapshot.dat
+#rw=read
+#bs=1M
+#size=100G
+#iodepth=4
+
+[snapshot-write]
+name=solana-snapshot-write
+filename=/mnt/xfs/snapshot.dat
+rw=write
+bs=1M
+size=100G
+iodepth=4
