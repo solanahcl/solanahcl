@@ -35,7 +35,7 @@ AMD is the CPU maker of choice when it comes to running Solana validators. Runni
 
 
 **NOTE**: This list is not exhaustive, just a selection of CPUs different folks on the discord have run or are currently running. 
-- 24 cores is the sweet spot, as of 10/2024, 
+- 24 cores is the sweet spot for agave, as of 9/2025, frankendancer loves and utilizes more cores especially with revenue scheduler so 32/64 are more viable
 - 12/16 cores will most likely struggle, and
 - more than 32 cores will have a slower base clock speed due to TDP issues (32 cores would possibly be more future proof).
 
