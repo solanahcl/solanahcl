@@ -140,6 +140,7 @@ Consumer drives are less suitable for Solana validators, because they are design
 |--------------|------------------|-------:|------------|----------------:|-----------------:|------------:|-------------:|
 | **Samsung**  | 9100 PRO         | > 2 TB | Gen 5      |     14,700 MB/s |      13,400 MB/s | 1,850K IOPS |  2,600K IOPS |
 | **SanDisk**  | WD_BLACK SN8100  | > 2 TB | Gen 5      |     14,900 MB/s |      14,000 MB/s | 2,300K IOPS |  2,400K IOPS |
+| **Crucial**  | T710             | > 2 TB | Gen 5      |     14,500 MB/s |      13,800 MB/s | 2,200K IOPS |  2,300K IOPS |
 | **Kingston** | FURY Renegade G5 | > 2 TB | Gen 5      |     14,700 MB/s |      14,000 MB/s | 2,200K IOPS |  2,200K IOPS |
 | **Micron**   | 4600             | > 2 TB | Gen 5      |     14,500 MB/s |      12,000 MB/s | 2,100K IOPS |  2,100K IOPS |
 | **Crucial**  | T705             | > 2 TB | Gen 5      |     14,500 MB/s |      12,700 MB/s | 1,550K IOPS |  1,800K IOPS |
