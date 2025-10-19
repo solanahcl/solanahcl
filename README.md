@@ -228,6 +228,9 @@ A: If you've followed the [setup instructions](https://docs.solanalabs.com/opera
 - [Pumpkin's Pool Identity Switch & Keyless Operation](https://pumpkins-pool.gitbook.io/pumpkins-pool/keyless-operation)
 - [Anza Guide - Setup Node Failover](https://docs.anza.xyz/operations/guides/validator-failover#triggering-a-failover-via-monitoring)
 
+## Keeping Validators Updated
+- [solana-validator-version-sync by SOL Strategies](https://github.com/SOL-Strategies/solana-validator-version-sync)
+
 ## Upcoming Leader Slots
 - [MasDeFi Leader Schedule](https://masdefi.vercel.app/leaderSchedule)
 - [validator-idle-time.sh by bji](https://github.com/bji/solana_tools/blob/master/validator-idle-time.sh)
