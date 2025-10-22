@@ -183,6 +183,7 @@ More here: [Marinade ISP list](https://app.marinade.finance/network/isps/?countr
 Some providers offer a test phase before you commit to renting with them, often as a playground to explore running a Solana node. You can check the list, which we update frequently with new providers.
 
 - [CherryServers](https://www.cherryservers.com/bare-metal-dedicated-servers)
+- [DedicatedNodes](https://www.dedicatednodes.io/solana-nodes) - any of the instant servers
 ---
 
 ### Notes
