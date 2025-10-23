@@ -48,7 +48,7 @@ The recommendations also apply to RPC nodes, but RPC nodes require more cores an
 | Yes         | **AMD**      | Ryzen Threadripper PRO 7975WX |   4.00 GHz |  Up to 5.30 GHz |    32 |      64 |       350 W |              |
 | Yes         | **AMD**      | Ryzen Threadripper PRO 7985WX |   3.20 GHz |  Up to 5.10 GHz |    64 |     128 |       350 W |              |
 | Yes         | **AMD**      | EPYC 9374F                    |   3.85 GHz |  Up to 4.30 GHz |    32 |      64 |       320 W | 18.2M        |
-| Yes         | **AMD**      | EPYC 9375F                    |   3.80 GHz |  Up to 4.80 GHz |    32 |      64 |       320 W |              |
+| Yes         | **AMD**      | EPYC 9375F                    |   3.80 GHz |  Up to 4.80 GHz |    32 |      64 |       320 W | 18.9M-19.3M  |
 | Yes         | **AMD**      | EPYC 9275F                    |   4.10 GHz |  Up to 4.80 GHz |    24 |      48 |       320 W | 19.3M        |
 | Yes         | **AMD**      | Ryzen Threadripper 7960X      |   4.20 GHz |  Up to 5.30 GHz |    24 |      48 |       350 W | 20.6M, 19.9M |
 | Yes         | **AMD**      | Ryzen 9 7950X                 |   4.50 GHz |  Up to 5.70 GHz |    16 |      32 |       170 W | 22.4M        |
