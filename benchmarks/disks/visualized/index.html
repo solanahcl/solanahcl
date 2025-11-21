@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nvme benchmark results</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: system-ui;
+            background: linear-gradient(135deg, #b3b4bb 0%, #736f77 100%);
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            text-align: center;
+            color: #4968e1;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #4968e1;
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+        .chart-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(1350px, 1fr));
+            gap: 30px;
+            margin: 20px 0;
+        }
+        .chart-container {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .chart-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+        }
+        .dashboard {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        embed {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+        .dashboard embed {
+            height: auto;
+            min-height: 1000px;
+        }
+        .info {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #2196f3;
+        }
+        .info h3 {
+            color: #1976d2;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>nvme benchmark comparison</h1>
+        <div class="info">
+            <h3>Key Metrics Guide:</h3>
+            <ul>
+                <li><strong>IOPS:</strong> Operations per second (Higher = Better)</li>
+                <li><strong>Bandwidth:</strong> Data transfer rate in MB/s (Higher = Better)</li>
+                <li><strong>Latency Percentiles:</strong> Response time distribution (Lower = Better)</li>
+                <li><strong>Stability (Stddev):</strong> Latency variance (Lower = More Stable)</li>
+            </ul>
+        </div>
+<h2>ledger workload benchmarks</h2>
+<div class="chart-grid">
+<div class="chart-container"><embed src="ledger_iops.svg" type="image/svg+xml"></div>
+<div class="chart-container"><embed src="ledger_bandwidth.svg" type="image/svg+xml"></div>
+<div class="chart-container"><embed src="ledger_latency_percentiles.svg" type="image/svg+xml"></div>
+<div class="chart-container"><embed src="ledger_stability.svg" type="image/svg+xml"></div>
+</div>
+<h2>snapshots workload benchmarks</h2>
+<div class="chart-grid">
+<div class="chart-container"><embed src="snapshots_iops.svg" type="image/svg+xml"></div>
+<div class="chart-container"><embed src="snapshots_bandwidth.svg" type="image/svg+xml"></div>
+<div class="chart-container"><embed src="snapshots_latency_percentiles.svg" type="image/svg+xml"></div>
+<div class="chart-container"><embed src="snapshots_stability.svg" type="image/svg+xml"></div>
+</div>
+<h2>accounts workload benchmarks</h2>
+<div class="chart-grid">
+<div class="chart-container"><embed src="accounts_iops.svg" type="image/svg+xml"></div>
+<div class="chart-container"><embed src="accounts_bandwidth.svg" type="image/svg+xml"></div>
+<div class="chart-container"><embed src="accounts_latency_percentiles.svg" type="image/svg+xml"></div>
+<div class="chart-container"><embed src="accounts_stability.svg" type="image/svg+xml"></div>
+</div>
+<h2>overall statistics</h2>
+<div class="dashboard"><embed src="dashboard.svg" type="image/svg+xml"></div>
+
+    </div>
+</body>
+</html>
