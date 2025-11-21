@@ -161,7 +161,7 @@ xfs
 </text>
 <polyline fill="none" opacity="1" stroke="#000000" stroke-width="1" points="85,505 85,510 "/>
 <text x="195" y="515" dy="0.76em" text-anchor="middle" font-family="sans-serif" font-size="9.67741935483871" opacity="1" fill="#000000">
-solidigm d7 ps1030
+solidigm opal 7 ps1030
 ext4
 </text>
 <polyline fill="none" opacity="1" stroke="#000000" stroke-width="1" points="195,505 195,510 "/>
@@ -190,379 +190,379 @@ micron 9550
 ext4
 </text>
 <polyline fill="none" opacity="1" stroke="#000000" stroke-width="1" points="745,505 745,510 "/>
-<rect x="85" y="89" width="22" height="415" opacity="1" fill="#0072B2" stroke="none"/>
-<rect x="107" y="89" width="22" height="415" opacity="1" fill="#E69F00" stroke="none"/>
-<rect x="129" y="91" width="22" height="413" opacity="1" fill="#009E73" stroke="none"/>
-<rect x="151" y="102" width="22" height="402" opacity="1" fill="#CC79A7" stroke="none"/>
-<rect x="173" y="112" width="22" height="392" opacity="1" fill="#D55E00" stroke="none"/>
-<rect x="195" y="116" width="22" height="388" opacity="1" fill="#56B4E9" stroke="none"/>
-<rect x="217" y="187" width="22" height="317" opacity="1" fill="#F0E442" stroke="none"/>
-<rect x="239" y="188" width="22" height="316" opacity="1" fill="#000000" stroke="none"/>
-<rect x="261" y="188" width="22" height="316" opacity="1" fill="#66C2A5" stroke="none"/>
-<rect x="283" y="189" width="22" height="315" opacity="1" fill="#FC8D62" stroke="none"/>
-<rect x="305" y="189" width="22" height="315" opacity="1" fill="#8DA0CB" stroke="none"/>
-<rect x="327" y="189" width="22" height="315" opacity="1" fill="#E78AC3" stroke="none"/>
-<rect x="349" y="189" width="22" height="315" opacity="1" fill="#A6D854" stroke="none"/>
-<rect x="371" y="190" width="22" height="314" opacity="1" fill="#FFD92F" stroke="none"/>
-<rect x="393" y="190" width="22" height="314" opacity="1" fill="#E5C494" stroke="none"/>
-<rect x="415" y="191" width="22" height="313" opacity="1" fill="#B3B3B3" stroke="none"/>
-<rect x="437" y="191" width="22" height="313" opacity="1" fill="#4DAF4A" stroke="none"/>
-<rect x="459" y="204" width="22" height="300" opacity="1" fill="#984EA3" stroke="none"/>
-<rect x="481" y="204" width="22" height="300" opacity="1" fill="#FF1493" stroke="none"/>
-<rect x="503" y="205" width="22" height="299" opacity="1" fill="#00BFFF" stroke="none"/>
-<rect x="525" y="205" width="22" height="299" opacity="1" fill="#800080" stroke="none"/>
-<rect x="547" y="205" width="22" height="299" opacity="1" fill="#FFA500" stroke="none"/>
-<rect x="569" y="206" width="22" height="298" opacity="1" fill="#008080" stroke="none"/>
-<rect x="591" y="206" width="22" height="298" opacity="1" fill="#808000" stroke="none"/>
-<rect x="613" y="207" width="22" height="297" opacity="1" fill="#4682B4" stroke="none"/>
-<rect x="635" y="207" width="22" height="297" opacity="1" fill="#DC143C" stroke="none"/>
-<rect x="657" y="207" width="22" height="297" opacity="1" fill="#2E8B57" stroke="none"/>
-<rect x="679" y="228" width="22" height="276" opacity="1" fill="#DA70D6" stroke="none"/>
-<rect x="701" y="253" width="22" height="251" opacity="1" fill="#B8860B" stroke="none"/>
-<rect x="723" y="253" width="22" height="251" opacity="1" fill="#483D8B" stroke="none"/>
-<rect x="745" y="253" width="22" height="251" opacity="1" fill="#FF6347" stroke="none"/>
-<rect x="767" y="253" width="22" height="251" opacity="1" fill="#20B2AA" stroke="none"/>
-<rect x="789" y="448" width="22" height="56" opacity="1" fill="#C71585" stroke="none"/>
-<rect x="811" y="448" width="23" height="56" opacity="1" fill="#F4A460" stroke="none"/>
+<rect x="85" y="89" width="22" height="415" opacity="1" fill="#1F77B4" stroke="none"/>
+<rect x="107" y="89" width="22" height="415" opacity="1" fill="#FF7F0E" stroke="none"/>
+<rect x="129" y="91" width="22" height="413" opacity="1" fill="#2CA02C" stroke="none"/>
+<rect x="151" y="102" width="22" height="402" opacity="1" fill="#D62728" stroke="none"/>
+<rect x="173" y="112" width="22" height="392" opacity="1" fill="#9467BD" stroke="none"/>
+<rect x="195" y="116" width="22" height="388" opacity="1" fill="#8C564B" stroke="none"/>
+<rect x="217" y="187" width="22" height="317" opacity="1" fill="#E377C2" stroke="none"/>
+<rect x="239" y="188" width="22" height="316" opacity="1" fill="#7F7F7F" stroke="none"/>
+<rect x="261" y="188" width="22" height="316" opacity="1" fill="#BCBD22" stroke="none"/>
+<rect x="283" y="189" width="22" height="315" opacity="1" fill="#17BECF" stroke="none"/>
+<rect x="305" y="189" width="22" height="315" opacity="1" fill="#1F77B4" stroke="none"/>
+<rect x="327" y="189" width="22" height="315" opacity="1" fill="#FF7F0E" stroke="none"/>
+<rect x="349" y="189" width="22" height="315" opacity="1" fill="#2CA02C" stroke="none"/>
+<rect x="371" y="190" width="22" height="314" opacity="1" fill="#D62728" stroke="none"/>
+<rect x="393" y="190" width="22" height="314" opacity="1" fill="#9467BD" stroke="none"/>
+<rect x="415" y="191" width="22" height="313" opacity="1" fill="#8C564B" stroke="none"/>
+<rect x="437" y="191" width="22" height="313" opacity="1" fill="#E377C2" stroke="none"/>
+<rect x="459" y="204" width="22" height="300" opacity="1" fill="#7F7F7F" stroke="none"/>
+<rect x="481" y="204" width="22" height="300" opacity="1" fill="#BCBD22" stroke="none"/>
+<rect x="503" y="205" width="22" height="299" opacity="1" fill="#17BECF" stroke="none"/>
+<rect x="525" y="205" width="22" height="299" opacity="1" fill="#1F77B4" stroke="none"/>
+<rect x="547" y="205" width="22" height="299" opacity="1" fill="#FF7F0E" stroke="none"/>
+<rect x="569" y="206" width="22" height="298" opacity="1" fill="#2CA02C" stroke="none"/>
+<rect x="591" y="206" width="22" height="298" opacity="1" fill="#D62728" stroke="none"/>
+<rect x="613" y="207" width="22" height="297" opacity="1" fill="#9467BD" stroke="none"/>
+<rect x="635" y="207" width="22" height="297" opacity="1" fill="#8C564B" stroke="none"/>
+<rect x="657" y="207" width="22" height="297" opacity="1" fill="#E377C2" stroke="none"/>
+<rect x="679" y="228" width="22" height="276" opacity="1" fill="#7F7F7F" stroke="none"/>
+<rect x="701" y="253" width="22" height="251" opacity="1" fill="#BCBD22" stroke="none"/>
+<rect x="723" y="253" width="22" height="251" opacity="1" fill="#17BECF" stroke="none"/>
+<rect x="745" y="253" width="22" height="251" opacity="1" fill="#1F77B4" stroke="none"/>
+<rect x="767" y="253" width="22" height="251" opacity="1" fill="#FF7F0E" stroke="none"/>
+<rect x="789" y="448" width="22" height="56" opacity="1" fill="#2CA02C" stroke="none"/>
+<rect x="811" y="448" width="23" height="56" opacity="1" fill="#D62728" stroke="none"/>
 <rect x="850" y="0" width="550" height="600" opacity="1" fill="#FAFAFA" stroke="none"/>
 <text x="860" y="15" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="12.903225806451614" opacity="1" fill="#000000" font-weight="bold">
 Legend
 </text>
-<rect x="855" y="30" width="12" height="12" opacity="1" fill="#0072B2" stroke="none"/>
-<text x="872" y="33" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#000000" font-weight="bold">
-solidigm d7 ps1010 (3.84TB)
+<rect x="855" y="30" width="12" height="12" opacity="1" fill="#1F77B4" stroke="none"/>
+<text x="872" y="33" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="11.290322580645162" opacity="1" fill="#000000" font-weight="bold">
+solidigm d7 ps1010
 </text>
-<text x="872" y="44" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#006400">
+<text x="872" y="44" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="10.483870967741936" opacity="1" fill="#006400">
 6071.3 MB/s
 </text>
 <text x="872" y="54" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="9.67741935483871" opacity="1" fill="#505050">
 xfs | format_0_512
 </text>
-<rect x="855" y="68" width="12" height="12" opacity="1" fill="#E69F00" stroke="none"/>
-<text x="872" y="71" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#000000" font-weight="bold">
-solidigm d7 ps1010 (3.84TB)
+<rect x="855" y="68" width="12" height="12" opacity="1" fill="#FF7F0E" stroke="none"/>
+<text x="872" y="71" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="11.290322580645162" opacity="1" fill="#000000" font-weight="bold">
+solidigm d7 ps1010
 </text>
-<text x="872" y="82" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#006400">
+<text x="872" y="82" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="10.483870967741936" opacity="1" fill="#006400">
 6064.7 MB/s
 </text>
 <text x="872" y="92" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="9.67741935483871" opacity="1" fill="#505050">
 xfs | format_0_4096
 </text>
-<rect x="855" y="106" width="12" height="12" opacity="1" fill="#009E73" stroke="none"/>
-<text x="872" y="109" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#000000" font-weight="bold">
-solidigm d7 ps1030 (3.2TB)
+<rect x="855" y="106" width="12" height="12" opacity="1" fill="#2CA02C" stroke="none"/>
+<text x="872" y="109" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="11.290322580645162" opacity="1" fill="#000000" font-weight="bold">
+solidigm opal 7 ps1030
 </text>
-<text x="872" y="120" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#006400">
+<text x="872" y="120" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="10.483870967741936" opacity="1" fill="#006400">
 6049.7 MB/s
 </text>
 <text x="872" y="130" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="9.67741935483871" opacity="1" fill="#505050">
 xfs | format_0_4096
 </text>
-<rect x="855" y="144" width="12" height="12" opacity="1" fill="#CC79A7" stroke="none"/>
-<text x="872" y="147" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#000000" font-weight="bold">
-solidigm d7 ps1010 (3.84TB)
+<rect x="855" y="144" width="12" height="12" opacity="1" fill="#D62728" stroke="none"/>
+<text x="872" y="147" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="11.290322580645162" opacity="1" fill="#000000" font-weight="bold">
+solidigm d7 ps1010
 </text>
-<text x="872" y="158" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#006400">
+<text x="872" y="158" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="10.483870967741936" opacity="1" fill="#006400">
 5878.8 MB/s
 </text>
 <text x="872" y="168" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="9.67741935483871" opacity="1" fill="#505050">
 ext4 | format_0_4096
 </text>
-<rect x="855" y="182" width="12" height="12" opacity="1" fill="#D55E00" stroke="none"/>
-<text x="872" y="185" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#000000" font-weight="bold">
-solidigm d7 ps1010 (3.84TB)
+<rect x="855" y="182" width="12" height="12" opacity="1" fill="#9467BD" stroke="none"/>
+<text x="872" y="185" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="11.290322580645162" opacity="1" fill="#000000" font-weight="bold">
+solidigm d7 ps1010
 </text>
-<text x="872" y="196" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#006400">
+<text x="872" y="196" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="10.483870967741936" opacity="1" fill="#006400">
 5729.9 MB/s
 </text>
 <text x="872" y="206" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="9.67741935483871" opacity="1" fill="#505050">
 ext4 | format_0_512
 </text>
-<rect x="855" y="220" width="12" height="12" opacity="1" fill="#56B4E9" stroke="none"/>
-<text x="872" y="223" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#000000" font-weight="bold">
-solidigm d7 ps1030 (3.2TB)
+<rect x="855" y="220" width="12" height="12" opacity="1" fill="#8C564B" stroke="none"/>
+<text x="872" y="223" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="11.290322580645162" opacity="1" fill="#000000" font-weight="bold">
+solidigm opal 7 ps1030
 </text>
-<text x="872" y="234" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#006400">
+<text x="872" y="234" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="10.483870967741936" opacity="1" fill="#006400">
 5683.0 MB/s
 </text>
 <text x="872" y="244" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="9.67741935483871" opacity="1" fill="#505050">
 ext4 | format_0_4096
 </text>
-<rect x="855" y="258" width="12" height="12" opacity="1" fill="#F0E442" stroke="none"/>
-<text x="872" y="261" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#000000" font-weight="bold">
-samsung pm1743 (3.84TB)
+<rect x="855" y="258" width="12" height="12" opacity="1" fill="#E377C2" stroke="none"/>
+<text x="872" y="261" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="11.290322580645162" opacity="1" fill="#000000" font-weight="bold">
+samsung pm1743
 </text>
-<text x="872" y="272" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#006400">
+<text x="872" y="272" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="10.483870967741936" opacity="1" fill="#006400">
 4640.2 MB/s
 </text>
 <text x="872" y="282" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="9.67741935483871" opacity="1" fill="#505050">
 xfs | format_0_512
 </text>
-<rect x="855" y="296" width="12" height="12" opacity="1" fill="#000000" stroke="none"/>
-<text x="872" y="299" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#000000" font-weight="bold">
-samsung pm1743 (3.84TB)
+<rect x="855" y="296" width="12" height="12" opacity="1" fill="#7F7F7F" stroke="none"/>
+<text x="872" y="299" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="11.290322580645162" opacity="1" fill="#000000" font-weight="bold">
+samsung pm1743
 </text>
-<text x="872" y="310" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#006400">
+<text x="872" y="310" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="10.483870967741936" opacity="1" fill="#006400">
 4618.4 MB/s
 </text>
 <text x="872" y="320" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="9.67741935483871" opacity="1" fill="#505050">
 xfs | format_8_4096
 </text>
-<rect x="855" y="334" width="12" height="12" opacity="1" fill="#66C2A5" stroke="none"/>
-<text x="872" y="337" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#000000" font-weight="bold">
-samsung pm1743 (3.84TB)
+<rect x="855" y="334" width="12" height="12" opacity="1" fill="#BCBD22" stroke="none"/>
+<text x="872" y="337" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="11.290322580645162" opacity="1" fill="#000000" font-weight="bold">
+samsung pm1743
 </text>
-<text x="872" y="348" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#006400">
+<text x="872" y="348" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="10.483870967741936" opacity="1" fill="#006400">
 4618.2 MB/s
 </text>
 <text x="872" y="358" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="9.67741935483871" opacity="1" fill="#505050">
 xfs | format_0_4096
 </text>
-<rect x="855" y="372" width="12" height="12" opacity="1" fill="#FC8D62" stroke="none"/>
-<text x="872" y="375" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#000000" font-weight="bold">
-samsung pm1743 (3.84TB)
+<rect x="855" y="372" width="12" height="12" opacity="1" fill="#17BECF" stroke="none"/>
+<text x="872" y="375" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="11.290322580645162" opacity="1" fill="#000000" font-weight="bold">
+samsung pm1743
 </text>
-<text x="872" y="386" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#006400">
+<text x="872" y="386" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="10.483870967741936" opacity="1" fill="#006400">
 4617.4 MB/s
 </text>
 <text x="872" y="396" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="9.67741935483871" opacity="1" fill="#505050">
 xfs | format_16_4096
 </text>
-<rect x="855" y="410" width="12" height="12" opacity="1" fill="#8DA0CB" stroke="none"/>
-<text x="872" y="413" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#000000" font-weight="bold">
-samsung pm1743 (3.84TB)
+<rect x="855" y="410" width="12" height="12" opacity="1" fill="#1F77B4" stroke="none"/>
+<text x="872" y="413" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="11.290322580645162" opacity="1" fill="#000000" font-weight="bold">
+samsung pm1743
 </text>
-<text x="872" y="424" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#006400">
+<text x="872" y="424" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="10.483870967741936" opacity="1" fill="#006400">
 4611.9 MB/s
 </text>
 <text x="872" y="434" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="9.67741935483871" opacity="1" fill="#505050">
 xfs | format_64_4096
 </text>
-<rect x="855" y="448" width="12" height="12" opacity="1" fill="#E78AC3" stroke="none"/>
-<text x="872" y="451" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#000000" font-weight="bold">
-samsung pm1743 (3.84TB)
+<rect x="855" y="448" width="12" height="12" opacity="1" fill="#FF7F0E" stroke="none"/>
+<text x="872" y="451" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="11.290322580645162" opacity="1" fill="#000000" font-weight="bold">
+samsung pm1743
 </text>
-<text x="872" y="462" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#006400">
+<text x="872" y="462" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="10.483870967741936" opacity="1" fill="#006400">
 4608.3 MB/s
 </text>
 <text x="872" y="472" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="9.67741935483871" opacity="1" fill="#505050">
 xfs | format_8_512
 </text>
-<rect x="1035" y="30" width="12" height="12" opacity="1" fill="#A6D854" stroke="none"/>
-<text x="1052" y="33" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#000000" font-weight="bold">
-samsung pm1743 (3.84TB)
+<rect x="1035" y="30" width="12" height="12" opacity="1" fill="#2CA02C" stroke="none"/>
+<text x="1052" y="33" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="11.290322580645162" opacity="1" fill="#000000" font-weight="bold">
+samsung pm1743
 </text>
-<text x="1052" y="44" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#006400">
+<text x="1052" y="44" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="10.483870967741936" opacity="1" fill="#006400">
 4607.7 MB/s
 </text>
 <text x="1052" y="54" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="9.67741935483871" opacity="1" fill="#505050">
 ext4 | format_8_4096
 </text>
-<rect x="1035" y="68" width="12" height="12" opacity="1" fill="#FFD92F" stroke="none"/>
-<text x="1052" y="71" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#000000" font-weight="bold">
-samsung pm1743 (3.84TB)
+<rect x="1035" y="68" width="12" height="12" opacity="1" fill="#D62728" stroke="none"/>
+<text x="1052" y="71" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="11.290322580645162" opacity="1" fill="#000000" font-weight="bold">
+samsung pm1743
 </text>
-<text x="1052" y="82" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#006400">
+<text x="1052" y="82" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="10.483870967741936" opacity="1" fill="#006400">
 4597.4 MB/s
 </text>
 <text x="1052" y="92" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="9.67741935483871" opacity="1" fill="#505050">
 ext4 | format_16_4096
 </text>
-<rect x="1035" y="106" width="12" height="12" opacity="1" fill="#E5C494" stroke="none"/>
-<text x="1052" y="109" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#000000" font-weight="bold">
-samsung pm1743 (3.84TB)
+<rect x="1035" y="106" width="12" height="12" opacity="1" fill="#9467BD" stroke="none"/>
+<text x="1052" y="109" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="11.290322580645162" opacity="1" fill="#000000" font-weight="bold">
+samsung pm1743
 </text>
-<text x="1052" y="120" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#006400">
+<text x="1052" y="120" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="10.483870967741936" opacity="1" fill="#006400">
 4594.4 MB/s
 </text>
 <text x="1052" y="130" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="9.67741935483871" opacity="1" fill="#505050">
 ext4 | format_64_4096
 </text>
-<rect x="1035" y="144" width="12" height="12" opacity="1" fill="#B3B3B3" stroke="none"/>
-<text x="1052" y="147" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#000000" font-weight="bold">
-samsung pm1743 (3.84TB)
+<rect x="1035" y="144" width="12" height="12" opacity="1" fill="#8C564B" stroke="none"/>
+<text x="1052" y="147" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="11.290322580645162" opacity="1" fill="#000000" font-weight="bold">
+samsung pm1743
 </text>
-<text x="1052" y="158" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#006400">
+<text x="1052" y="158" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="10.483870967741936" opacity="1" fill="#006400">
 4583.8 MB/s
 </text>
 <text x="1052" y="168" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="9.67741935483871" opacity="1" fill="#505050">
 ext4 | format_0_512
 </text>
-<rect x="1035" y="182" width="12" height="12" opacity="1" fill="#4DAF4A" stroke="none"/>
-<text x="1052" y="185" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#000000" font-weight="bold">
-samsung pm1743 (3.84TB)
+<rect x="1035" y="182" width="12" height="12" opacity="1" fill="#E377C2" stroke="none"/>
+<text x="1052" y="185" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="11.290322580645162" opacity="1" fill="#000000" font-weight="bold">
+samsung pm1743
 </text>
-<text x="1052" y="196" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#006400">
+<text x="1052" y="196" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="10.483870967741936" opacity="1" fill="#006400">
 4582.5 MB/s
 </text>
 <text x="1052" y="206" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="9.67741935483871" opacity="1" fill="#505050">
 ext4 | format_0_4096
 </text>
-<rect x="1035" y="220" width="12" height="12" opacity="1" fill="#984EA3" stroke="none"/>
-<text x="1052" y="223" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#000000" font-weight="bold">
-kioxia cm7 (3.2TB)
+<rect x="1035" y="220" width="12" height="12" opacity="1" fill="#7F7F7F" stroke="none"/>
+<text x="1052" y="223" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="11.290322580645162" opacity="1" fill="#000000" font-weight="bold">
+kioxia cm7
 </text>
-<text x="1052" y="234" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#006400">
+<text x="1052" y="234" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="10.483870967741936" opacity="1" fill="#006400">
 4396.6 MB/s
 </text>
 <text x="1052" y="244" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="9.67741935483871" opacity="1" fill="#505050">
 ext4 | unknown
 </text>
-<rect x="1035" y="258" width="12" height="12" opacity="1" fill="#FF1493" stroke="none"/>
-<text x="1052" y="261" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#000000" font-weight="bold">
-kioxia cm7 (3.2TB)
+<rect x="1035" y="258" width="12" height="12" opacity="1" fill="#BCBD22" stroke="none"/>
+<text x="1052" y="261" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="11.290322580645162" opacity="1" fill="#000000" font-weight="bold">
+kioxia cm7
 </text>
-<text x="1052" y="272" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#006400">
+<text x="1052" y="272" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="10.483870967741936" opacity="1" fill="#006400">
 4384.3 MB/s
 </text>
 <text x="1052" y="282" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="9.67741935483871" opacity="1" fill="#505050">
 ext4 | format_64_4096
 </text>
-<rect x="1035" y="296" width="12" height="12" opacity="1" fill="#00BFFF" stroke="none"/>
-<text x="1052" y="299" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#000000" font-weight="bold">
-kioxia cm7 (3.2TB)
+<rect x="1035" y="296" width="12" height="12" opacity="1" fill="#17BECF" stroke="none"/>
+<text x="1052" y="299" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="11.290322580645162" opacity="1" fill="#000000" font-weight="bold">
+kioxia cm7
 </text>
-<text x="1052" y="310" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#006400">
+<text x="1052" y="310" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="10.483870967741936" opacity="1" fill="#006400">
 4380.2 MB/s
 </text>
 <text x="1052" y="320" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="9.67741935483871" opacity="1" fill="#505050">
 ext4 | format_8_4096
 </text>
-<rect x="1035" y="334" width="12" height="12" opacity="1" fill="#800080" stroke="none"/>
-<text x="1052" y="337" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#000000" font-weight="bold">
-kioxia cm7 (3.2TB)
+<rect x="1035" y="334" width="12" height="12" opacity="1" fill="#1F77B4" stroke="none"/>
+<text x="1052" y="337" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="11.290322580645162" opacity="1" fill="#000000" font-weight="bold">
+kioxia cm7
 </text>
-<text x="1052" y="348" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#006400">
+<text x="1052" y="348" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="10.483870967741936" opacity="1" fill="#006400">
 4374.0 MB/s
 </text>
 <text x="1052" y="358" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="9.67741935483871" opacity="1" fill="#505050">
 ext4 | format_8_512
 </text>
-<rect x="1035" y="372" width="12" height="12" opacity="1" fill="#FFA500" stroke="none"/>
-<text x="1052" y="375" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#000000" font-weight="bold">
-kioxia cm7 (3.2TB)
+<rect x="1035" y="372" width="12" height="12" opacity="1" fill="#FF7F0E" stroke="none"/>
+<text x="1052" y="375" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="11.290322580645162" opacity="1" fill="#000000" font-weight="bold">
+kioxia cm7
 </text>
-<text x="1052" y="386" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#006400">
+<text x="1052" y="386" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="10.483870967741936" opacity="1" fill="#006400">
 4370.8 MB/s
 </text>
 <text x="1052" y="396" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="9.67741935483871" opacity="1" fill="#505050">
 ext4 | format_0_4096
 </text>
-<rect x="1035" y="410" width="12" height="12" opacity="1" fill="#008080" stroke="none"/>
-<text x="1052" y="413" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#000000" font-weight="bold">
-kioxia cm7 (3.2TB)
+<rect x="1035" y="410" width="12" height="12" opacity="1" fill="#2CA02C" stroke="none"/>
+<text x="1052" y="413" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="11.290322580645162" opacity="1" fill="#000000" font-weight="bold">
+kioxia cm7
 </text>
-<text x="1052" y="424" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#006400">
+<text x="1052" y="424" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="10.483870967741936" opacity="1" fill="#006400">
 4361.6 MB/s
 </text>
 <text x="1052" y="434" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="9.67741935483871" opacity="1" fill="#505050">
 xfs | format_64_4096
 </text>
-<rect x="1035" y="448" width="12" height="12" opacity="1" fill="#808000" stroke="none"/>
-<text x="1052" y="451" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#000000" font-weight="bold">
-kioxia cm7 (3.2TB)
+<rect x="1035" y="448" width="12" height="12" opacity="1" fill="#D62728" stroke="none"/>
+<text x="1052" y="451" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="11.290322580645162" opacity="1" fill="#000000" font-weight="bold">
+kioxia cm7
 </text>
-<text x="1052" y="462" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#006400">
+<text x="1052" y="462" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="10.483870967741936" opacity="1" fill="#006400">
 4357.5 MB/s
 </text>
 <text x="1052" y="472" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="9.67741935483871" opacity="1" fill="#505050">
 xfs | format_8_4096
 </text>
-<rect x="1215" y="30" width="12" height="12" opacity="1" fill="#4682B4" stroke="none"/>
-<text x="1232" y="33" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#000000" font-weight="bold">
-kioxia cm7 (3.2TB)
+<rect x="1215" y="30" width="12" height="12" opacity="1" fill="#9467BD" stroke="none"/>
+<text x="1232" y="33" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="11.290322580645162" opacity="1" fill="#000000" font-weight="bold">
+kioxia cm7
 </text>
-<text x="1232" y="44" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#006400">
+<text x="1232" y="44" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="10.483870967741936" opacity="1" fill="#006400">
 4352.8 MB/s
 </text>
 <text x="1232" y="54" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="9.67741935483871" opacity="1" fill="#505050">
 xfs | format_8_512
 </text>
-<rect x="1215" y="68" width="12" height="12" opacity="1" fill="#DC143C" stroke="none"/>
-<text x="1232" y="71" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#000000" font-weight="bold">
-kioxia cm7 (3.2TB)
+<rect x="1215" y="68" width="12" height="12" opacity="1" fill="#8C564B" stroke="none"/>
+<text x="1232" y="71" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="11.290322580645162" opacity="1" fill="#000000" font-weight="bold">
+kioxia cm7
 </text>
-<text x="1232" y="82" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#006400">
+<text x="1232" y="82" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="10.483870967741936" opacity="1" fill="#006400">
 4350.3 MB/s
 </text>
 <text x="1232" y="92" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="9.67741935483871" opacity="1" fill="#505050">
 xfs | format_0_4096
 </text>
-<rect x="1215" y="106" width="12" height="12" opacity="1" fill="#2E8B57" stroke="none"/>
-<text x="1232" y="109" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#000000" font-weight="bold">
-kioxia cm7 (3.2TB)
+<rect x="1215" y="106" width="12" height="12" opacity="1" fill="#E377C2" stroke="none"/>
+<text x="1232" y="109" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="11.290322580645162" opacity="1" fill="#000000" font-weight="bold">
+kioxia cm7
 </text>
-<text x="1232" y="120" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#006400">
+<text x="1232" y="120" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="10.483870967741936" opacity="1" fill="#006400">
 4346.0 MB/s
 </text>
 <text x="1232" y="130" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="9.67741935483871" opacity="1" fill="#505050">
 xfs | unknown
 </text>
-<rect x="1215" y="144" width="12" height="12" opacity="1" fill="#DA70D6" stroke="none"/>
-<text x="1232" y="147" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#000000" font-weight="bold">
-kioxia cm7 (3.2TB)
+<rect x="1215" y="144" width="12" height="12" opacity="1" fill="#7F7F7F" stroke="none"/>
+<text x="1232" y="147" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="11.290322580645162" opacity="1" fill="#000000" font-weight="bold">
+kioxia cm7
 </text>
-<text x="1232" y="158" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#006400">
+<text x="1232" y="158" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="10.483870967741936" opacity="1" fill="#006400">
 4038.5 MB/s
 </text>
 <text x="1232" y="168" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="9.67741935483871" opacity="1" fill="#505050">
 ext4 | format_0_512
 </text>
-<rect x="1215" y="182" width="12" height="12" opacity="1" fill="#B8860B" stroke="none"/>
-<text x="1232" y="185" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#000000" font-weight="bold">
-micron 9550 (3.2TB)
+<rect x="1215" y="182" width="12" height="12" opacity="1" fill="#BCBD22" stroke="none"/>
+<text x="1232" y="185" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="11.290322580645162" opacity="1" fill="#000000" font-weight="bold">
+micron 9550
 </text>
-<text x="1232" y="196" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#006400">
+<text x="1232" y="196" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="10.483870967741936" opacity="1" fill="#006400">
 3674.0 MB/s
 </text>
 <text x="1232" y="206" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="9.67741935483871" opacity="1" fill="#505050">
 xfs | format_0_512
 </text>
-<rect x="1215" y="220" width="12" height="12" opacity="1" fill="#483D8B" stroke="none"/>
-<text x="1232" y="223" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#000000" font-weight="bold">
-micron 9550 (3.2TB)
+<rect x="1215" y="220" width="12" height="12" opacity="1" fill="#17BECF" stroke="none"/>
+<text x="1232" y="223" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="11.290322580645162" opacity="1" fill="#000000" font-weight="bold">
+micron 9550
 </text>
-<text x="1232" y="234" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#006400">
+<text x="1232" y="234" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="10.483870967741936" opacity="1" fill="#006400">
 3672.6 MB/s
 </text>
 <text x="1232" y="244" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="9.67741935483871" opacity="1" fill="#505050">
 xfs | format_0_4096
 </text>
-<rect x="1215" y="258" width="12" height="12" opacity="1" fill="#FF6347" stroke="none"/>
-<text x="1232" y="261" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#000000" font-weight="bold">
-micron 9550 (3.2TB)
+<rect x="1215" y="258" width="12" height="12" opacity="1" fill="#1F77B4" stroke="none"/>
+<text x="1232" y="261" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="11.290322580645162" opacity="1" fill="#000000" font-weight="bold">
+micron 9550
 </text>
-<text x="1232" y="272" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#006400">
+<text x="1232" y="272" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="10.483870967741936" opacity="1" fill="#006400">
 3670.4 MB/s
 </text>
 <text x="1232" y="282" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="9.67741935483871" opacity="1" fill="#505050">
 ext4 | format_0_4096
 </text>
-<rect x="1215" y="296" width="12" height="12" opacity="1" fill="#20B2AA" stroke="none"/>
-<text x="1232" y="299" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#000000" font-weight="bold">
-micron 9550 (3.2TB)
+<rect x="1215" y="296" width="12" height="12" opacity="1" fill="#FF7F0E" stroke="none"/>
+<text x="1232" y="299" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="11.290322580645162" opacity="1" fill="#000000" font-weight="bold">
+micron 9550
 </text>
-<text x="1232" y="310" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#006400">
+<text x="1232" y="310" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="10.483870967741936" opacity="1" fill="#006400">
 3669.0 MB/s
 </text>
 <text x="1232" y="320" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="9.67741935483871" opacity="1" fill="#505050">
 ext4 | format_0_512
 </text>
-<rect x="1215" y="334" width="12" height="12" opacity="1" fill="#C71585" stroke="none"/>
-<text x="1232" y="337" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#000000" font-weight="bold">
-solidigm d7 ps1030 (3.2TB)
+<rect x="1215" y="334" width="12" height="12" opacity="1" fill="#2CA02C" stroke="none"/>
+<text x="1232" y="337" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="11.290322580645162" opacity="1" fill="#000000" font-weight="bold">
+solidigm opal 7 ps1030
 </text>
-<text x="1232" y="348" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#006400">
+<text x="1232" y="348" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="10.483870967741936" opacity="1" fill="#006400">
 832.3 MB/s
 </text>
 <text x="1232" y="358" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="9.67741935483871" opacity="1" fill="#505050">
 ext4 | format_0_512
 </text>
-<rect x="1215" y="372" width="12" height="12" opacity="1" fill="#F4A460" stroke="none"/>
-<text x="1232" y="375" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#000000" font-weight="bold">
-solidigm d7 ps1030 (3.2TB)
+<rect x="1215" y="372" width="12" height="12" opacity="1" fill="#D62728" stroke="none"/>
+<text x="1232" y="375" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="11.290322580645162" opacity="1" fill="#000000" font-weight="bold">
+solidigm opal 7 ps1030
 </text>
-<text x="1232" y="386" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="8.870967741935484" opacity="1" fill="#006400">
+<text x="1232" y="386" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="10.483870967741936" opacity="1" fill="#006400">
 827.3 MB/s
 </text>
 <text x="1232" y="396" dy="0.76em" text-anchor="start" font-family="sans-serif" font-size="9.67741935483871" opacity="1" fill="#505050">
