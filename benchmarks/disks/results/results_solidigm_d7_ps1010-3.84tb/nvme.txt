@@ -1,0 +1,2 @@
+/dev/nvme2n1          /dev/ng2n1            BTCP43650BC63P8BGN   SOLIDIGM SB5PH27X038TOP                  0x1          2.10  MB /   3.84  TB    512   B +  0 B   G70YG100
+/dev/nvme3n1          /dev/ng3n1            BTCP436500EM3P8BGN   SOLIDIGM SB5PH27X038TOP                  0x1          2.10  MB /   3.84  TB    512   B +  0 B   G70YG100

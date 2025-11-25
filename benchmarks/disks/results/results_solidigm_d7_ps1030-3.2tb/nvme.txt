@@ -1,0 +1,2 @@
+/dev/nvme2n1          /dev/ng2n1            PHCP5166002K3P8BGN   SOLIDIGM SB5PH27E032T                    0x1          2.10  MB /   3.20  TB      4 KiB +  0 B   G70YG100
+/dev/nvme3n1          /dev/ng3n1            PHCP5166007S3P8BGN   SOLIDIGM SB5PH27E032T                    0x1          2.10  MB /   3.20  TB      4 KiB +  0 B   G70YG100
