@@ -165,6 +165,7 @@ Running swap files is **highly discouraged** since it masks problems with your s
 | **DedicatedNodes** | [DedicatedNodes](https://www.dedicatednodes.io/solana-nodes/)
 | **Allnodes**       | [Allnodes](https://www.allnodes.com/hosting)
 | **3NV**            | [3NV](https://3nv.io/)
+| **velia.net**      | [velia.net](https://www.velia.net/shop/region/frankfurt-am-main)
 
 More here: [Marinade ISP list](https://app.marinade.finance/network/isps/?countries=&direction=descending&sorting=stake)
 
