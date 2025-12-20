@@ -227,11 +227,13 @@ A: If you've followed the [setup instructions](https://docs.solanalabs.com/opera
 ## Validator Hotswap & Failover
 - [SVS - Switch, Alert and Autofailover by huisky](https://github.com/huiskylabs/solana-validator-switch)
 - [solana-validator-failover - QUIC p2p failovers by SOL Strategies](https://github.com/sol-strategies/solana-validator-failover)
+- [solana-validator-ha - Gossip-based Validator High Availability Mananager by SOL Strategies](https://github.com/sol-strategies/solana-validator-ha)
 - [Pumpkin's Pool Identity Switch & Keyless Operation](https://pumpkins-pool.gitbook.io/pumpkins-pool/keyless-operation)
 - [Anza Guide - Setup Node Failover](https://docs.anza.xyz/operations/guides/validator-failover#triggering-a-failover-via-monitoring)
 
 ## Keeping Validators Updated
 - [solana-validator-version-sync by SOL Strategies](https://github.com/SOL-Strategies/solana-validator-version-sync)
+- [doublezero-version-sync by SOL Strategies](https://github.com/SOL-Strategies/doublezero-version-sync)
 
 ## Upcoming Leader Slots
 - [MasDeFi Leader Schedule](https://masdefi.vercel.app/leaderSchedule)
