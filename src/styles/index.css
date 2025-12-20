@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-solana-dark text-white font-sans;
+  }
+  
+  * {
+    @apply border-solana-dark-border;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-solana-green text-solana-dark font-semibold px-6 py-3 rounded-lg hover:bg-opacity-90 transition-all duration-200;
+  }
+  
+  .card {
+    @apply bg-solana-dark-alt border border-solana-dark-border rounded-lg p-6 hover:border-solana-green transition-all duration-200;
+  }
+  
+  .table-container {
+    @apply overflow-x-auto rounded-lg border border-solana-dark-border;
+  }
+  
+  .table {
+    @apply w-full text-left;
+  }
+  
+  .table th {
+    @apply bg-solana-dark-hover px-4 py-3 text-sm font-semibold text-solana-green border-b border-solana-dark-border;
+  }
+  
+  .table td {
+    @apply px-4 py-3 text-sm border-b border-solana-dark-border;
+  }
+  
+  .table tbody tr:hover {
+    @apply bg-solana-dark-hover;
+  }
+}
+

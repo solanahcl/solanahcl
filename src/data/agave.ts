@@ -1,0 +1,146 @@
+import { CPU } from './hardware';
+
+export const agaveCPUs: CPU[] = [
+  {
+    recommended: true,
+    manufacturer: 'AMD',
+    model: 'Ryzen Threadripper PRO 7965WX',
+    baseClock: '4.20 GHz',
+    maxBoostClock: 'Up to 5.30 GHz',
+    cores: 24,
+    threads: 48,
+    defaultTDP: '350 W',
+    pohSpeed: '22.2M, 20.4M',
+  },
+  {
+    recommended: true,
+    manufacturer: 'AMD',
+    model: 'EPYC 9274F',
+    baseClock: '4.05 GHz',
+    maxBoostClock: 'Up to 4.30 GHz',
+    cores: 24,
+    threads: 48,
+    defaultTDP: '320 W',
+    pohSpeed: '18.1M',
+  },
+  {
+    recommended: true,
+    manufacturer: 'AMD',
+    model: 'Ryzen Threadripper PRO 7975WX',
+    baseClock: '4.00 GHz',
+    maxBoostClock: 'Up to 5.30 GHz',
+    cores: 32,
+    threads: 64,
+    defaultTDP: '350 W',
+  },
+  {
+    recommended: true,
+    manufacturer: 'AMD',
+    model: 'Ryzen Threadripper PRO 7985WX',
+    baseClock: '3.20 GHz',
+    maxBoostClock: 'Up to 5.10 GHz',
+    cores: 64,
+    threads: 128,
+    defaultTDP: '350 W',
+  },
+  {
+    recommended: true,
+    manufacturer: 'AMD',
+    model: 'EPYC 9374F',
+    baseClock: '3.85 GHz',
+    maxBoostClock: 'Up to 4.30 GHz',
+    cores: 32,
+    threads: 64,
+    defaultTDP: '320 W',
+    pohSpeed: '18.2M',
+  },
+  {
+    recommended: true,
+    manufacturer: 'AMD',
+    model: 'EPYC 9375F',
+    baseClock: '3.80 GHz',
+    maxBoostClock: 'Up to 4.80 GHz',
+    cores: 32,
+    threads: 64,
+    defaultTDP: '320 W',
+    pohSpeed: '18.9M-19.3M',
+  },
+  {
+    recommended: true,
+    manufacturer: 'AMD',
+    model: 'EPYC 9275F',
+    baseClock: '4.10 GHz',
+    maxBoostClock: 'Up to 4.80 GHz',
+    cores: 24,
+    threads: 48,
+    defaultTDP: '320 W',
+    pohSpeed: '19.3M',
+  },
+  {
+    recommended: true,
+    manufacturer: 'AMD',
+    model: 'Ryzen Threadripper 7960X',
+    baseClock: '4.20 GHz',
+    maxBoostClock: 'Up to 5.30 GHz',
+    cores: 24,
+    threads: 48,
+    defaultTDP: '350 W',
+    pohSpeed: '20.6M, 19.9M',
+  },
+  {
+    recommended: true,
+    manufacturer: 'AMD',
+    model: 'Ryzen 9 7950X',
+    baseClock: '4.50 GHz',
+    maxBoostClock: 'Up to 5.70 GHz',
+    cores: 16,
+    threads: 32,
+    defaultTDP: '170 W',
+    pohSpeed: '22.4M',
+  },
+  {
+    recommended: true,
+    manufacturer: 'AMD',
+    model: 'Ryzen 9 9950X',
+    baseClock: '4.30 GHz',
+    maxBoostClock: 'Up to 5.70 GHz',
+    cores: 16,
+    threads: 32,
+    defaultTDP: '170 W',
+    pohSpeed: '23M',
+  },
+  {
+    recommended: true,
+    manufacturer: 'AMD',
+    model: 'EPYC 9254',
+    baseClock: '2.90 GHz',
+    maxBoostClock: 'Up to 4.15 GHz',
+    cores: 24,
+    threads: 48,
+    defaultTDP: '200 W',
+    pohSpeed: '17.5M',
+  },
+  {
+    recommended: true,
+    manufacturer: 'AMD',
+    model: 'EPYC 9354P',
+    baseClock: '3.25 GHz',
+    maxBoostClock: 'Up to 3.80 GHz',
+    cores: 32,
+    threads: 64,
+    defaultTDP: '280 W',
+    pohSpeed: '16.1M, 14.4M',
+  },
+];
+
+export const agaveNotes = `AMD is the CPU maker of choice when it comes to running Solana validators. Running Intel processors for a new validator is **strongly discouraged**. Intel Xeon Gold/Platinum (6[45]xx) are the only ones known to be able to possibly keep up with the chain.
+
+**NOTE**: This list is not exhaustive, just a selection of CPUs different folks on the discord have run or are currently running. 
+- 24 cores is the sweet spot for agave, as of 9/2025, frankendancer loves and utilizes more cores especially with revenue scheduler so 32/64 are more viable
+- 12/16 cores will most likely struggle, and
+- more than 32 cores will have a slower base clock speed due to TDP issues (32 cores would possibly be more future proof).
+
+The recommendations also apply to RPC nodes, but RPC nodes require more cores and RAM than validators to perform sufficiently under load. RPC node operators should therefore aim for a slightly higher core count than validator operators.
+
+* The CPU should be capable of at least 10M hashes/sec. Results based on governor set at performance mode.`;
+
