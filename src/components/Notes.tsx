@@ -9,7 +9,6 @@ export default function Notes({ content, title }: NotesProps) {
   const formatText = (text: string): ReactNode => {
     // Handle bold text **text**
     const parts: ReactNode[] = [];
-    let remaining = text;
     let key = 0;
 
     // Process bold text
@@ -87,7 +86,10 @@ export default function Notes({ content, title }: NotesProps) {
         const paragraph = currentParagraph.join(' ').trim();
         if (paragraph) {
           elements.push(
-            <p key={`p-${key++}`} className="text-gray-300 mb-4 leading-relaxed">
+            <p
+              key={`p-${key++}`}
+              className="text-gray-300 mb-4 leading-relaxed"
+            >
               {formatText(paragraph)}
             </p>
           );
@@ -133,10 +135,23 @@ export default function Notes({ content, title }: NotesProps) {
         flushParagraph();
         flushList();
         elements.push(
-          <div key={`note-${key++}`} className="mt-4 p-4 bg-solana-green bg-opacity-10 border-l-4 border-solana-green rounded-r-lg">
+          <div
+            key={`note-${key++}`}
+            className="mt-4 p-4 bg-solana-green bg-opacity-10 border-l-4 border-solana-green rounded-r-lg"
+          >
             <p className="text-gray-200 flex items-start">
-              <svg className="w-5 h-5 text-solana-green mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              <svg
+                className="w-5 h-5 text-solana-green mr-2 flex-shrink-0 mt-0.5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
               </svg>
               <span>{formatText(trimmed)}</span>
             </p>
@@ -160,16 +175,24 @@ export default function Notes({ content, title }: NotesProps) {
     <div className="mb-12">
       {title && (
         <div className="flex items-center mb-4">
-          <svg className="w-6 h-6 text-solana-green mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          <svg
+            className="w-6 h-6 text-solana-green mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+            />
           </svg>
           <h2 className="text-2xl font-bold text-white">{title}</h2>
         </div>
       )}
       <div className="p-6 bg-solana-dark-alt rounded-lg border border-solana-dark-border">
-        <div className="space-y-4">
-          {parseNotes(content)}
-        </div>
+        <div className="space-y-4">{parseNotes(content)}</div>
       </div>
     </div>
   );
