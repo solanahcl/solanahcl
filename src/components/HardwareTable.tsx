@@ -21,7 +21,7 @@ function generateId(item: CPU | StorageDrive, index: number, type: 'cpu' | 'stor
   }
 }
 
-export default function HardwareTable({ cpus, storage, category }: HardwareTableProps) {
+export default function HardwareTable({ cpus, storage }: HardwareTableProps) {
   if (cpus && cpus.length > 0) {
     return (
       <div className="table-container">

@@ -32,7 +32,7 @@ export function searchHardware(query: string): SearchResult[] {
   };
 
   // Search CPUs
-  agaveCPUs.forEach((cpu, index) => {
+  agaveCPUs.forEach((cpu) => {
     const matchScore = getMatchScore(cpu, searchTerm, 'agave');
     if (matchScore > 0) {
       results.push({
@@ -46,7 +46,7 @@ export function searchHardware(query: string): SearchResult[] {
     }
   });
 
-  frankendancerCPUs.forEach((cpu, index) => {
+  frankendancerCPUs.forEach((cpu) => {
     const matchScore = getMatchScore(cpu, searchTerm, 'frankendancer');
     if (matchScore > 0) {
       results.push({
