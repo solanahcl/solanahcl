@@ -82,6 +82,16 @@ export default function SearchBar() {
       window.open(result.link, '_blank');
     } else {
       navigate(result.link);
+      // Scroll to anchor after navigation
+      setTimeout(() => {
+        const hash = result.link.split('#')[1];
+        if (hash) {
+          const element = document.getElementById(hash);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      }, 100);
     }
     setIsOpen(false);
     setQuery('');

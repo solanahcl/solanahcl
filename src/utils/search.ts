@@ -25,8 +25,14 @@ export function searchHardware(query: string): SearchResult[] {
   const searchTerm = query.toLowerCase().trim();
   const results: SearchResult[] = [];
 
+  // Generate ID for CPU
+  const getCpuId = (cpu: CPU): string => {
+    const modelSlug = cpu.model.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+    return `cpu-${cpu.manufacturer.toLowerCase()}-${modelSlug}`;
+  };
+
   // Search CPUs
-  agaveCPUs.forEach((cpu) => {
+  agaveCPUs.forEach((cpu, index) => {
     const matchScore = getMatchScore(cpu, searchTerm, 'agave');
     if (matchScore > 0) {
       results.push({
@@ -35,12 +41,12 @@ export function searchHardware(query: string): SearchResult[] {
         title: `${cpu.manufacturer} ${cpu.model}`,
         subtitle: `${cpu.cores} cores, ${cpu.threads} threads, ${cpu.baseClock}`,
         data: cpu,
-        link: '/category/agave',
+        link: `/category/agave#${getCpuId(cpu)}`,
       });
     }
   });
 
-  frankendancerCPUs.forEach((cpu) => {
+  frankendancerCPUs.forEach((cpu, index) => {
     const matchScore = getMatchScore(cpu, searchTerm, 'frankendancer');
     if (matchScore > 0) {
       results.push({
@@ -49,13 +55,19 @@ export function searchHardware(query: string): SearchResult[] {
         title: `${cpu.manufacturer} ${cpu.model}`,
         subtitle: `${cpu.cores} cores, ${cpu.threads} threads, ${cpu.baseClock}`,
         data: cpu,
-        link: '/category/frankendancer',
+        link: `/category/frankendancer#${getCpuId(cpu)}`,
       });
     }
   });
 
+  // Generate ID for storage
+  const getStorageId = (drive: StorageDrive, index: number): string => {
+    const modelSlug = drive.model.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+    return `storage-${drive.manufacturer.toLowerCase()}-${modelSlug}-${index}`;
+  };
+
   // Search Storage
-  [...enterpriseGen5, ...enterpriseGen4, ...consumerDrives].forEach((drive) => {
+  [...enterpriseGen5, ...enterpriseGen4, ...consumerDrives].forEach((drive, index) => {
     const matchScore = getStorageMatchScore(drive, searchTerm);
     if (matchScore > 0) {
       results.push({
@@ -65,7 +77,7 @@ export function searchHardware(query: string): SearchResult[] {
           drive.generation ? `, ${drive.generation}` : ''
         } - ${drive.randomWrite}`,
         data: drive,
-        link: '/category/agave', // Storage is shown on all category pages
+        link: `/category/agave#${getStorageId(drive, index)}`, // Storage is shown on all category pages
       });
     }
   });

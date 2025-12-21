@@ -14,23 +14,32 @@ export default function Resources() {
         {Object.entries(resourcesByCategory).map(([category, resources]) => (
           <section key={category} className="mb-12">
             <h2 className="text-2xl font-bold text-white mb-6">{category}</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {resources.map((resource, index) => (
-                <a
-                  key={index}
-                  href={resource.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="card block group"
-                >
-                  <h3 className="text-lg font-semibold text-white group-hover:text-solana-green transition-colors mb-2">
-                    {resource.title}
-                  </h3>
-                  <span className="text-sm text-gray-400 group-hover:text-solana-green transition-colors">
-                    Visit resource →
-                  </span>
-                </a>
-              ))}
+            <div className="table-container">
+              <table className="table">
+                <thead>
+                  <tr>
+                    <th>Title</th>
+                    <th>Link</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {resources.map((resource, index) => (
+                    <tr key={index}>
+                      <td className="font-semibold text-white">{resource.title}</td>
+                      <td>
+                        <a
+                          href={resource.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-solana-green hover:underline"
+                        >
+                          {resource.link}
+                        </a>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
           </section>
         ))}
@@ -38,4 +47,3 @@ export default function Resources() {
     </div>
   );
 }
-

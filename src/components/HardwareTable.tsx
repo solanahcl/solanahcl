@@ -3,9 +3,25 @@ import { CPU, StorageDrive } from '../data/hardware';
 interface HardwareTableProps {
   cpus?: CPU[];
   storage?: StorageDrive[];
+  category?: 'agave' | 'frankendancer' | 'firedancer';
 }
 
-export default function HardwareTable({ cpus, storage }: HardwareTableProps) {
+// Generate a unique ID for a CPU or storage drive
+function generateId(item: CPU | StorageDrive, index: number, type: 'cpu' | 'storage'): string {
+  if ('model' in item) {
+    // CPU
+    const cpu = item as CPU;
+    const modelSlug = cpu.model.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+    return `${type}-${cpu.manufacturer.toLowerCase()}-${modelSlug}`;
+  } else {
+    // Storage
+    const drive = item as StorageDrive;
+    const modelSlug = drive.model.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+    return `${type}-${drive.manufacturer.toLowerCase()}-${modelSlug}-${index}`;
+  }
+}
+
+export default function HardwareTable({ cpus, storage, category }: HardwareTableProps) {
   if (cpus && cpus.length > 0) {
     return (
       <div className="table-container">
@@ -26,23 +42,26 @@ export default function HardwareTable({ cpus, storage }: HardwareTableProps) {
             </tr>
           </thead>
           <tbody>
-            {cpus.map((cpu, index) => (
-              <tr key={index}>
-                <td className={cpu.recommended ? 'text-solana-green' : 'text-gray-500'}>
-                  {cpu.recommended ? 'Yes' : 'No'}
-                </td>
-                <td>{cpu.manufacturer}</td>
-                <td className="font-mono text-sm">{cpu.model}</td>
-                <td>{cpu.baseClock}</td>
-                <td>{cpu.maxBoostClock}</td>
-                <td>{cpu.cores}</td>
-                <td>{cpu.threads}</td>
-                <td>{cpu.defaultTDP}</td>
-                {cpu.pohSpeed && <td>{cpu.pohSpeed}</td>}
-                {cpu.testnetCaughtUp && <td>{cpu.testnetCaughtUp}</td>}
-                {cpu.mainnetCaughtUp && <td>{cpu.mainnetCaughtUp}</td>}
-              </tr>
-            ))}
+            {cpus.map((cpu, index) => {
+              const id = generateId(cpu, index, 'cpu');
+              return (
+                <tr key={index} id={id} className="scroll-mt-20">
+                  <td className={cpu.recommended ? 'text-solana-green' : 'text-gray-500'}>
+                    {cpu.recommended ? 'Yes' : 'No'}
+                  </td>
+                  <td>{cpu.manufacturer}</td>
+                  <td className="font-mono text-sm">{cpu.model}</td>
+                  <td>{cpu.baseClock}</td>
+                  <td>{cpu.maxBoostClock}</td>
+                  <td>{cpu.cores}</td>
+                  <td>{cpu.threads}</td>
+                  <td>{cpu.defaultTDP}</td>
+                  {cpu.pohSpeed && <td>{cpu.pohSpeed}</td>}
+                  {cpu.testnetCaughtUp && <td>{cpu.testnetCaughtUp}</td>}
+                  {cpu.mainnetCaughtUp && <td>{cpu.mainnetCaughtUp}</td>}
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </div>
@@ -66,18 +85,21 @@ export default function HardwareTable({ cpus, storage }: HardwareTableProps) {
             </tr>
           </thead>
           <tbody>
-            {storage.map((drive, index) => (
-              <tr key={index}>
-                <td>{drive.manufacturer}</td>
-                <td className="font-mono text-sm">{drive.model}</td>
-                <td>{drive.size}</td>
-                {drive.generation && <td>{drive.generation}</td>}
-                <td>{drive.sequentialRead}</td>
-                <td>{drive.sequentialWrite}</td>
-                <td>{drive.randomRead}</td>
-                <td>{drive.randomWrite}</td>
-              </tr>
-            ))}
+            {storage.map((drive, index) => {
+              const id = generateId(drive, index, 'storage');
+              return (
+                <tr key={index} id={id} className="scroll-mt-20">
+                  <td>{drive.manufacturer}</td>
+                  <td className="font-mono text-sm">{drive.model}</td>
+                  <td>{drive.size}</td>
+                  {drive.generation && <td>{drive.generation}</td>}
+                  <td>{drive.sequentialRead}</td>
+                  <td>{drive.sequentialWrite}</td>
+                  <td>{drive.randomRead}</td>
+                  <td>{drive.randomWrite}</td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </div>
@@ -86,4 +108,3 @@ export default function HardwareTable({ cpus, storage }: HardwareTableProps) {
 
   return null;
 }
-
