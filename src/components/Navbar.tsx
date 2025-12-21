@@ -34,29 +34,39 @@ export default function Navbar() {
     return 'Clients';
   };
 
+  const getCurrentCategoryPath = (): string => {
+    const path = location.pathname;
+    if (path.includes('/category/frankendancer')) return '/category/frankendancer';
+    if (path.includes('/category/firedancer')) return '/category/firedancer';
+    if (path.includes('/category/agave')) return '/category/agave';
+    return '/category/agave'; // Default to agave
+  };
+
+  const currentCategoryPath = getCurrentCategoryPath();
+
   const quickNavItems: NavItem[] = [
     {
       icon: '⚙️',
       title: 'Baseline Hardware',
-      link: '/category/agave',
+      link: currentCategoryPath,
       anchor: '#baseline',
     },
     {
       icon: '✅',
       title: 'Recommended Hardware',
-      link: '/category/agave',
+      link: currentCategoryPath,
       anchor: '#recommended',
     },
     {
       icon: '🔧',
       title: 'CPU Performance',
-      link: '/category/agave',
+      link: currentCategoryPath,
       anchor: '#cpu',
     },
     {
       icon: '💿',
       title: 'Storage',
-      link: '/category/agave',
+      link: currentCategoryPath,
       anchor: '#storage',
     },
     {
