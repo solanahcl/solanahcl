@@ -7,11 +7,13 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      
+
       {/* Providers Section */}
       <section id="providers" className="py-16 bg-solana-dark-alt scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-6">Datacenter Providers</h2>
+          <h2 className="text-3xl font-bold text-white mb-6">
+            Datacenter Providers
+          </h2>
           <div className="table-container">
             <table className="table">
               <thead>
@@ -23,13 +25,15 @@ export default function Home() {
               <tbody>
                 {providers.map((provider, index) => (
                   <tr key={index}>
-                    <td className="font-semibold text-white">{provider.name}</td>
-                    <td>
+                    <td className="font-semibold text-white w-1/3">
+                      {provider.name}
+                    </td>
+                    <td className="text-gray-300">
                       <a
                         href={provider.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-solana-green hover:underline"
+                        className="text-solana-green hover:underline break-all"
                       >
                         {provider.link}
                       </a>
@@ -44,7 +48,7 @@ export default function Home() {
 
       {/* Contributors Section - moved to bottom */}
       <Contributors contributors={contributors} />
-      
+
       {/* Inspired By Section */}
       <section className="py-16 bg-solana-dark">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -60,8 +64,10 @@ export default function Home() {
               <tbody>
                 {inspiredBy.map((person, index) => (
                   <tr key={index}>
-                    <td className="font-semibold text-white">{person.name}</td>
-                    <td>
+                    <td className="font-semibold text-white w-1/3">
+                      {person.name}
+                    </td>
+                    <td className="text-gray-300">
                       <div className="flex flex-wrap gap-4">
                         {person.twitter && (
                           <a

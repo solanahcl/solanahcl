@@ -46,19 +46,19 @@ export default function HardwareTable({ cpus, storage }: HardwareTableProps) {
               const id = generateId(cpu, index, 'cpu');
               return (
                 <tr key={index} id={id} className="scroll-mt-20">
-                  <td className={cpu.recommended ? 'text-solana-green' : 'text-gray-500'}>
+                  <td className={cpu.recommended ? 'text-solana-green font-medium' : 'text-gray-500'}>
                     {cpu.recommended ? 'Yes' : 'No'}
                   </td>
-                  <td>{cpu.manufacturer}</td>
-                  <td className="font-mono text-sm">{cpu.model}</td>
-                  <td>{cpu.baseClock}</td>
-                  <td>{cpu.maxBoostClock}</td>
-                  <td>{cpu.cores}</td>
-                  <td>{cpu.threads}</td>
-                  <td>{cpu.defaultTDP}</td>
-                  {cpu.pohSpeed && <td>{cpu.pohSpeed}</td>}
-                  {cpu.testnetCaughtUp && <td>{cpu.testnetCaughtUp}</td>}
-                  {cpu.mainnetCaughtUp && <td>{cpu.mainnetCaughtUp}</td>}
+                  <td className="text-gray-300">{cpu.manufacturer}</td>
+                  <td className="font-mono text-sm text-gray-300">{cpu.model}</td>
+                  <td className="text-gray-300">{cpu.baseClock}</td>
+                  <td className="text-gray-300">{cpu.maxBoostClock}</td>
+                  <td className="text-gray-300">{cpu.cores}</td>
+                  <td className="text-gray-300">{cpu.threads}</td>
+                  <td className="text-gray-300">{cpu.defaultTDP}</td>
+                  {cpu.pohSpeed && <td className="text-gray-300">{cpu.pohSpeed}</td>}
+                  {cpu.testnetCaughtUp && <td className="text-gray-300">{cpu.testnetCaughtUp}</td>}
+                  {cpu.mainnetCaughtUp && <td className="text-gray-300">{cpu.mainnetCaughtUp}</td>}
                 </tr>
               );
             })}
@@ -89,14 +89,14 @@ export default function HardwareTable({ cpus, storage }: HardwareTableProps) {
               const id = generateId(drive, index, 'storage');
               return (
                 <tr key={index} id={id} className="scroll-mt-20">
-                  <td>{drive.manufacturer}</td>
-                  <td className="font-mono text-sm">{drive.model}</td>
-                  <td>{drive.size}</td>
-                  {drive.generation && <td>{drive.generation}</td>}
-                  <td>{drive.sequentialRead}</td>
-                  <td>{drive.sequentialWrite}</td>
-                  <td>{drive.randomRead}</td>
-                  <td>{drive.randomWrite}</td>
+                  <td className="text-gray-300">{drive.manufacturer}</td>
+                  <td className="font-mono text-sm text-gray-300">{drive.model}</td>
+                  <td className="text-gray-300">{drive.size}</td>
+                  {drive.generation && <td className="text-gray-300">{drive.generation}</td>}
+                  <td className="text-gray-300">{drive.sequentialRead}</td>
+                  <td className="text-gray-300">{drive.sequentialWrite}</td>
+                  <td className="text-gray-300">{drive.randomRead}</td>
+                  <td className="text-gray-300">{drive.randomWrite}</td>
                 </tr>
               );
             })}

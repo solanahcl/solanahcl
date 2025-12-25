@@ -165,16 +165,16 @@ export default function Category() {
             <table className="table">
               <thead>
                 <tr>
-                  <th>Component</th>
+                  <th className="w-32">Component</th>
                   <th>Validator Requirements</th>
                   <th>Additional RPC Node Requirements</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td className="font-semibold">CPU</td>
+                  <td className="font-semibold text-white">CPU</td>
                   <td>
-                    <ul className="list-disc list-inside space-y-1 text-sm">
+                    <ul className="list-disc list-inside space-y-1 text-sm text-gray-300">
                       <li>2.8GHz base clock speed, or faster</li>
                       <li>SHA extensions instruction support</li>
                       <li>AMD Gen 3 or newer / Intel Ice Lake or newer</li>
@@ -184,23 +184,23 @@ export default function Category() {
                       <li>12 cores / 24 threads, or more</li>
                     </ul>
                   </td>
-                  <td>16 cores / 32 threads, or more</td>
+                  <td className="text-gray-300">16 cores / 32 threads, or more</td>
                 </tr>
                 <tr>
-                  <td className="font-semibold">RAM</td>
+                  <td className="font-semibold text-white">RAM</td>
                   <td>
-                    <ul className="list-disc list-inside space-y-1 text-sm">
+                    <ul className="list-disc list-inside space-y-1 text-sm text-gray-300">
                       <li>Error Correction Code (ECC) memory suggested</li>
                       <li>Motherboard with 512GB capacity suggested</li>
                       <li>256GB or more</li>
                     </ul>
                   </td>
-                  <td>512 GB or more for all account indexes</td>
+                  <td className="text-gray-300">512 GB or more for all account indexes</td>
                 </tr>
                 <tr>
-                  <td className="font-semibold">Disk</td>
+                  <td className="font-semibold text-white">Disk</td>
                   <td>
-                    <ul className="list-disc list-inside space-y-1 text-sm">
+                    <ul className="list-disc list-inside space-y-1 text-sm text-gray-300">
                       <li>PCIe Gen3 x4 NVME SSD, or better</li>
                       <li>Accounts: 500GB+ (High TBW)</li>
                       <li>Ledger: 1TB+ (High TBW)</li>
@@ -208,14 +208,14 @@ export default function Category() {
                       <li>OS: 500GB+ (SATA OK)</li>
                     </ul>
                   </td>
-                  <td>
+                  <td className="text-gray-300">
                     Larger ledger disk if longer transaction history required.
                     Accounts and ledger should not be stored on the same disk.
                   </td>
                 </tr>
                 <tr>
-                  <td className="font-semibold">GPUs</td>
-                  <td colSpan={2}>
+                  <td className="font-semibold text-white">GPUs</td>
+                  <td colSpan={2} className="text-gray-300">
                     Not necessary at this time. Operators in the validator community do not use GPUs currently.
                   </td>
                 </tr>

@@ -25,13 +25,13 @@ export default function Resources() {
                 <tbody>
                   {resources.map((resource, index) => (
                     <tr key={index}>
-                      <td className="font-semibold text-white">{resource.title}</td>
-                      <td>
+                      <td className="font-semibold text-white w-1/3">{resource.title}</td>
+                      <td className="text-gray-300">
                         <a
                           href={resource.link}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-solana-green hover:underline"
+                          className="text-solana-green hover:underline break-all"
                         >
                           {resource.link}
                         </a>

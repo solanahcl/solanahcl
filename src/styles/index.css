@@ -26,23 +26,47 @@
   }
   
   .table-container {
-    @apply overflow-x-auto rounded-lg border border-solana-dark-border;
+    @apply overflow-x-auto rounded-lg border border-solana-dark-border bg-solana-dark-alt;
   }
   
   .table {
-    @apply w-full text-left;
+    @apply w-full text-left border-collapse;
   }
   
   .table th {
-    @apply bg-solana-dark-hover px-4 py-3 text-sm font-semibold text-solana-green border-b border-solana-dark-border;
+    @apply bg-solana-dark-hover px-4 py-3 text-sm font-semibold text-solana-green border-b border-solana-dark-border whitespace-nowrap;
+  }
+  
+  .table th:first-child {
+    @apply pl-6;
+  }
+  
+  .table th:last-child {
+    @apply pr-6;
   }
   
   .table td {
-    @apply px-4 py-3 text-sm border-b border-solana-dark-border;
+    @apply px-4 py-3 text-sm border-b border-solana-dark-border text-gray-300;
+  }
+  
+  .table td:first-child {
+    @apply pl-6;
+  }
+  
+  .table td:last-child {
+    @apply pr-6;
+  }
+  
+  .table tbody tr:last-child td {
+    @apply border-b-0;
   }
   
   .table tbody tr:hover {
     @apply bg-solana-dark-hover;
+  }
+  
+  .table tbody tr:last-child:hover {
+    @apply rounded-b-lg;
   }
 }
 

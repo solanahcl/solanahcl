@@ -21,8 +21,8 @@ export default function Contributors({ contributors, title = 'Contributors' }: C
             <tbody>
               {contributors.map((contributor, index) => (
                 <tr key={index}>
-                  <td className="font-semibold text-white">{contributor.name}</td>
-                  <td>
+                  <td className="font-semibold text-white w-1/3">{contributor.name}</td>
+                  <td className="text-gray-300">
                     <div className="flex flex-wrap gap-4">
                       {contributor.twitter && (
                         <a
