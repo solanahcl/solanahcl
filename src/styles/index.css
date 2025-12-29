@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-solana-dark text-white font-sans antialiased;
+  }
+  
+  * {
+    @apply border-solana-dark-border;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-solana-green text-solana-dark font-semibold px-6 py-3 rounded-lg hover:bg-opacity-90 transition-all duration-200;
+  }
+  
+  .card {
+    @apply bg-solana-dark-alt border border-solana-dark-border rounded-lg p-6 hover:border-solana-green transition-all duration-200;
+  }
+  
+  .table-container {
+    @apply overflow-x-auto rounded-lg border border-solana-dark-border bg-solana-dark-alt shadow-lg;
+  }
+  
+  .table {
+    @apply w-full text-left border-collapse;
+  }
+  
+  .table th {
+    @apply bg-solana-dark-hover px-4 py-3 text-xs font-semibold text-solana-green border-b border-solana-dark-border whitespace-nowrap uppercase tracking-wider;
+  }
+  
+  .table th:first-child {
+    @apply pl-6;
+  }
+  
+  .table th:last-child {
+    @apply pr-6;
+  }
+  
+  .table td {
+    @apply px-4 py-3 text-sm border-b border-solana-dark-border text-gray-300;
+  }
+  
+  .table td:first-child {
+    @apply pl-6;
+  }
+  
+  .table td:last-child {
+    @apply pr-6;
+  }
+  
+  .table tbody tr:last-child td {
+    @apply border-b-0;
+  }
+  
+  .table tbody tr:hover {
+    @apply bg-solana-dark-hover transition-colors duration-150;
+  }
+  
+  .table tbody tr:last-child:hover {
+    @apply rounded-b-lg;
+  }
+}
+
