@@ -1,12 +1,33 @@
 import Hero from '../components/Hero';
+import RecommendedHardware from '../components/RecommendedHardware';
 import Contributors from '../components/Contributors';
+import SEO from '../components/SEO';
 import { providers } from '../data/providers';
 import { contributors, inspiredBy } from '../data/contributors';
+
+// Static SEO data for Home page
+const HOME_SEO = {
+  title:
+    'Solana Hardware Compatibility List - Recommended Hardware for Validators',
+  description:
+    'Community-maintained hardware guide for running Solana validators. Find recommended CPUs, storage solutions, and datacenter providers for Agave, Frankendancer, and Firedancer.',
+  keywords:
+    'Solana validator hardware, Solana HCL, validator CPU recommendations, Solana storage, datacenter providers',
+};
 
 export default function Home() {
   return (
     <div>
+      <SEO
+        title={HOME_SEO.title}
+        description={HOME_SEO.description}
+        keywords={HOME_SEO.keywords}
+      />
+
       <Hero />
+
+      {/* Recommended Hardware Section */}
+      <RecommendedHardware />
 
       {/* Providers Section */}
       <section id="providers" className="py-16 bg-solana-dark-alt scroll-mt-20">

@@ -8,7 +8,7 @@
   }
   
   body {
-    @apply bg-solana-dark text-white font-sans;
+    @apply bg-solana-dark text-white font-sans antialiased;
   }
   
   * {
@@ -26,7 +26,7 @@
   }
   
   .table-container {
-    @apply overflow-x-auto rounded-lg border border-solana-dark-border bg-solana-dark-alt;
+    @apply overflow-x-auto rounded-lg border border-solana-dark-border bg-solana-dark-alt shadow-lg;
   }
   
   .table {
@@ -34,7 +34,7 @@
   }
   
   .table th {
-    @apply bg-solana-dark-hover px-4 py-3 text-sm font-semibold text-solana-green border-b border-solana-dark-border whitespace-nowrap;
+    @apply bg-solana-dark-hover px-4 py-3 text-xs font-semibold text-solana-green border-b border-solana-dark-border whitespace-nowrap uppercase tracking-wider;
   }
   
   .table th:first-child {
@@ -62,7 +62,7 @@
   }
   
   .table tbody tr:hover {
-    @apply bg-solana-dark-hover;
+    @apply bg-solana-dark-hover transition-colors duration-150;
   }
   
   .table tbody tr:last-child:hover {
