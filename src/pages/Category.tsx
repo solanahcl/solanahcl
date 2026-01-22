@@ -12,6 +12,37 @@ import {
   consumerDrives,
   storageNotes,
 } from '../data/storage';
+import { networkCards, networkNotes } from '../data/network';
+
+// Reusable section heading with anchor link
+function SectionHeading({
+  id,
+  level = 2,
+  children,
+}: {
+  id: string;
+  level?: 2 | 3;
+  children: React.ReactNode;
+}) {
+  const HeadingTag = level === 2 ? 'h2' : 'h3';
+  const headingClass =
+    level === 2
+      ? 'text-2xl font-bold text-white mb-4'
+      : 'text-xl font-semibold text-white mb-4';
+
+  return (
+    <HeadingTag className={`${headingClass} group flex items-center gap-2`}>
+      {children}
+      <a
+        href={`#${id}`}
+        className="opacity-0 group-hover:opacity-100 transition-opacity text-gray-400 hover:text-solana-green"
+        aria-label={`Link to ${children} section`}
+      >
+        #
+      </a>
+    </HeadingTag>
+  );
+}
 
 // Static SEO data for Category pages
 const CATEGORY_SEO: Record<
@@ -114,9 +145,7 @@ export default function Category() {
         <p className="text-xl text-gray-300 mb-8">{categoryData.description}</p>
 
         <section id="baseline" className="mb-12 scroll-mt-20">
-          <h2 className="text-2xl font-bold text-white mb-4">
-            Baseline Hardware
-          </h2>
+          <SectionHeading id="baseline">Baseline Hardware</SectionHeading>
           <p className="text-gray-300 mb-4">
             Minimum specifications for running a Solana validator node. Source:{' '}
             <a
@@ -297,49 +326,54 @@ export default function Category() {
         </section>
 
         <section id="recommended" className="mb-12 scroll-mt-20">
-          <h2 className="text-2xl font-bold text-white mb-4">
-            Recommended Hardware
-          </h2>
+          <SectionHeading id="recommended">Recommended Hardware</SectionHeading>
           {categoryData.notes && <Notes content={categoryData.notes} />}
         </section>
 
         {categoryData.cpus && categoryData.cpus.length > 0 && (
           <section id="cpu" className="mb-12 scroll-mt-20">
-            <h2 className="text-2xl font-bold text-white mb-6">
-              Recommended CPUs
-            </h2>
+            <SectionHeading id="cpu">Recommended CPUs</SectionHeading>
             <HardwareTable cpus={categoryData.cpus} category={type} />
           </section>
         )}
 
         {/* Storage Section - shown for all categories */}
         <section id="storage" className="mb-12 scroll-mt-20">
-          <h2 className="text-2xl font-bold text-white mb-6">
-            Storage Recommendations
-          </h2>
+          <SectionHeading id="storage">Storage Recommendations</SectionHeading>
 
           <Notes content={storageNotes} />
 
-          <div className="mb-8">
-            <h3 className="text-xl font-semibold text-white mb-4">
+          <div id="enterprise-gen5" className="mb-8 scroll-mt-20">
+            <SectionHeading id="enterprise-gen5" level={3}>
               Enterprise Gen 5 (PCIe 5.0)
-            </h3>
+            </SectionHeading>
             <HardwareTable storage={enterpriseGen5} />
           </div>
 
-          <div className="mb-8">
-            <h3 className="text-xl font-semibold text-white mb-4">
+          <div id="enterprise-gen4" className="mb-8 scroll-mt-20">
+            <SectionHeading id="enterprise-gen4" level={3}>
               Enterprise Gen 4 (PCIe 4.0)
-            </h3>
+            </SectionHeading>
             <HardwareTable storage={enterpriseGen4} />
           </div>
 
-          <div>
-            <h3 className="text-xl font-semibold text-white mb-4">
+          <div id="consumer-drives" className="scroll-mt-20">
+            <SectionHeading id="consumer-drives" level={3}>
               Consumer Drives
-            </h3>
+            </SectionHeading>
             <HardwareTable storage={consumerDrives} />
           </div>
+        </section>
+
+        {/* Network Section - shown for all categories */}
+        <section id="network" className="mb-12 scroll-mt-20">
+          <SectionHeading id="network">
+            Network Interface Cards (NICs)
+          </SectionHeading>
+
+          <Notes content={networkNotes} />
+
+          <HardwareTable network={networkCards} />
         </section>
       </div>
     </div>

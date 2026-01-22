@@ -1,27 +1,19 @@
-import { CPU, StorageDrive } from '../data/hardware';
+import { CPU, StorageDrive, NetworkCard } from '../data/hardware';
 
 interface HardwareTableProps {
   cpus?: CPU[];
   storage?: StorageDrive[];
+  network?: NetworkCard[];
   category?: 'agave' | 'frankendancer' | 'firedancer';
 }
 
-// Generate a unique ID for a CPU or storage drive
-function generateId(item: CPU | StorageDrive, index: number, type: 'cpu' | 'storage'): string {
-  if ('model' in item) {
-    // CPU
-    const cpu = item as CPU;
-    const modelSlug = cpu.model.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
-    return `${type}-${cpu.manufacturer.toLowerCase()}-${modelSlug}`;
-  } else {
-    // Storage
-    const drive = item as StorageDrive;
-    const modelSlug = drive.model.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
-    return `${type}-${drive.manufacturer.toLowerCase()}-${modelSlug}-${index}`;
-  }
+// Generate a unique ID for a CPU, storage drive, or network card
+function generateId(item: CPU | StorageDrive | NetworkCard, index: number, type: 'cpu' | 'storage' | 'network'): string {
+  const modelSlug = item.model.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+  return `${type}-${item.manufacturer.toLowerCase()}-${modelSlug}-${index}`;
 }
 
-export default function HardwareTable({ cpus, storage }: HardwareTableProps) {
+export default function HardwareTable({ cpus, storage, network }: HardwareTableProps) {
   if (cpus && cpus.length > 0) {
     return (
       <div className="table-container">
@@ -97,6 +89,38 @@ export default function HardwareTable({ cpus, storage }: HardwareTableProps) {
                   <td className="text-gray-300">{drive.sequentialWrite}</td>
                   <td className="text-gray-300">{drive.randomRead}</td>
                   <td className="text-gray-300">{drive.randomWrite}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+    );
+  }
+
+  if (network && network.length > 0) {
+    return (
+      <div className="table-container">
+        <table className="table">
+          <thead>
+            <tr>
+              <th>Manufacturer</th>
+              <th>Model</th>
+              <th>Speed</th>
+              <th>Ports</th>
+              <th>Media</th>
+            </tr>
+          </thead>
+          <tbody>
+            {network.map((nic, index) => {
+              const id = generateId(nic, index, 'network');
+              return (
+                <tr key={index} id={id} className="scroll-mt-20">
+                  <td className="text-gray-300">{nic.manufacturer}</td>
+                  <td className="font-mono text-sm text-gray-300">{nic.model}</td>
+                  <td className="text-gray-300">{nic.speed}</td>
+                  <td className="text-gray-300">{nic.ports}</td>
+                  <td className="text-gray-300 capitalize">{nic.media}</td>
                 </tr>
               );
             })}

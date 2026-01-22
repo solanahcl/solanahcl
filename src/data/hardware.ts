@@ -27,6 +27,15 @@ export interface StorageDrive {
   notes?: string;
 }
 
+export interface NetworkCard {
+  manufacturer: string;
+  model: string;
+  speed: string;
+  ports: number;
+  media: 'optical' | 'copper' | 'both';
+  notes?: string;
+}
+
 export interface Provider {
   name: string;
   link: string;
