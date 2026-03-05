@@ -3,6 +3,7 @@ import RecommendedHardware from '../components/RecommendedHardware';
 import Contributors from '../components/Contributors';
 import SEO from '../components/SEO';
 import { providers } from '../data/providers';
+import { doubleZeroRings } from '../data/doublezero';
 import { contributors, inspiredBy } from '../data/contributors';
 
 // Static SEO data for Home page
@@ -63,6 +64,51 @@ export default function Home() {
                 ))}
               </tbody>
             </table>
+          </div>
+        </div>
+      </section>
+
+      {/* DoubleZero Section */}
+      <section id="doublezero" className="py-12 bg-solana-dark scroll-mt-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="text-2xl font-bold text-white">
+              DoubleZero Phase II
+            </h2>
+            <a
+              href="/category/doublezero"
+              className="text-solana-green hover:underline text-sm"
+            >
+              View all →
+            </a>
+          </div>
+          <p className="text-gray-400 mb-6 max-w-3xl text-sm">
+            Bonus stake delegated to validators in Ring 2 & Ring 3 regions to
+            strengthen Solana's geographic decentralization.
+          </p>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            {doubleZeroRings.map((ring) => (
+              <div key={ring.ring} className="card">
+                <h3 className="text-lg font-semibold text-white mb-1">
+                  {ring.ring}
+                </h3>
+                <p className="text-gray-400 text-xs mb-3">{ring.regions}</p>
+                <div className="flex flex-wrap gap-2">
+                  {ring.providers.map((provider) => (
+                    <a
+                      key={`${ring.ring}-${provider.name}`}
+                      href={provider.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-solana-green hover:underline"
+                    >
+                      {provider.name}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

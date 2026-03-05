@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Category from './pages/Category';
+import DoubleZero from './pages/DoubleZero';
 import Resources from './pages/Resources';
 import './styles/index.css';
 
@@ -12,6 +13,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/category/doublezero" element={<DoubleZero />} />
           <Route path="/category/:type" element={<Category />} />
           <Route path="/resources" element={<Resources />} />
         </Routes>
