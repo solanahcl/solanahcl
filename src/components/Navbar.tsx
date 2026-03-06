@@ -31,6 +31,7 @@ export default function Navbar() {
     if (path.includes('/category/agave')) return 'Agave';
     if (path.includes('/category/frankendancer')) return 'Frankendancer';
     if (path.includes('/category/firedancer')) return 'Firedancer';
+    if (path.includes('/category/doublezero')) return 'DoubleZero';
     return 'Clients';
   };
 
@@ -38,6 +39,7 @@ export default function Navbar() {
     const path = location.pathname;
     if (path.includes('/category/frankendancer')) return '/category/frankendancer';
     if (path.includes('/category/firedancer')) return '/category/firedancer';
+    if (path.includes('/category/doublezero')) return '/category/doublezero';
     if (path.includes('/category/agave')) return '/category/agave';
     return '/category/agave'; // Default to agave
   };
@@ -86,6 +88,7 @@ export default function Navbar() {
     { name: 'Agave', path: '/category/agave' },
     { name: 'Frankendancer', path: '/category/frankendancer' },
     { name: 'Firedancer', path: '/category/firedancer' },
+    { name: 'DoubleZero', path: '/category/doublezero' },
   ];
 
   // Close dropdowns when clicking outside
