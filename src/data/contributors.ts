@@ -26,6 +26,11 @@ export const contributors: Contributor[] = [
     twitter: 'https://x.com/dhruvsol',
     website: 'https://www.dhruvsol.io',
   },
+  {
+    name: 'frbrkoala',
+    twitter: 'https://x.com/frbrkoala',
+    website: 'https://aws.amazon.com',
+  },
 ];
 
 export const inspiredBy: Contributor[] = [
