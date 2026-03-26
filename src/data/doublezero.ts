@@ -20,6 +20,7 @@ export const doubleZeroRings: RingProviders[] = [
       { name: 'Cherry', link: 'https://www.cherryservers.com/bare-metal-dedicated-servers' },
       { name: 'velia.net', link: 'https://www.velia.net' },
       { name: 'Koddos', link: 'https://www.koddos.net' },
+      { name: 'Allnodes', link: 'https://www.allnodes.com/hosting/solana' },
     ],
   },
   {
@@ -31,6 +32,7 @@ export const doubleZeroRings: RingProviders[] = [
       { name: 'Edgevana', link: 'https://srv.edgevana.com/solana-validator-servers' },
       { name: 'Latitude', link: 'https://latitude.sh' },
       { name: 'Cherry', link: 'https://www.cherryservers.com/bare-metal-dedicated-servers' },
+      { name: 'Allnodes', link: 'https://www.allnodes.com/hosting/solana' },
     ],
   },
 ];
