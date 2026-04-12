@@ -33,7 +33,7 @@ export const networkCards: NetworkCard[] = [
         speed: '10 GbE',
         ports: 2,
         media: 'copper',
-        notes: 'Common in OEM servers. Basic XDP support.'
+        notes: "Common in OEM servers. Basic XDP support. Driver 'bnxt' does NOT support XDP zero-copy."
     },
 ];
 
