@@ -21,6 +21,7 @@ export const doubleZeroRings: RingProviders[] = [
       { name: 'velia.net', link: 'https://www.velia.net' },
       { name: 'Koddos', link: 'https://www.koddos.net' },
       { name: 'Allnodes', link: 'https://www.allnodes.com/hosting/solana' },
+      { name: 'DedicatedNodes', link: 'https://www.dedicatednodes.io/solana-servers' },
     ],
   },
   {
