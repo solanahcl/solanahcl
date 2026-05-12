@@ -42,6 +42,7 @@ export const resources: Resource[] = [
   { title: 'Jito StakeNet', link: 'https://www.jito.network/stakenet/', category: 'Dashboards' },
   { title: 'stakewiz.com', link: 'https://stakewiz.com', category: 'Dashboards' },
   { title: '1000x.sh Validators', link: 'https://1000x.sh/validators', category: 'Dashboards' },
+  { title: 'ValidBlocks.com', link: 'https://dashboards.validblocks.com/', category: 'Dashboards' },
   
   // Apps
   { title: 'Gate Omega - Solcircl', link: 'https://gateomega.com/solcircl/', category: 'Apps' },
