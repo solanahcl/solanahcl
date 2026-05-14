@@ -18,6 +18,15 @@ export const networkCards: NetworkCard[] = [
         media: 'both',
         notes: 'Top-tier Intel NIC with full XDP support. QSFP28 connections.'
     },
+    // NVIDIA/Mellanox ConnectX Series
+    {
+        manufacturer: 'NVIDIA/Mellanox',
+        model: 'ConnectX-6 / ConnectX-7',
+        speed: '100+ GbE',
+        ports: 2,
+        media: 'both',
+        notes: 'mlx5 driver with excellent AF_XDP zero-copy support. More expensive than Intel E810 options.'
+    },
     // Budget-friendly options
     {
         manufacturer: 'Intel',
@@ -31,7 +40,9 @@ export const networkCards: NetworkCard[] = [
 
 export const networkNotes = `Network interface cards with native XDP (eXpress Data Path) driver support are essential for Agave validators running version 3.0.9+. XDP accelerates Turbine packet processing by bypassing the Linux networking stack.
 
-**Recommended:** 25 GbE or higher with native XDP driver support. NVIDIA ConnectX series (mlx5 driver) and Intel E810 series are top choices.
+**Recommended:** 25 GbE or higher with native XDP driver support.
+- Intel E810 series
+- NVIDIA/Mellanox ConnectX-6 or ConnectX-7. Uses the mlx5 driver with excellent zero-copy support, but is more expensive.
 
 **Minimum:** 10 GbE symmetric connection. Higher speeds recommended for mainnet validators.
 

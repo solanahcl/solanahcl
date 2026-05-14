@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { searchHardware, SearchResult } from '../utils/search';
 
@@ -40,6 +40,27 @@ export default function SearchBar() {
     };
   }, []);
 
+  const handleSelectResult = useCallback((result: SearchResult) => {
+    if (result.type === 'provider') {
+      window.open(result.link, '_blank');
+    } else {
+      navigate(result.link);
+      // Scroll to anchor after navigation
+      setTimeout(() => {
+        const hash = result.link.split('#')[1];
+        if (hash) {
+          const element = document.getElementById(hash);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      }, 100);
+    }
+    setIsOpen(false);
+    setQuery('');
+    inputRef.current?.blur();
+  }, [navigate]);
+
   // Handle keyboard navigation
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
@@ -75,28 +96,7 @@ export default function SearchBar() {
         document.removeEventListener('keydown', handleKeyDown);
       };
     }
-  }, [isOpen, results, selectedIndex]);
-
-  const handleSelectResult = (result: SearchResult) => {
-    if (result.type === 'provider') {
-      window.open(result.link, '_blank');
-    } else {
-      navigate(result.link);
-      // Scroll to anchor after navigation
-      setTimeout(() => {
-        const hash = result.link.split('#')[1];
-        if (hash) {
-          const element = document.getElementById(hash);
-          if (element) {
-            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }
-        }
-      }, 100);
-    }
-    setIsOpen(false);
-    setQuery('');
-    inputRef.current?.blur();
-  };
+  }, [handleSelectResult, isOpen, results, selectedIndex]);
 
   const highlightMatch = (text: string, searchTerm: string) => {
     if (!searchTerm) return text;
@@ -221,4 +221,3 @@ export default function SearchBar() {
     </div>
   );
 }
-
