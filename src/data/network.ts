@@ -27,14 +27,6 @@ export const networkCards: NetworkCard[] = [
         media: 'copper',
         notes: 'Reliable 10GbE option with XDP support via ixgbe driver.'
     },
-    {
-        manufacturer: 'Broadcom',
-        model: 'BCM57416',
-        speed: '10 GbE',
-        ports: 2,
-        media: 'copper',
-        notes: "Common in OEM servers. Basic XDP support. Driver 'bnxt' does NOT support XDP zero-copy."
-    },
 ];
 
 export const networkNotes = `Network interface cards with native XDP (eXpress Data Path) driver support are essential for Agave validators running version 3.0.9+. XDP accelerates Turbine packet processing by bypassing the Linux networking stack.
