@@ -25,6 +25,7 @@ export const enterpriseGen5: StorageDrive[] = [
   { manufacturer: 'Kioxia', model: 'CM7-R', size: '7.68 TB', sequentialRead: '14,000 MB/s', sequentialWrite: '6,750 MB/s', randomRead: '2,450K IOPS', randomWrite: '300K IOPS', notes: 'There have been a few reports of Kioxia\'s being unreliable on the discord, so proceed with caution.' },
   { manufacturer: 'Samsung', model: 'PM1743', size: '7.68 TB', sequentialRead: '14,000 MB/s', sequentialWrite: '6,000 MB/s', randomRead: '2,500K IOPS', randomWrite: '300K IOPS' },
   { manufacturer: 'Samsung', model: 'PM1743', size: '3.84 TB', sequentialRead: '14,000 MB/s', sequentialWrite: '6,000 MB/s', randomRead: '2,500K IOPS', randomWrite: '280K IOPS' },
+  { manufacturer: 'AWS', model: '3rd gen AWS Nitro SSDs', size: 'up to 7.5 TB', sequentialRead: '', sequentialWrite: '', randomRead: '', randomWrite: '', notes: 'Recommended for running RPC nodes on AWS only'},
 ];
 
 export const enterpriseGen4: StorageDrive[] = [

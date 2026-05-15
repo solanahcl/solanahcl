@@ -10,6 +10,7 @@ export const providers: Provider[] = [
   { name: 'Allnodes', link: 'https://www.allnodes.com/hosting' },
   { name: '3NV', link: 'https://3nv.io/' },
   { name: 'velia.net', link: 'https://www.velia.net/shop/region/frankfurt-am-main' },
+  { name: 'AWS', link: 'https://aws.amazon.com/' },
 ];
 
 export const providerNotes = `More providers available: [Marinade ISP list](https://app.marinade.finance/network/isps/?countries=&direction=descending&sorting=stake)
@@ -23,6 +24,7 @@ export const providerNotes = `More providers available: [Marinade ISP list](http
 - Verify the speed and uplink of the provider; low latency is crucial.
 - Ask the provider about the hardware specifications, focusing on higher RAM frequencies.
 - Before using your validator, confirm that all hardware components are functioning as expected.
+- While running nodes on AWS is technically feasible, it incurs higher costs. This option should only be considered when cost is secondary to other critical factors, such as specific compliance requirements, application proximity, or elasticity needs. Talk to your AWS account manager about discounts. 
 
 #### Free to test for beginners
 

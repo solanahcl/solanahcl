@@ -131,9 +131,20 @@ export const agaveCPUs: CPU[] = [
     defaultTDP: '280 W',
     pohSpeed: '16.1M, 14.4M',
   },
+  {
+    recommended: true,
+    manufacturer: 'Intel',
+    model: 'Xeon Platinum 8559C',
+    baseClock: '2.1 GHz',
+    maxBoostClock: 'Up to 4.0 GHz',
+    cores: 48,
+    threads: 96,
+    defaultTDP: '330 W',
+    notes: 'Recommended for running RPC nodes on AWS only'
+  },
 ];
 
-export const agaveNotes = `AMD is the CPU maker of choice when it comes to running Solana validators. Running Intel processors for a new validator is **strongly discouraged**. Intel Xeon Gold/Platinum (6[45]xx) are the only ones known to be able to possibly keep up with the chain.
+export const agaveNotes = `AMD is the CPU maker of choice when it comes to running Solana validators. Running Intel processors for a new validator is **strongly discouraged**. Intel Xeon Gold/Platinum (6[45]xx) and 8558 are the only ones known to be able to possibly keep up with the chain and are suitable for RPC nodes.
 
 **NOTE**: This list is not exhaustive, just a selection of CPUs different folks on the discord have run or are currently running. 
 - 24 cores is the sweet spot for agave, as of 9/2025, frankendancer loves and utilizes more cores especially with revenue scheduler so 32/64 are more viable
