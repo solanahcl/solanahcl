@@ -43,6 +43,7 @@ export const resources: Resource[] = [
   { title: 'stakewiz.com', link: 'https://stakewiz.com', category: 'Dashboards' },
   { title: '1000x.sh Validators', link: 'https://1000x.sh/validators', category: 'Dashboards' },
   { title: 'ValidBlocks.com', link: 'https://dashboards.validblocks.com/', category: 'Dashboards' },
+  { title: 'validator.info', link: 'https://validator.info/solana', category: 'Dashboards' },
   
   // Apps
   { title: 'Gate Omega - Solcircl', link: 'https://gateomega.com/solcircl/', category: 'Apps' },
