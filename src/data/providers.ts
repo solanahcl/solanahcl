@@ -10,6 +10,7 @@ export const providers: Provider[] = [
   { name: 'Allnodes', link: 'https://www.allnodes.com/hosting' },
   { name: '3NV', link: 'https://3nv.io/' },
   { name: 'velia.net', link: 'https://www.velia.net/shop/region/frankfurt-am-main' },
+  { name: 'Koddos', link: 'https://www.koddos.net' },
 ];
 
 export const providerNotes = `More providers available: [Marinade ISP list](https://app.marinade.finance/network/isps/?countries=&direction=descending&sorting=stake)
@@ -30,4 +31,3 @@ Some providers offer a test phase before you commit to renting with them, often 
 
 - [CherryServers](https://www.cherryservers.com/bare-metal-dedicated-servers)
 - [DedicatedNodes](https://www.dedicatednodes.io/solana-nodes) - any of the instant servers`;
-
