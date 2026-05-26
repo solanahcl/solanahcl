@@ -27,6 +27,15 @@ export const networkCards: NetworkCard[] = [
         media: 'both',
         notes: 'mlx5 driver with excellent AF_XDP zero-copy support. More expensive than Intel E810 options.'
     },
+    // Intel mid-tier PCI 3.0
+    {
+        manufacturer: 'Intel',
+        model: 'Intel XXV710',
+        speed: '25 GbE',
+        ports: 2,
+        media: 'both',
+        notes: 'Supports Native XDP and zero-copy with latest i40e drivers.'
+    },
     // Budget-friendly options
     {
         manufacturer: 'Intel',
