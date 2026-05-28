@@ -1,58 +1,90 @@
 import { NetworkCard } from './hardware';
 
 export const networkCards: NetworkCard[] = [
-    // Intel E810 Series
-    {
-        manufacturer: 'Intel',
-        model: 'E810-XXVDA2',
-        speed: '25 GbE',
-        ports: 2,
-        media: 'both',
-        notes: 'Native XDP and AF_XDP zero-copy support. SFP28 connections.'
-    },
-    {
-        manufacturer: 'Intel',
-        model: 'E810-CQDA2',
-        speed: '100 GbE',
-        ports: 2,
-        media: 'both',
-        notes: 'Top-tier Intel NIC with full XDP support. QSFP28 connections.'
-    },
-    // NVIDIA/Mellanox ConnectX Series
+    // High-confidence / preferred families
     {
         manufacturer: 'NVIDIA/Mellanox',
-        model: 'ConnectX-6 / ConnectX-7',
-        speed: '100+ GbE',
-        ports: 2,
-        media: 'both',
-        notes: 'mlx5 driver with excellent AF_XDP zero-copy support. More expensive than Intel E810 options.'
+        model: 'ConnectX-5 / ConnectX-6 Lx',
+        driver: 'mlx5',
+        afXdpWithoutZeroCopy: 'Works',
+        afXdpWithZeroCopy: 'Works',
+        notes: 'Operator reports: mlx5 works with XDP + ZC on kernel 6.8. ConnectX-6 Lx worked after kernel 6.17 upgrade. Highest-confidence family in the discussion.'
     },
-    // Intel mid-tier PCI 3.0
     {
         manufacturer: 'Intel',
-        model: 'Intel XXV710',
-        speed: '25 GbE',
-        ports: 2,
-        media: 'both',
-        notes: 'Supports Native XDP and zero-copy with latest i40e drivers.'
+        model: '700 series',
+        driver: 'i40e',
+        afXdpWithoutZeroCopy: 'Works',
+        afXdpWithZeroCopy: 'Works',
+        notes: 'Operator report: i40e works with XDP + ZC on kernel 6.8.'
     },
-    // Budget-friendly options
     {
         manufacturer: 'Intel',
-        model: 'X550-T2',
-        speed: '10 GbE',
-        ports: 2,
-        media: 'copper',
-        notes: 'Reliable 10GbE option with XDP support via ixgbe driver.'
+        model: 'I210',
+        driver: 'igb',
+        afXdpWithoutZeroCopy: 'Works',
+        afXdpWithZeroCopy: 'Works with caveat',
+        notes: 'Caveat: igb requires kernel >= 6.14 for ZC. Field report: I210 on 6.17 enabled ZC but had severe network degradation/high skips, so fall back to non-ZC if unstable.'
+    },
+    {
+        manufacturer: 'Intel',
+        model: 'E800 series',
+        driver: 'ice',
+        afXdpWithoutZeroCopy: 'Works',
+        afXdpWithZeroCopy: 'Works',
+        notes: 'ice supports native XDP and AF_XDP zero-copy. Caveat: XDP is blocked for frame sizes larger than 3KB.'
+    },
+
+    // Mixed / unsupported families
+    {
+        manufacturer: 'Intel',
+        model: 'X540 / X550',
+        driver: 'ixgbe',
+        afXdpWithoutZeroCopy: 'Works',
+        afXdpWithZeroCopy: 'Mixed / unstable',
+        notes: 'Alessandro guidance for freeze/link-flap cases: start without ZC while ixgbe is debugged. Stay tuned.'
+    },
+    {
+        manufacturer: 'Broadcom',
+        model: 'Broadcom',
+        driver: 'bnxt_en',
+        afXdpWithoutZeroCopy: 'Works',
+        afXdpWithZeroCopy: 'Does not work',
+        notes: 'bnxt_en works with XDP, but does not pass the zero-copy flag. Broadcom non-ZC can still be reasonably fast. Get a non-Broadcom NIC when possible.'
+    },
+    {
+        manufacturer: 'Broadcom',
+        model: 'BCM5720',
+        driver: 'tg3',
+        afXdpWithoutZeroCopy: 'No native/driver XDP; generic XDP only at best',
+        afXdpWithZeroCopy: 'Does not work',
+        notes: 'Broadcom BCM5720 uses the tg3 driver. Treat as unsupported for Agave/AF_XDP performance work: no native XDP and no AF_XDP zero-copy.'
+    },
+    {
+        manufacturer: 'Realtek',
+        model: 'Realtek',
+        driver: 'r8169',
+        afXdpWithoutZeroCopy: 'No native/driver XDP; generic XDP only at best',
+        afXdpWithZeroCopy: 'Does not work',
+        notes: 'Realtek NICs using r8169 should be treated as unsupported for Agave/AF_XDP performance work: no native XDP and no AF_XDP zero-copy.'
+    },
+    {
+        manufacturer: 'NVIDIA/Mellanox',
+        model: 'ConnectX-3',
+        driver: 'mlx4_en',
+        afXdpWithoutZeroCopy: 'Does not work',
+        afXdpWithZeroCopy: 'Does not work',
+        notes: 'Driver is no longer supported. Zero-copy does not work. Do not use.'
     },
 ];
 
 export const networkNotes = `Network interface cards with native XDP (eXpress Data Path) driver support are essential for Agave validators running version 3.0.9+. XDP accelerates Turbine packet processing by bypassing the Linux networking stack.
 
 **Recommended:** 25 GbE or higher with native XDP driver support.
-- Intel E810 series
-- NVIDIA/Mellanox ConnectX-6 or ConnectX-7. Uses the mlx5 driver with excellent zero-copy support, but is more expensive.
+- NVIDIA/Mellanox ConnectX-5 or ConnectX-6 Lx using mlx5.
+- Intel 700 series using i40e.
+- Intel E800 series using ice.
 
 **Minimum:** 10 GbE symmetric connection. Higher speeds recommended for mainnet validators.
 
-NICs are listed by speed tier. Optical/SFP connections typically offer better performance than copper for 25GbE+.`;
+Prefer families that support AF_XDP with zero-copy. If zero-copy is unstable on a specific host, run without ZC before replacing the NIC.`;

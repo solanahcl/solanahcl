@@ -30,9 +30,12 @@ export interface StorageDrive {
 export interface NetworkCard {
   manufacturer: string;
   model: string;
-  speed: string;
-  ports: number;
-  media: 'optical' | 'copper' | 'both';
+  speed?: string;
+  ports?: number;
+  media?: 'optical' | 'copper' | 'both';
+  driver?: string;
+  afXdpWithoutZeroCopy?: string;
+  afXdpWithZeroCopy?: string;
   notes?: string;
 }
 
@@ -63,4 +66,3 @@ export interface Category {
 }
 
 export type CategoryType = 'agave' | 'frankendancer' | 'firedancer';
-

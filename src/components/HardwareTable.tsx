@@ -13,6 +13,61 @@ function generateId(item: CPU | StorageDrive | NetworkCard, index: number, type:
   return `${type}-${item.manufacturer.toLowerCase()}-${modelSlug}-${index}`;
 }
 
+function networkStatusClass(status?: string): string {
+  if (!status) {
+    return 'text-gray-300';
+  }
+
+  const normalized = status.toLowerCase();
+
+  if (normalized.includes('does not') || normalized.includes('do not work') || normalized.includes('no native') || normalized.includes('do not use')) {
+    return 'text-red-400 font-medium';
+  }
+
+  if (normalized.includes('mixed') || normalized.includes('caveat') || normalized.includes('unstable')) {
+    return 'text-amber-300 font-medium';
+  }
+
+  if (normalized.includes('works')) {
+    return 'text-solana-green font-medium';
+  }
+
+  return 'text-gray-300';
+}
+
+function networkStatusIcon(status?: string): { label: string; className: string } | null {
+  if (!status) {
+    return null;
+  }
+
+  const normalized = status.toLowerCase();
+
+  if (normalized.includes('does not') || normalized.includes('do not work') || normalized.includes('no native') || normalized.includes('do not use')) {
+    return { label: 'X', className: 'text-red-400' };
+  }
+
+  if (normalized.includes('mixed') || normalized.includes('caveat') || normalized.includes('unstable')) {
+    return { label: '!', className: 'text-amber-300' };
+  }
+
+  if (normalized.includes('works')) {
+    return { label: 'OK', className: 'text-solana-green' };
+  }
+
+  return null;
+}
+
+function NetworkStatus({ status }: { status?: string }) {
+  const icon = networkStatusIcon(status);
+
+  return (
+    <>
+      {icon && <span className={`${icon.className} mr-1 font-bold`}>{icon.label}</span>}
+      {status}
+    </>
+  );
+}
+
 export default function HardwareTable({ cpus, storage, network }: HardwareTableProps) {
   if (cpus && cpus.length > 0) {
     return (
@@ -99,21 +154,52 @@ export default function HardwareTable({ cpus, storage, network }: HardwareTableP
   }
 
   if (network && network.length > 0) {
+    const hasAfXdpData = network.some((nic) => nic.driver || nic.afXdpWithoutZeroCopy || nic.afXdpWithZeroCopy);
+
     return (
       <div className="table-container">
         <table className="table">
           <thead>
-            <tr>
-              <th>Manufacturer</th>
-              <th>Model</th>
-              <th>Speed</th>
-              <th>Ports</th>
-              <th>Media</th>
-            </tr>
+            {hasAfXdpData ? (
+              <tr>
+                <th>Driver / NIC Family</th>
+                <th>AF_XDP w/o ZC</th>
+                <th>AF_XDP w/ ZC</th>
+                <th>Comments</th>
+              </tr>
+            ) : (
+              <tr>
+                <th>Manufacturer</th>
+                <th>Model</th>
+                <th>Speed</th>
+                <th>Ports</th>
+                <th>Media</th>
+                <th>Comments</th>
+              </tr>
+            )}
           </thead>
           <tbody>
             {network.map((nic, index) => {
               const id = generateId(nic, index, 'network');
+
+              if (hasAfXdpData) {
+                return (
+                  <tr key={index} id={id} className="scroll-mt-20">
+                    <td className="text-gray-300">
+                      <div className="font-mono text-sm text-gray-200">{nic.driver}</div>
+                      <div className="text-xs text-gray-400">{nic.manufacturer} {nic.model}</div>
+                    </td>
+                    <td className={networkStatusClass(nic.afXdpWithoutZeroCopy)}>
+                      <NetworkStatus status={nic.afXdpWithoutZeroCopy} />
+                    </td>
+                    <td className={networkStatusClass(nic.afXdpWithZeroCopy)}>
+                      <NetworkStatus status={nic.afXdpWithZeroCopy} />
+                    </td>
+                    <td className="max-w-2xl text-gray-300">{nic.notes}</td>
+                  </tr>
+                );
+              }
+
               return (
                 <tr key={index} id={id} className="scroll-mt-20">
                   <td className="text-gray-300">{nic.manufacturer}</td>
@@ -121,6 +207,7 @@ export default function HardwareTable({ cpus, storage, network }: HardwareTableP
                   <td className="text-gray-300">{nic.speed}</td>
                   <td className="text-gray-300">{nic.ports}</td>
                   <td className="text-gray-300 capitalize">{nic.media}</td>
+                  <td className="max-w-2xl text-gray-300">{nic.notes}</td>
                 </tr>
               );
             })}
