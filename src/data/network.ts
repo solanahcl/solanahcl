@@ -87,4 +87,6 @@ export const networkNotes = `Network interface cards with native XDP (eXpress Da
 
 **Minimum:** 10 GbE symmetric connection. Higher speeds recommended for mainnet validators.
 
-Prefer families that support AF_XDP with zero-copy. If zero-copy is unstable on a specific host, run without ZC before replacing the NIC.`;
+Prefer families that support AF_XDP with zero-copy. If zero-copy is unstable on a specific host, run without ZC before replacing the NIC.
+
+Read more about configuring Agave XDP in the [Agave XDP setup guide](https://www.anza.xyz/blog/agave-xdp-setup-guide).`;
