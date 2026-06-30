@@ -9,7 +9,6 @@ export const providers: Provider[] = [
   { name: 'DedicatedNodes', link: 'https://www.dedicatednodes.io/solana-nodes/' },
   { name: 'Allnodes', link: 'https://www.allnodes.com/hosting' },
   { name: '3NV', link: 'https://3nv.io/' },
-  { name: 'velia.net', link: 'https://www.velia.net/shop/region/frankfurt-am-main' },
   { name: 'Koddos', link: 'https://www.koddos.net' },
 ];
 

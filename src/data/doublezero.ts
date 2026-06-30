@@ -18,7 +18,6 @@ export const doubleZeroRings: RingProviders[] = [
       { name: 'Teraswitch', link: 'https://teraswitch.com/bare-metal/' },
       { name: 'Vultr', link: 'https://www.vultr.com/pricing/#bare-metal' },
       { name: 'Cherry', link: 'https://www.cherryservers.com/bare-metal-dedicated-servers' },
-      { name: 'velia.net', link: 'https://www.velia.net' },
       { name: 'Koddos', link: 'https://www.koddos.net' },
       { name: 'Allnodes', link: 'https://www.allnodes.com/hosting/solana' },
       { name: 'DedicatedNodes', link: 'https://www.dedicatednodes.io/solana-servers' },
