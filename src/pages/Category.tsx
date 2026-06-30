@@ -1,5 +1,4 @@
-import { useParams, useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import { CategoryType } from '../data/hardware';
 import HardwareTable from '../components/HardwareTable';
 import Notes from '../components/Notes';
@@ -74,20 +73,6 @@ const CATEGORY_SEO: Record<
 
 export default function Category() {
   const { type } = useParams<{ type: CategoryType }>();
-  const location = useLocation();
-
-  // Handle anchor scrolling on mount and hash changes
-  useEffect(() => {
-    const hash = location.hash.substring(1);
-    if (hash) {
-      setTimeout(() => {
-        const element = document.getElementById(hash);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      }, 100);
-    }
-  }, [location.hash, location.pathname]);
 
   const getCategoryData = () => {
     switch (type) {
