@@ -4,6 +4,7 @@ export const providers: Provider[] = [
   { name: 'Latitude', link: 'https://latitude.sh' },
   { name: 'Edgevana', link: 'https://srv.edgevana.com/solana-validator-servers' },
   { name: 'Teraswitch', link: 'https://teraswitch.com/bare-metal/' },
+  { name: 'OrbitServers', link: 'https://orbitservers.io' },
   { name: 'Vultr', link: 'https://www.vultr.com/pricing/#bare-metal' },
   { name: 'Cherry', link: 'https://www.cherryservers.com/bare-metal-dedicated-servers' },
   { name: 'DedicatedNodes', link: 'https://www.dedicatednodes.io/solana-nodes/' },
