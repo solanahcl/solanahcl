@@ -185,6 +185,10 @@ export const frankendancerCPUs: CPU[] = [
   },
 ];
 
-export const frankendancerNotes = `For Frankendancer its beneficial to have Simultaneous Multi-Threading (SMT) enabled.
+export const frankendancerNotes = `**NOTE: Frankendancer is being deprecated.** Jump Firedancer will end support for Frankendancer with the Alpenglow feature activation. Frankendancer keeps working right up until Alpenglow activates on mainnet (no firm date yet), and Alpenglow is already activating on testnet. Firedancer supports Alpenglow from day one, so operators should plan their move to the full Firedancer client (26.08 or newer).
+
+Neither Frankendancer nor Firedancer will support the Alpenglow migration period itself. Fail over to an Agave node beforehand, then bring the Firedancer node back up and fail back once the migration is complete.
+
+For Frankendancer its beneficial to have Simultaneous Multi-Threading (SMT) enabled.
 With each CPU it was tested if its possible to catch up with a non-voting node, while SMT was enabled.`;
 

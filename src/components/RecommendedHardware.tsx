@@ -5,7 +5,7 @@ import { enterpriseGen5 } from '../data/storage';
 import { CPU } from '../data/hardware';
 
 interface CPUWithClient extends CPU {
-  client: 'Agave' | 'Frankendancer' | 'Firedancer';
+  client: 'Agave' | 'Fire/Frankendancer';
 }
 
 export default function RecommendedHardware() {
@@ -16,7 +16,7 @@ export default function RecommendedHardware() {
   // Combine and add client info
   const allCPUs: CPUWithClient[] = [
     ...topAgaveCPUs.map(cpu => ({ ...cpu, client: 'Agave' as const })),
-    ...topFrankendancerCPUs.map(cpu => ({ ...cpu, client: 'Frankendancer' as const })),
+    ...topFrankendancerCPUs.map(cpu => ({ ...cpu, client: 'Fire/Frankendancer' as const })),
   ];
 
   // Get top storage drives (top 6 from Enterprise Gen 5)
@@ -39,7 +39,7 @@ export default function RecommendedHardware() {
             <table className="table">
               <thead>
                 <tr>
-                  <th className="w-24">Client</th>
+                  <th className="w-40">Client</th>
                   <th>Manufacturer</th>
                   <th>Model</th>
                   <th>Base Clock</th>
@@ -54,7 +54,6 @@ export default function RecommendedHardware() {
                 {allCPUs.map((cpu, index) => {
                   const getClientLink = () => {
                     if (cpu.client === 'Agave') return '/category/agave';
-                    if (cpu.client === 'Frankendancer') return '/category/frankendancer';
                     return '/category/firedancer';
                   };
                   
