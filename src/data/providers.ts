@@ -8,6 +8,7 @@ export const providers: Provider[] = [
   { name: 'Vultr', link: 'https://www.vultr.com/pricing/#bare-metal' },
   { name: 'Cherry', link: 'https://www.cherryservers.com/bare-metal-dedicated-servers' },
   { name: 'DedicatedNodes', link: 'https://www.dedicatednodes.io/solana-nodes/' },
+  { name: 'velia.net', link: 'https://www.velia.net/' },
   { name: 'Allnodes', link: 'https://www.allnodes.com/hosting' },
   { name: '3NV', link: 'https://3nv.io/' },
   { name: 'Koddos', link: 'https://www.koddos.net' },
