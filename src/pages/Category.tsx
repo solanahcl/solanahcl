@@ -5,6 +5,7 @@ import Notes from '../components/Notes';
 import SEO from '../components/SEO';
 import { agaveCPUs, agaveNotes } from '../data/agave';
 import { frankendancerCPUs, frankendancerNotes } from '../data/frankendancer';
+import { firedancerNotes } from '../data/firedancer';
 import {
   enterpriseGen5,
   enterpriseGen4,
@@ -87,7 +88,7 @@ export default function Category() {
         return {
           name: 'Frankendancer',
           description:
-            'A hybrid validator combining Agave and Firedancer components',
+            'A hybrid validator combining Agave and Firedancer components. Support ends with the Alpenglow activation.',
           cpus: frankendancerCPUs,
           notes: frankendancerNotes,
         };
@@ -97,8 +98,7 @@ export default function Category() {
           description:
             'A high-performance validator implementation built from the ground up',
           cpus: [],
-          notes:
-            'Firedancer is a next-generation validator implementation. Hardware recommendations are similar to Frankendancer.',
+          notes: firedancerNotes,
         };
       default:
         return {
