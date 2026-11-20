@@ -46,11 +46,11 @@ export const networkCards: NetworkCard[] = [
     },
     {
         manufacturer: 'Broadcom',
-        model: 'Broadcom',
+        model: 'NetXtreme-E (e.g. BCM57502)',
         driver: 'bnxt_en',
         afXdpWithoutZeroCopy: 'Works',
         afXdpWithZeroCopy: 'Does not work',
-        notes: 'bnxt_en works with XDP, but does not pass the zero-copy flag. Broadcom non-ZC can still be reasonably fast. Get a non-Broadcom NIC when possible.'
+                notes: 'bnxt_en works with XDP, but does not pass the zero-copy flag: with --xdp-zero-copy the AF_XDP bind fails with EOPNOTSUPP (os error 95). Broadcom non-ZC can still be reasonably fast. NIC ring sizes must be a power of two (e.g. ethtool -G <if> rx 1024 tx 1024), otherwise Agave fails at startup with setsockopt(SOL_XDP, ...) EINVAL. Get a non-Broadcom NIC when possible.'
     },
     {
         manufacturer: 'Broadcom',
